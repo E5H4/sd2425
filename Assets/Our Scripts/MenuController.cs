@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-   public void BulletWoundBtn()
+    public void BulletWoundBtn()
     {
+        Debug.Log("Button Clicked!");
         SceneManager.LoadScene("BulletWound");
     }
 

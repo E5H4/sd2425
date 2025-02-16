@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        // Check if the current scene is "SampleScene"
+        if (SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            moveSpeed = 1000f; // Change speed to 1000 if in SampleScene
+        }
     }
 
     void Update()
