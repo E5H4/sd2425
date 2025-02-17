@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = 1000f; // Change speed to 1000 if in SampleScene
         }
+        if (SceneManager.GetActiveScene().name == "HypoglycemicShock")
+        {
+            moveSpeed = 25f; // Change speed to 1000 if in HypoglycemicShock
+        }
     }
 
     void Update()
