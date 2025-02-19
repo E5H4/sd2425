@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+
+    // buttons on Lobby
+
     public void BulletWoundBtn()
     {
         Debug.Log("Button Clicked!");
