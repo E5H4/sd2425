@@ -14834,11 +14834,11 @@ MonoBehaviour:
   _dialogueFont: {fileID: 0}
   _fontColor: {r: 0, g: 0, b: 0, a: 0}
   _characterName: Sameshalos
-  _customizeCharacterName: 0
+  _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterNameFontBold: 0
-  _characterNameFontItalic: 0
+  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
@@ -22376,7 +22376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -700}
+  m_AnchoredPosition: {x: 0, y: -600}
   m_SizeDelta: {x: 0, y: 380}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &310816338
@@ -54951,6 +54951,7 @@ MonoBehaviour:
   _dialogueContents:
   - {fileID: 1061078512}
   - {fileID: 1481421184}
+  - {fileID: 1707554282}
   - {fileID: 207163010}
   _firstDialogueContent: {fileID: 1061078512}
   _currentDialogueContent: {fileID: 0}
@@ -55048,6 +55049,7 @@ RectTransform:
   - {fileID: 994026143}
   - {fileID: 1061078513}
   - {fileID: 1481421185}
+  - {fileID: 1707554283}
   - {fileID: 207163011}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -70906,10 +70908,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 190
+    m_Top: 150
     m_Bottom: 2
   m_ChildAlignment: 2
-  m_Spacing: -300
+  m_Spacing: -250
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -75397,11 +75399,11 @@ MonoBehaviour:
   _dialogueFont: {fileID: 0}
   _fontColor: {r: 0, g: 0, b: 0, a: 0}
   _characterName: Sameshalos
-  _customizeCharacterName: 0
+  _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterNameFontBold: 0
-  _characterNameFontItalic: 0
+  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
@@ -75419,7 +75421,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - _option: Okay
-    _nextDialogueContent: {fileID: 1481421184}
+    _nextDialogueContent: {fileID: 1707554282}
     _optionEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -77274,7 +77276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: 0}
+  m_AnchoredPosition: {x: -290, y: -55}
   m_SizeDelta: {x: 1050, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1087581989
@@ -105245,14 +105247,14 @@ MonoBehaviour:
   _dialogueFont: {fileID: 0}
   _fontColor: {r: 0, g: 0, b: 0, a: 0}
   _characterName: Jennifer
-  _customizeCharacterName: 0
+  _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterNameFontBold: 0
-  _characterNameFontItalic: 0
+  _characterNameFontColor: {r: 0.6556604, g: 1, b: 0.66936576, a: 0.99215686}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 3fbabb53ece764222afe2bb9ae98636c, type: 3}
-  _characterImagePosition: 0
+  _characterImagePosition: 1
   _nextDialogueContent: {fileID: 207163010}
   _dialogueStartEvent:
     m_PersistentCalls:
@@ -122548,6 +122550,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 732705859540968690, guid: dd6fb2e4ac513ce44800f0b2245f3107, type: 3}
   m_PrefabInstance: {fileID: 1706893200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1707554281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1707554283}
+  - component: {fileID: 1707554282}
+  m_Layer: 0
+  m_Name: 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1707554282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707554281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Hi, I'm the npc in this scene
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Jennifer
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.6556604, g: 1, b: 0.66936576, a: 0.99215686}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImagePosition: 1
+  _nextDialogueContent: {fileID: 207163010}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
+--- !u!4 &1707554283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707554281}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 797653058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1707723973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130503,14 +130570,14 @@ RectTransform:
   m_GameObject: {fileID: 1809449667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 310816337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560, y: 0}
+  m_AnchoredPosition: {x: 730, y: 100}
   m_SizeDelta: {x: 280, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1810530071
