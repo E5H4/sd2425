@@ -21,6 +21,50 @@ public class TestingText : MonoBehaviour
         startdialoguecontroller.ShowDialogueUI();
     }
 
+    public void ChoseDifficulty()
+    {
+        if (Difficulty.difficulty == "Minor")
+        {
+            // Disable StartDialogue
+            if (StartDialogue != null)
+            {
+                StartDialogue.SetActive(false);
+            }
+
+            // Enable MinorDialogue
+            if (MinorDialogue != null)
+            {
+                MinorDialogue.SetActive(true);
+            }
+
+            // Call new dialogue system
+            minordialoguecontroller.ShowDialogueUI();
+
+            Debug.Log("Minor difficulty mode activated.");
+        }
+
+        if (Difficulty.difficulty == "Severe")
+        {
+            // Disable StartDialogue
+            if (StartDialogue != null)
+            {
+                StartDialogue.SetActive(false);
+            }
+
+            // Enable MinorDialogue
+            if (SevereDialogue != null)
+            {
+                SevereDialogue.SetActive(true);
+            }
+
+            // Call new dialogue system
+            severedialoguecontroller.ShowDialogueUI();
+
+            Debug.Log("Major difficulty mode activated.");
+        }
+
+    }
+
     public void MinorDifficulty()
     {
         // Disable StartDialogue
