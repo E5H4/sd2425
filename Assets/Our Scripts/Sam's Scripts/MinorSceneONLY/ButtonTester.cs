@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlucoseMonitor : MonoBehaviour
+public class ButtonTester : MonoBehaviour
 {
     void Update()
     {
