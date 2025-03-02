@@ -11,6 +11,7 @@ public class TestingText : MonoBehaviour
     [SerializeField] private GameObject StartDialogue;  // Reference to the StartDialogue object
     [SerializeField] private GameObject MinorDialogue;  // Reference to the MinorDialogue object
     [SerializeField] private GameObject SevereDialogue;  // Reference to the SevereDialogue object
+    public static bool bookbagButton = false;
 
     void Start()
     {
@@ -19,6 +20,11 @@ public class TestingText : MonoBehaviour
 
         // Load initial dialogue
         startdialoguecontroller.ShowDialogueUI();
+    }
+
+    public void bookbagTrue()
+    {
+        bookbagButton = true;
     }
 
     public void ChoseDifficulty()

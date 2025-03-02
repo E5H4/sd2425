@@ -8,6 +8,12 @@ public class BoxScript : MonoBehaviour
     [SerializeField] private GameObject Dizz;  
     [SerializeField] private GameObject Fatigue; 
     [SerializeField] private GameObject Pale;
+    [SerializeField] private GameObject MonitorImage;
+    [SerializeField] private GameObject Monitor;  // Reference to the headache stuff
+    [SerializeField] private GameObject BoxStrips;
+    [SerializeField] private GameObject Strips;
+    [SerializeField] private GameObject Lancet;
+    //Open headache object
     //Open headache object
     public void headache()
     { 
@@ -49,5 +55,56 @@ public class BoxScript : MonoBehaviour
         Dizz.SetActive(false);
         Fatigue.SetActive(false);
         Pale.SetActive(false);
+        MonitorImage.SetActive(false);
+        Monitor.SetActive(false);
+        BoxStrips.SetActive(false);
+        Strips.SetActive(false);
+        Lancet.SetActive(false);
+
+    }
+
+    public void monitorimage()
+    {
+        // Enable Monitor
+        if (MonitorImage != null)
+        {
+            MonitorImage.SetActive(true);
+        }
+    }
+
+    public void monitor()
+    {
+        // Enable Monitor
+        if (Monitor != null)
+        {
+            Monitor.SetActive(true);
+        }
+    }
+
+    public void boxstrips()
+    {
+        // Enable boxstrips
+        if (BoxStrips != null)
+        {
+            BoxStrips.SetActive(true);
+        }
+    }
+
+    public void strips()
+    {
+        // Enable strips
+        if (Strips != null)
+        {
+            Strips.SetActive(true);
+        }
+    }
+
+    public void lancet()
+    {
+        // Enable lancets
+        if (Lancet != null)
+        {
+            Lancet.SetActive(true);
+        }
     }
 }
