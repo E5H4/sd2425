@@ -6,12 +6,6 @@ public class Difficulty : MonoBehaviour
 {
     public static string difficulty;
 
-    private void Start()
-    {
-        // Default to random difficulty
-        SetRandomDifficulty();
-    }
-
     public static void SetMinorDifficulty()
     {
         difficulty = "Minor";

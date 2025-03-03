@@ -9,6 +9,7 @@ public class EnableObjects : MonoBehaviour
     [SerializeField] private GameObject playerBig;
     [SerializeField] private GameObject characterBig;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject blood;
     [SerializeField] private GameObject character;
     [SerializeField] private GameObject Monitor8Dialogue;
     [SerializeField] private GameObject Monitor9Dialogue;
@@ -44,6 +45,23 @@ public class EnableObjects : MonoBehaviour
         Debug.Log("Regular characters disabled!");
     }
 
+
+    public void BacktoNormal()
+    {
+        if (monitor != null) monitor.SetActive(false);
+        else Debug.Log("HELP");
+        if (pen != null) pen.SetActive(false);
+        if (bottleStrips != null) bottleStrips.SetActive(false);
+        if (playerBig != null) playerBig.SetActive(false);
+        if (characterBig != null) characterBig.SetActive(false);
+        if (blood != null) blood.SetActive(false);
+        if (text != null) text.SetActive(false);
+        if (player != null) player.SetActive(true);
+        if (character != null) character.SetActive(true);
+
+        Debug.Log("Regular characters disabled!");
+        //if (text) text.SetActive(false);
+    }
     public void TurnOffDialogue8()
     {
         if (Monitor8Dialogue != null) Monitor8Dialogue.SetActive(false);

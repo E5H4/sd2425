@@ -8,6 +8,10 @@ public class Bookbag : MonoBehaviour
     [SerializeField] private GameObject bag;
     [SerializeField] private DialogueUIController minordialogue2controller;
     [SerializeField] private GameObject MinorDialogue2;
+    [SerializeField] private DialogueUIController minordialogue4controller;
+    [SerializeField] private GameObject MinorDialogue4;
+    [SerializeField] private DialogueUIController MeterDialoguecontroller;
+    [SerializeField] private GameObject MeterDialogue;
     [SerializeField] private DialogueUIController MoneyDialoguecontroller;
     [SerializeField] private GameObject MoneyDialogue;
     [SerializeField] private DialogueUIController SodaDialoguecontroller;
@@ -18,6 +22,8 @@ public class Bookbag : MonoBehaviour
     [SerializeField] private GameObject KitDialogue;
     [SerializeField] private DialogueUIController NotebookDialoguecontroller;
     [SerializeField] private GameObject NotebookDialogue;
+    private static bool minorsecond = false;
+    public static bool soda = false;
 
     void Update()
     {
@@ -43,35 +49,70 @@ public class Bookbag : MonoBehaviour
     private void DeactivateAllDialogues()
     {
         MinorDialogue2?.SetActive(false);
+        MeterDialogue?.SetActive(false);
         MoneyDialogue?.SetActive(false);
         SodaDialogue?.SetActive(false);
         PhoneDialogue?.SetActive(false);
         KitDialogue?.SetActive(false);
         NotebookDialogue?.SetActive(false);
     }
+    public void MinorSecondTrue()
+    {
+        minorsecond = true;
+        Debug.Log("Minor second is" + minorsecond);
+    }
+
 
 
     public void MonitorDialogue()
     {
         DeactivateAllDialogues();
-        if (bag.activeInHierarchy)
-        {
-            bag.SetActive(false);
-        }
 
-        if (MinorDialogue2 != null)
+        if (Difficulty.difficulty == "Minor")
         {
-            MinorDialogue2.SetActive(true);
-            Debug.Log("Minor dialogue 2 activated.");
-        }
+            if (minorsecond == false)
+            {
+                if (bag.activeInHierarchy)
+                {
+                    bag.SetActive(false);
+                }
 
-        if (minordialogue2controller != null)
-        {
-            minordialogue2controller.ShowDialogueUI();
+                if (MinorDialogue2 != null)
+                {
+                    MinorDialogue2.SetActive(true);
+                    Debug.Log("Minor dialogue 2 activated.");
+                    minordialogue2controller.ShowDialogueUI();
+                }
+
+            }
+            else
+            {
+                if (MeterDialogue != null)
+                {
+                    MeterDialogue.SetActive(true);
+                    Debug.Log("Meter dialogue activated.");
+                }
+
+                if (MeterDialoguecontroller != null)
+                {
+                    MeterDialoguecontroller.ShowDialogueUI();
+                }
+
+            }
         }
         else
         {
-            Debug.LogError("minordialogue2controller is NULL! Check the Inspector.");
+            if (MeterDialogue != null)
+            {
+                MeterDialogue.SetActive(true);
+                Debug.Log("Meter dialogue activated.");
+            }
+
+            if (MeterDialoguecontroller != null)
+            {
+                MeterDialoguecontroller.ShowDialogueUI();
+            }
+
         }
     }
 
@@ -92,15 +133,36 @@ public class Bookbag : MonoBehaviour
     public void PopDialogue()
     {
         DeactivateAllDialogues();
-        if (SodaDialogue != null)
+        if (minorsecond)
         {
-            SodaDialogue.SetActive(true);
+            soda = true;
+            if (bag.activeInHierarchy)
+            {
+                bag.SetActive(false);
+            }
+            {
+                MinorDialogue4.SetActive(true);
+                Debug.Log("Minor dialogue 4 activated.");
+            }
+
+            if (minordialogue4controller != null)
+            {
+                minordialogue4controller.ShowDialogueUI();
+            }
+        }
+        else {
+            if (SodaDialogue != null)
+            {
+                SodaDialogue.SetActive(true);
+            }
+
+            if (SodaDialoguecontroller != null)
+            {
+                SodaDialoguecontroller.ShowDialogueUI();
+            }
         }
 
-        if (SodaDialoguecontroller != null)
-        {
-            SodaDialoguecontroller.ShowDialogueUI();
-        }
+
     }
 
     public void TelephoneDialogue()

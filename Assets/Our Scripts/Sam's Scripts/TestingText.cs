@@ -27,6 +27,11 @@ public class TestingText : MonoBehaviour
         bookbagButton = true;
     }
 
+    public void bookbagFalse()
+    {
+        bookbagButton = false;
+    }
+
     public void ChoseDifficulty()
     {
         if (Difficulty.difficulty == "Minor")

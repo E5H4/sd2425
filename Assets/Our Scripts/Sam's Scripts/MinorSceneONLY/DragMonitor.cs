@@ -64,7 +64,14 @@ public class DragMonitor : MonoBehaviour
             {
                 MinorDialogue3.ShowDialogueUI(); // Trigger next dialogue
                 Debug.Log("MinorDialogue3 triggered!");
+                StartCoroutine(HideMonitorAfterDelay());
             }
+        }
+
+        IEnumerator HideMonitorAfterDelay()
+        {
+            yield return new WaitForSeconds(0.1f);
+            gameObject.SetActive(false); // Hide monitor
         }
     }
 
