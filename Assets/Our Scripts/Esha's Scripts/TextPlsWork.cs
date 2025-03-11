@@ -7,10 +7,10 @@ public class TextPlsWork : MonoBehaviour
 {
     [SerializeField] private DialogueUIController _dialogueUIController; // this is my start dialogue test (DIALOGUEUI) , premade and prenamed
      [SerializeField] private DialogueUIController minordialoguecontroller;
-    [SerializeField] private DialogueUIController severedialoguecontroller;
+    [SerializeField] private DialogueUIController majordialoguecontroller;
     [SerializeField] private GameObject StartDialogue;  // Reference to the StartDialogue object
     [SerializeField] private GameObject MinorDialogue;  // Reference to the MinorDialogue object
-    [SerializeField] private GameObject SevereDialogue;  // Reference to the SevereDialogue object
+    [SerializeField] private GameObject MajorDialogue;  // Reference to the SevereDialogue object
 
 
     private void Start()
@@ -54,14 +54,14 @@ public class TextPlsWork : MonoBehaviour
             StartDialogue.SetActive(false);
         }
 
-        // Enable SevereDialogue
-        if (SevereDialogue != null)
+        // Enable MajorDialogue
+        if (MajorDialogue != null)
         {
-            SevereDialogue.SetActive(true);
+            MajorDialogue.SetActive(true);
         }
 
         // Call new dialogue system
-        severedialoguecontroller.ShowDialogueUI();
+        majordialoguecontroller.ShowDialogueUI();
 
         Debug.Log("Major difficulty mode activated.");
     }
