@@ -37,9 +37,11 @@ public class TextPlsWork : MonoBehaviour
         startdialoguecontroller.ShowDialogueUI();
     }
 
-        public void ChoseDifficulty() {
+    public void ChoseDifficulty()
+    {
         if (SetDifficulty.difficulty == "Minor")
         {
+            Debug.Log("Minor difficulty activated.");
             // Disable StartDialogue
             if (StartDialogue != null)
             {
@@ -55,7 +57,7 @@ public class TextPlsWork : MonoBehaviour
             // Call new dialogue system
             minordialoguecontroller.ShowDialogueUI();
 
-            Debug.Log("Minor difficulty mode activated!");
+            Debug.Log("Minor difficulty mode activated.");
         }
 
         if (SetDifficulty.difficulty == "Major")
@@ -66,7 +68,7 @@ public class TextPlsWork : MonoBehaviour
                 StartDialogue.SetActive(false);
             }
 
-            // Enable MajorDialogue
+            // Enable MinorDialogue
             if (MajorDialogue != null)
             {
                 MajorDialogue.SetActive(true);
@@ -75,28 +77,9 @@ public class TextPlsWork : MonoBehaviour
             // Call new dialogue system
             majordialoguecontroller.ShowDialogueUI();
 
-            Debug.Log("Major difficulty mode activated!");
+            Debug.Log("Major difficulty mode activated.");
         }
 
-    }
-    public void MinorDifficulty() // minor/female version
-    {
-        // Disable StartDialogue
-        if (StartDialogue != null)
-        {
-            StartDialogue.SetActive(false);
-        }
-
-        // Enable MinorDialogue
-        if (MinorDialogue != null)
-        {
-            MinorDialogue.SetActive(true);
-        }
-
-        // Call new dialogue system
-        minordialoguecontroller.ShowDialogueUI();
-
-        Debug.Log("Minor difficulty mode activated!");
     }
 
     public void MajorDifficulty() //severe/male version
