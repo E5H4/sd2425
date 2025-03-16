@@ -5,7 +5,7 @@ using DialogueSystemWithText;
 
 public class TextPlsWork : MonoBehaviour
 {
-    [SerializeField] private DialogueUIController startdialoguecontroller; // this is my start dialogue (DIALOGUEUI) , premade and prenamed, changed to start
+    [SerializeField] private DialogueUIController startdialoguecontroller; // this is my StartDialogue (DIALOGUEUI) , premade and prenamed
      [SerializeField] private DialogueUIController minordialoguecontroller;
     [SerializeField] private DialogueUIController majordialoguecontroller;
     [SerializeField] private GameObject StartDialogue;  // Reference to the StartDialogue object
@@ -27,9 +27,12 @@ public class TextPlsWork : MonoBehaviour
     // }
 
         void Start() {
-        // Show difficulty in console
-        Debug.Log("Difficulty: " + SetDifficulty.difficulty);
-
+        // Show difficulty in console if there is one set lol
+            if (string.IsNullOrEmpty(SetDifficulty.difficulty)) {
+                Debug.LogError("SETDIFFICULTY.DIFFICULTY IS NULL OR EMPTY!");
+            } else {
+                Debug.Log("Difficulty: " + SetDifficulty.difficulty);
+            }
         // Load initial dialogue
         startdialoguecontroller.ShowDialogueUI();
     }

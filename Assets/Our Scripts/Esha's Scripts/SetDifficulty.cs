@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SetDifficulty : MonoBehaviour
 {
-public static string difficulty;
+    public static string difficulty;
 
     public static void SetMinorDifficulty()
     {
