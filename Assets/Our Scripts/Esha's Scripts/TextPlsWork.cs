@@ -5,7 +5,7 @@ using DialogueSystemWithText;
 
 public class TextPlsWork : MonoBehaviour
 {
-    [SerializeField] private DialogueUIController startdialoguecontroller; // this is my start dialogue test (DIALOGUEUI) , premade and prenamed
+    [SerializeField] private DialogueUIController startdialoguecontroller; // this is my start dialogue (DIALOGUEUI) , premade and prenamed, changed to start
      [SerializeField] private DialogueUIController minordialoguecontroller;
     [SerializeField] private DialogueUIController majordialoguecontroller;
     [SerializeField] private GameObject StartDialogue;  // Reference to the StartDialogue object
