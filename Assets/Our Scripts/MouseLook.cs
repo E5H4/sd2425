@@ -29,6 +29,11 @@ public class MouseLook : MonoBehaviour
 
     private float speedX = 0, speedZ = 0; // Movement speed variables
 
+    // Variables for camera toggling on crouch
+    public GameObject mainCamera;   // Assign in Inspector
+    public GameObject crouchCamera; // Assign in Inspector
+    private bool isCrouching = false; // Starts as false
+
     void Start()
     {
         // Set initial target direction based on the camera's starting orientation
@@ -41,6 +46,25 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
+        // Toggle crouch when either Shift key is pressed
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            if (isCrouching)
+            {
+                // If already crouched, switch back to main camera and reset crouch state
+                if (mainCamera) mainCamera.SetActive(true);
+                if (crouchCamera) crouchCamera.SetActive(false);
+                isCrouching = false;
+            }
+            else
+            {
+                // If not crouched, switch to crouch camera and set crouch state to true
+                if (mainCamera) mainCamera.SetActive(false);
+                if (crouchCamera) crouchCamera.SetActive(true);
+                isCrouching = true;
+            }
+        }
+
         // Lock the cursor to the screen if enabled
         Cursor.lockState = lockCursor;
 
@@ -76,7 +100,7 @@ public class MouseLook : MonoBehaviour
         // Apply horizontal rotation
         transform.localRotation *= targetOrientation;
 
-        // If the camera is attached to a character body, rotate the body
+        // Rotate the character body if it exists
         if (characterBody)
         {
             var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, characterBody.transform.up);
@@ -92,9 +116,9 @@ public class MouseLook : MonoBehaviour
 
     void FixedUpdate()
     {
-        bool isMoving = false; // Track if the player is pressing movement keys
+        bool isMoving = false; // Track if movement keys are pressed
 
-        // Handle movement in the X (left/right) direction
+        // Handle movement in the X direction
         if (Input.GetKey(rightKey))
         {
             speedX += acceleration * Time.deltaTime;
@@ -106,7 +130,7 @@ public class MouseLook : MonoBehaviour
             isMoving = true;
         }
 
-        // Handle movement in the Z (forward/backward) direction
+        // Handle movement in the Z direction
         if (Input.GetKey(backKey))
         {
             speedZ -= acceleration * Time.deltaTime;
@@ -118,14 +142,14 @@ public class MouseLook : MonoBehaviour
             isMoving = true;
         }
 
-        // If no movement keys are pressed, stop movement immediately
+        // If no movement keys are pressed, reset speeds immediately
         if (!isMoving)
         {
             speedX = 0;
             speedZ = 0;
         }
 
-        // Clamp speeds to the max allowed movement speed
+        // Clamp speeds to the maximum allowed movement speed
         speedX = Mathf.Clamp(speedX, -maxSpeed * Time.deltaTime, maxSpeed * Time.deltaTime);
         speedZ = Mathf.Clamp(speedZ, -maxSpeed * Time.deltaTime, maxSpeed * Time.deltaTime);
 
