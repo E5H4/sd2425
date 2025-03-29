@@ -28,6 +28,7 @@ public class BoxScript : MonoBehaviour
     [SerializeField] private GameObject Step2;
     [SerializeField] private GameObject Step3;
     [SerializeField] private GameObject Step4;
+    [SerializeField] private GameObject Needleshot;
 
 
 
@@ -90,6 +91,7 @@ public class BoxScript : MonoBehaviour
         Step2.SetActive(false);
         Step3.SetActive(false);
         Step4.SetActive(false);
+        Needleshot.SetActive(false);
     }
 
     public void monitorimage()
@@ -232,6 +234,14 @@ public class BoxScript : MonoBehaviour
         if (Step4 != null)
         {
             Step4.SetActive(true);
+        }
+    }
+
+    public void NeedleShot()
+    {
+        if (Needleshot != null)
+        {
+            Needleshot.SetActive(true);
         }
     }
 

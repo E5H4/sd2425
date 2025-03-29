@@ -3,18 +3,20 @@ using DialogueSystemWithText;
 
 public class SyringeDraggable : MonoBehaviour
 {
-    // Dialogue for when the syringe is inserted into the vile (Step 2)
-    [SerializeField] private DialogueUIController severeDialogue4;
-
-    // Reference to the vile’s transform (assign via Inspector)
+    [SerializeField] private DialogueUIController severeDialogue5;
     [SerializeField] private Transform vileTransform;
+    [SerializeField] private Transform vileTopTransform;
+    [SerializeField] private GameObject bottleSyringeObject;
 
     // Draggable mechanics
     private bool isDragging = false;
     private Vector3 offset;
 
-    // Distance threshold for considering the syringe “inserted”
-    private float insertionThreshold = 1.0f;
+    //considering the syringe “inserted” (general proximity to vile)
+    private float insertionThreshold = 0.55f;
+
+    //syringe's needle to be at the top of the vile.
+    private float topThreshold = 0.1f;
 
     private void OnMouseDown()
     {
@@ -43,16 +45,46 @@ public class SyringeDraggable : MonoBehaviour
         {
             float distance = Vector3.Distance(transform.position, vileTransform.position);
             Debug.Log("SyringeDraggable: Distance to vile: " + distance);
-            if (distance < insertionThreshold)
+
+            // Check both that the syringe is within the general insertion range
+            // and that the needle is at the top of the vile.
+            if (distance < insertionThreshold && IsNeedleAtTop())
             {
-                Debug.Log("SyringeDraggable: Syringe inserted into vile. Triggering dialogue.");
-                if (severeDialogue4 != null)
+                Debug.Log("SyringeDraggable: Needle is in the top of the vile. Triggering dialogue and activating combined object.");
+                if (severeDialogue5 != null)
                 {
-                    severeDialogue4.ShowDialogueUI();
+                    severeDialogue5.ShowDialogueUI();
                 }
-                // Optionally disable further dragging.
-                this.enabled = false;
+                // Activate the combined bottleSyringe object.
+                if (bottleSyringeObject != null)
+                {
+                    bottleSyringeObject.SetActive(true);
+                }
+           
+                gameObject.SetActive(false);
+     
+                if (vileTransform != null)
+                {
+                    vileTransform.gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                Debug.Log("SyringeDraggable: Needle is not at the top of the vile.");
             }
         }
+    }
+
+    //checks if the syringe's position is in the top of the vile.
+    private bool IsNeedleAtTop()
+    {
+        if (vileTopTransform == null)
+        {
+            Debug.LogWarning("SyringeDraggable: Vile top transform not assigned.");
+            return false;
+        }
+        float topDistance = Vector3.Distance(transform.position, vileTopTransform.position);
+        Debug.Log("SyringeDraggable: Distance to vile top: " + topDistance);
+        return topDistance < topThreshold;
     }
 }

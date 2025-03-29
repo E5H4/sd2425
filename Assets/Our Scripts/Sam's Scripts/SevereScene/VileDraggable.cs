@@ -17,6 +17,24 @@ public class VileDraggable : MonoBehaviour
     private float dragThreshold = 0.1f; // World units; if movement is less, count as a click.
     private bool actionCompleted = false;
 
+    private void Update()
+    {
+        // Continuously check if the vile's z rotation is near 180°.
+        if (!actionCompleted)
+        {
+            float currentZ = NormalizeAngle(transform.eulerAngles.z);
+            if (Mathf.Abs(currentZ - 180f) < 5f)
+            {
+                Debug.Log("VileDraggable: Detected rotation near 180° in Update. Triggering dialogue.");
+                if (severeDialogue4 != null)
+                {
+                    severeDialogue4.ShowDialogueUI();
+                }
+                actionCompleted = true;
+            }
+        }
+    }
+
     private void OnMouseDown()
     {
         if (actionCompleted) return;
@@ -60,6 +78,7 @@ public class VileDraggable : MonoBehaviour
                 // Double-click detected: rotate by 45°.
                 transform.Rotate(0, 0, 45);
                 Debug.Log("VileDraggable: Vile rotated 45° on double click.");
+
                 // Check if the vile is near 180° (upside down).
                 float zRotation = NormalizeAngle(transform.eulerAngles.z);
                 if (Mathf.Abs(zRotation - 180f) < 5f)
