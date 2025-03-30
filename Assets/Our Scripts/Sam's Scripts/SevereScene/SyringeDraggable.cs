@@ -4,6 +4,8 @@ using DialogueSystemWithText;
 public class SyringeDraggable : MonoBehaviour
 {
     [SerializeField] private DialogueUIController severeDialogue5;
+    [SerializeField] private GameObject severedialogue5;
+
     [SerializeField] private Transform vileTransform;
     [SerializeField] private Transform vileTopTransform;
     [SerializeField] private GameObject bottleSyringeObject;
@@ -51,6 +53,7 @@ public class SyringeDraggable : MonoBehaviour
             if (distance < insertionThreshold && IsNeedleAtTop())
             {
                 Debug.Log("SyringeDraggable: Needle is in the top of the vile. Triggering dialogue and activating combined object.");
+                severedialogue5.SetActive(true);
                 if (severeDialogue5 != null)
                 {
                     severeDialogue5.ShowDialogueUI();
@@ -87,4 +90,5 @@ public class SyringeDraggable : MonoBehaviour
         Debug.Log("SyringeDraggable: Distance to vile top: " + topDistance);
         return topDistance < topThreshold;
     }
+
 }

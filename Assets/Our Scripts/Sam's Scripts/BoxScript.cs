@@ -29,6 +29,15 @@ public class BoxScript : MonoBehaviour
     [SerializeField] private GameObject Step3;
     [SerializeField] private GameObject Step4;
     [SerializeField] private GameObject Needleshot;
+    [SerializeField] private GameObject CharBack;
+    [SerializeField] private GameObject CharReg;
+    [SerializeField] private GameObject CharFront;
+    [SerializeField] private GameObject B1;
+    [SerializeField] private GameObject B2;
+    [SerializeField] private GameObject B3;
+    [SerializeField] private GameObject B4;
+    [SerializeField] private GameObject SyringeShot;
+
 
 
 
@@ -92,7 +101,19 @@ public class BoxScript : MonoBehaviour
         Step3.SetActive(false);
         Step4.SetActive(false);
         Needleshot.SetActive(false);
+        CharBack.SetActive(false);
+        B1.SetActive(false);
+        B2.SetActive(false);
+        B3.SetActive(false);
+        B4.SetActive(false);
     }
+
+    public void turnofffront()
+    {
+      CharFront.SetActive(false);
+      SyringeShot.SetActive(false);
+    }
+
 
     public void monitorimage()
     {
@@ -245,7 +266,42 @@ public class BoxScript : MonoBehaviour
         }
     }
 
+    public void Charback()
+    {
+        CharReg.SetActive(false);
+        if (CharBack != null)
+        {
+            CharBack.SetActive(true);
+        }
+    }
 
+    public void Charfront()
+    {
+        if (CharFront != null)
+        {
+            CharFront.SetActive(true);
+            B1.SetActive(true);
+            B2.SetActive(true);
+            B3.SetActive(true);
+            B4.SetActive(true);
+        }
+    }
+
+    public void CharRegAlive()
+    {
+        if (CharReg != null)
+        {
+            CharReg.SetActive(true);
+        }
+    }
+
+    public void Syringeshot()
+    {
+        if (SyringeShot != null)
+        {
+            SyringeShot.SetActive(true);
+        }
+    }
 
 
 }

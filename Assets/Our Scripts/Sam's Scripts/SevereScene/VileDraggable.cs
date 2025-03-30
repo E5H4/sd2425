@@ -5,16 +5,16 @@ using DialogueSystemWithText;
 [RequireComponent(typeof(Collider))]
 public class VileDraggable : MonoBehaviour
 {
-    // Dialogue for when the vile is turned upside down (Step 2)
+ 
     [SerializeField] private DialogueUIController severeDialogue4;
-
+    [SerializeField] private GameObject severedialogue4;
     // Drag and double-click variables
     private bool isDragging = false;
     private Vector3 offset;
     private Vector3 mouseDownPos;
     private float lastClickTime = 0f;
     private float doubleClickThreshold = 0.3f;
-    private float dragThreshold = 0.1f; // World units; if movement is less, count as a click.
+    private float dragThreshold = 0.1f; // World units
     private bool actionCompleted = false;
 
     private void Update()
@@ -26,6 +26,7 @@ public class VileDraggable : MonoBehaviour
             if (Mathf.Abs(currentZ - 180f) < 5f)
             {
                 Debug.Log("VileDraggable: Detected rotation near 180° in Update. Triggering dialogue.");
+                severedialogue4.SetActive(true);
                 if (severeDialogue4 != null)
                 {
                     severeDialogue4.ShowDialogueUI();
@@ -40,7 +41,7 @@ public class VileDraggable : MonoBehaviour
         if (actionCompleted) return;
 
         isDragging = true;
-        // Record the initial mouse position (world point) preserving the object's z.
+        // Record the initial mouse position 
         Vector3 mousePos = Input.mousePosition;
         float objectZ = Camera.main.WorldToScreenPoint(transform.position).z;
         mousePos.z = objectZ;
@@ -97,10 +98,9 @@ public class VileDraggable : MonoBehaviour
                 lastClickTime = Time.time;
             }
         }
-        // Otherwise, it was a drag so simply let the object stay where it was moved.
     }
 
-    // Utility to normalize an angle between 0 and 360.
+    //normalize an angle between 0 and 360.
     private float NormalizeAngle(float angle)
     {
         angle = angle % 360f;

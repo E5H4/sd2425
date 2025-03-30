@@ -7,6 +7,7 @@ public class OrangeCapDraggable : MonoBehaviour
 {
     // Dialogue controller for step one.
     [SerializeField] private DialogueUIController severeDialogue3;
+    [SerializeField] private GameObject severedialogue3;
 
     // Flag to prevent multiple clicks.
     private bool canClick = true;
@@ -16,6 +17,7 @@ public class OrangeCapDraggable : MonoBehaviour
         if (canClick)
         {
             Debug.Log("OrangeCapDraggable: Orange cap clicked, triggering dialogue.");
+            severedialogue3.SetActive(true);
             if (severeDialogue3 != null)
             {
                 severeDialogue3.ShowDialogueUI();

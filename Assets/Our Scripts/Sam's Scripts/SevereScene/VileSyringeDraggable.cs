@@ -4,42 +4,47 @@ using DialogueSystemWithText;
 [RequireComponent(typeof(Collider))]
 public class VileSyringDraggable : MonoBehaviour
 {
-    // Dialogue for when rotated right side up (z near 180°)
+
     [SerializeField] private DialogueUIController severeDialogue6;
-    // Dialogue for when shaking is complete
     [SerializeField] private DialogueUIController severeDialogue8;
-    // Dialogue for when rotated back upside down (z near 0°)
     [SerializeField] private DialogueUIController severeDialogue9;
+
+
+    //Turn on dialogue
+    [SerializeField] private GameObject severedialogue6;
+    [SerializeField] private GameObject severedialogue8;
+    [SerializeField] private GameObject severedialogue9;
+
 
     // Define phases of the sequence.
     private enum Phase { RotateUp, Shake, RotateDown }
     private Phase currentPhase = Phase.RotateUp;
 
-    // Variables for dragging and double-click rotation.
+    //dragging and double-click rotation.
     private bool isDragging = false;
     private Vector3 dragOffset;
     private Vector3 mouseDownPos;
     private float lastClickTime = 0f;
     private float doubleClickThreshold = 0.3f;
-    private float dragThreshold = 0.1f; // distinguish click from drag
+    private float dragThreshold = 0.1f; 
 
-    // Rotation settings used in RotateUp and RotateDown phases.
+    // Rotation settings
     [SerializeField] private float rotationIncrement = 45f;
-    [SerializeField] private float rotationTolerance = 5f; // degrees
+    [SerializeField] private float rotationTolerance = 5f; 
 
-    // Shake mode parameters (active during Shake phase):
-    [SerializeField] private float shakeRange = 0.15f;      // allowed horizontal range from initial X
-    [SerializeField] private float extremeTolerance = 0.02f;  // tolerance to detect an extreme
+    // Shake mode parameters
+    [SerializeField] private float shakeRange = 0.15f;      
+    [SerializeField] private float extremeTolerance = 0.02f;  
     [SerializeField] private int requiredShakeCount = 5;
     private int shakeCount = 0;
-    private float initialX;         // record local X when shake begins
-    private float initialMouseX;    // record mouse X (screen space) when shake begins
-    private string lastExtreme = "none"; // to avoid double-counting extremes
+    private float initialX;        
+    private float initialMouseX;   
+    private string lastExtreme = "none"; 
 
     // Internal flag so dialogue is triggered only once per phase.
     private bool dialogueTriggered = false;
 
-    // -------------- OnMouseDown: start dragging --------------
+    // OnMouseDown: start dragging 
     private void OnMouseDown()
     {
         isDragging = true;
@@ -50,7 +55,7 @@ public class VileSyringDraggable : MonoBehaviour
         mouseDownPos = Camera.main.ScreenToWorldPoint(mousePos);
         dragOffset = transform.position - mouseDownPos;
 
-        // If we're in Shake phase, record initial X positions.
+        // If in Shake phase, record initial X positions.
         if (currentPhase == Phase.Shake)
         {
             initialX = transform.localPosition.x;
@@ -60,18 +65,18 @@ public class VileSyringDraggable : MonoBehaviour
         }
     }
 
-    // -------------- OnMouseDrag: update dragging --------------
+    //OnMouseDrag: update dragging
     private void OnMouseDrag()
     {
         if (!isDragging) return;
 
         if (currentPhase == Phase.Shake)
         {
-            // In Shake phase, only allow horizontal (x-axis) movement.
+            //only allow horizontal (x-axis) movement.
             float currentMouseX = Input.mousePosition.x;
             float deltaX = currentMouseX - initialMouseX;
 
-            // Convert pixel delta to world units.
+            //convert
             float objectZ = Camera.main.WorldToScreenPoint(transform.position).z;
             Vector3 screenPoint0 = new Vector3(0, 0, objectZ);
             Vector3 screenPoint1 = new Vector3(1, 0, objectZ);
@@ -79,12 +84,12 @@ public class VileSyringDraggable : MonoBehaviour
                                       Camera.main.ScreenToWorldPoint(screenPoint0).x;
 
             float newLocalX = initialX + deltaX * worldUnitPerPixel;
-            // Clamp within allowed shake range.
+            // Clamp
             newLocalX = Mathf.Clamp(newLocalX, initialX - shakeRange, initialX + shakeRange);
             Vector3 localPos = transform.localPosition;
             transform.localPosition = new Vector3(newLocalX, localPos.y, localPos.z);
 
-            // ---- Check for shake extremes continuously ----
+            //Check for shake extremes continuously
             float offsetX = newLocalX - initialX;
             if (offsetX <= -shakeRange + extremeTolerance)
             {
@@ -111,7 +116,7 @@ public class VileSyringDraggable : MonoBehaviour
         }
         else
         {
-            // In Rotate phases, allow full drag (for rotation via double-click).
+            // In Rotate phases, allow full drag
             Vector3 mousePos = Input.mousePosition;
             float objectZ = Camera.main.WorldToScreenPoint(transform.position).z;
             mousePos.z = objectZ;
@@ -121,7 +126,7 @@ public class VileSyringDraggable : MonoBehaviour
         }
     }
 
-    // -------------- OnMouseUp: handle click/double-click events --------------
+    //OnMouseUp: handle click/double-click events
     private void OnMouseUp()
     {
         if (!isDragging) return;
@@ -129,10 +134,10 @@ public class VileSyringDraggable : MonoBehaviour
 
         if (currentPhase == Phase.Shake)
         {
-            // In Shake phase, the extreme detection is done continuously.
             if (shakeCount >= requiredShakeCount && !dialogueTriggered)
             {
                 Debug.Log("Shake phase: Shake count reached. Triggering Dialogue 8.");
+                severedialogue8.SetActive(true);
                 if (severeDialogue8 != null)
                     severeDialogue8.ShowDialogueUI();
                 dialogueTriggered = true;
@@ -143,7 +148,7 @@ public class VileSyringDraggable : MonoBehaviour
         }
         else
         {
-            // In Rotate phases, check if the movement was minimal (i.e. a click).
+            // In Rotate phases, check if the movement was minimal
             Vector3 mouseUpPos = Camera.main.ScreenToWorldPoint(
                 new Vector3(Input.mousePosition.x, Input.mousePosition.y,
                 Camera.main.WorldToScreenPoint(transform.position).z));
@@ -168,6 +173,7 @@ public class VileSyringDraggable : MonoBehaviour
                         {
                             // When rotating up to 180°, trigger Dialogue 6.
                             Debug.Log("RotateUp: Rotation near 180° achieved. Triggering Dialogue 6.");
+                            severedialogue6.SetActive(true);
                             if (severeDialogue6 != null)
                                 severeDialogue6.ShowDialogueUI();
                             dialogueTriggered = true;
@@ -184,8 +190,10 @@ public class VileSyringDraggable : MonoBehaviour
                         {
                             // When rotating down to 0°, trigger Dialogue 9.
                             Debug.Log("RotateDown: Rotation near 0° achieved. Triggering Dialogue 9.");
+                            severedialogue9.SetActive(true);
                             if (severeDialogue9 != null)
                                 severeDialogue9.ShowDialogueUI();
+
                             dialogueTriggered = true;
                             // End of sequence: disable further interaction.
                             this.enabled = false;
