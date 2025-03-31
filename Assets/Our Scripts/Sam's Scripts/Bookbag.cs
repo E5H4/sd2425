@@ -22,6 +22,9 @@ public class Bookbag : MonoBehaviour
     [SerializeField] private GameObject KitDialogue;
     [SerializeField] private DialogueUIController NotebookDialoguecontroller;
     [SerializeField] private GameObject NotebookDialogue;
+    [SerializeField] private DialogueUIController SevereDialogue2controller;
+    [SerializeField] private GameObject SevereDialogue2;
+
     private static bool minorsecond = false;
     public static bool soda = false;
 
@@ -55,6 +58,7 @@ public class Bookbag : MonoBehaviour
         PhoneDialogue?.SetActive(false);
         KitDialogue?.SetActive(false);
         NotebookDialogue?.SetActive(false);
+        SevereDialogue2?.SetActive(false);
     }
     public void MinorSecondTrue()
     {
@@ -182,14 +186,34 @@ public class Bookbag : MonoBehaviour
     public void GlucagonDialogue()
     {
         DeactivateAllDialogues();
-        if (KitDialogue != null)
+        if (Difficulty.difficulty == "Minor")
         {
-            KitDialogue.SetActive(true);
-        }
+            if (KitDialogue != null)
+            {
+                KitDialogue.SetActive(true);
+            }
 
-        if (KitDialoguecontroller != null)
+            if (KitDialoguecontroller != null)
+            {
+                KitDialoguecontroller.ShowDialogueUI();
+            }
+        }
+        else
         {
-            KitDialoguecontroller.ShowDialogueUI();
+            if (bag.activeInHierarchy)
+            {
+                bag.SetActive(false);
+            }
+
+            if (SevereDialogue2 != null)
+            {
+                SevereDialogue2.SetActive(true);
+            }
+
+            if (SevereDialogue2controller != null)
+            {
+                SevereDialogue2controller.ShowDialogueUI();
+            }
         }
     }
 

@@ -58,6 +58,8 @@ public class TextPlsWork : MonoBehaviour
             minordialoguecontroller.ShowDialogueUI();
 
             Debug.Log("Minor difficulty mode activated.");
+
+           
         }
 
         if (SetDifficulty.difficulty == "Major")
