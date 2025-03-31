@@ -111,7 +111,12 @@ public class BoxScript : MonoBehaviour
     public void turnofffront()
     {
       CharFront.SetActive(false);
-      SyringeShot.SetActive(false);
+      CharReg.SetActive(true);
+    }
+
+    public void turnoffshot()
+    {
+        SyringeShot.SetActive(false);
     }
 
 
@@ -284,14 +289,6 @@ public class BoxScript : MonoBehaviour
             B2.SetActive(true);
             B3.SetActive(true);
             B4.SetActive(true);
-        }
-    }
-
-    public void CharRegAlive()
-    {
-        if (CharReg != null)
-        {
-            CharReg.SetActive(true);
         }
     }
 

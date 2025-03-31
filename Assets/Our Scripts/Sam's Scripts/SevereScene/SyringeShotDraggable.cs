@@ -10,6 +10,9 @@ public class SyringeShotDraggable : MonoBehaviour
     // The fixed Z offset from the camera.
     private float fixedZOffset;
 
+    // Flag to allow movement. When false, the syringe can't be dragged.
+    private bool canMove = true;
+
     // Dialogue to turn off (e.g., if Dialogue 10 is already active).
     [SerializeField] private DialogueUIController severeDialogue10;
     // Dialogue to turn on when the needle is inserted (Dialogue 11).
@@ -17,6 +20,9 @@ public class SyringeShotDraggable : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!canMove)
+            return;
+
         isDragging = true;
         // Get current mouse position in screen space.
         Vector3 mousePos = Input.mousePosition;
@@ -32,7 +38,7 @@ public class SyringeShotDraggable : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        if (!isDragging)
+        if (!isDragging || !canMove)
             return;
 
         // Get the updated mouse position in screen space.
@@ -70,6 +76,9 @@ public class SyringeShotDraggable : MonoBehaviour
                 severeDialogue11.gameObject.SetActive(true);
                 severeDialogue11.ShowDialogueUI();
             }
+            // Prevent further movement.
+            canMove = false;
+            isDragging = false;
         }
     }
 }
