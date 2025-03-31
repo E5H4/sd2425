@@ -93566,7 +93566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8182310155170258665, guid: 0bd81e94430ecd64e8959692a15e54b4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8846959799952131155, guid: 0bd81e94430ecd64e8959692a15e54b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -137035,10 +137035,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20.082346
-  m_Height: 34.882896
+  m_Radius: 10.865124
+  m_Height: 29.68412
   m_Direction: 0
-  m_Center: {x: 0.11191462, y: -4.414015, z: 17.068024}
+  m_Center: {x: 2.7112997, y: -4.824597, z: 21.094841}
 --- !u!114 &1490461050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191569,7 +191569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   severeDialogue11: {fileID: 1993653725}
   severeDialogue12: {fileID: 1160614078}
-  dragDistanceThreshold: 0.06
+  dragDistanceThreshold: 0.05
   triggerTolerance: 0.001
 --- !u!1001 &2048328833
 PrefabInstance:
@@ -199851,7 +199851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2143354549
 RectTransform:
   m_ObjectHideFlags: 0

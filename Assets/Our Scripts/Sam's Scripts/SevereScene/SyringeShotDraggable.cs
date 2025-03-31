@@ -13,9 +13,8 @@ public class SyringeShotDraggable : MonoBehaviour
     // Flag to allow movement. When false, the syringe can't be dragged.
     private bool canMove = true;
 
-    // Dialogue to turn off (e.g., if Dialogue 10 is already active).
+   
     [SerializeField] private DialogueUIController severeDialogue10;
-    // Dialogue to turn on when the needle is inserted (Dialogue 11).
     [SerializeField] private DialogueUIController severeDialogue11;
 
     private void OnMouseDown()
