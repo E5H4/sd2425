@@ -76,7 +76,7 @@ public class TextPlsWork : MonoBehaviour
 
             // Call new dialogue system
             majordialoguecontroller.ShowDialogueUI();
-
+ 
             Debug.Log("Major difficulty mode activated.");
         }
 
