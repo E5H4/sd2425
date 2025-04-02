@@ -6,26 +6,25 @@ using DialogueSystemWithText;
 public class BulletWoundDialougue : MonoBehaviour
 {
     [SerializeField] private DialogueUIController startdialoguecontroller; // this is my StartDialogue (DIALOGUEUI) , premade and prenamed
+    [SerializeField] private DialogueUIController midscenariodialoguecontroller;
     [SerializeField] private GameObject StartDialogue;  // Reference to the StartDialogue object
-
-    // private void Start()
-    // {
-    //     if (startdialoguecontroller != null)
-    //     {
-    //         Debug.Log("Starting Dialogue...");
-    //         startdialoguecontroller.ShowDialogueUI(); // This will show the dialogue panel
-    //     }
-    //     else
-    //     {
-    //         Debug.LogError("DialogueUIController is not assigned.");
-    //     }
-    // }
-
-        void Start() {
-        // Show difficulty in console if there is one set lol
-            
+    [SerializeField] private GameObject midDialogue; // Reference to the Mid-section dialogue
+    
+          void Start() {   
         // Load initial dialogue
         startdialoguecontroller.ShowDialogueUI();
     }
+        void midscenarioDialogue(){
+            //Disable begining dialouge 
+            if (StartDialogue != null){
+                StartDialogue.SetActive(false);
+            }
+            //Enables Midsection dialogue
+            if(midDialogue != null){
+                midDialogue.SetActive(true);
+            }
+            midscenariodialoguecontroller.ShowDialogueUI();
+            //debug.log ("I AM WORKING!!");
+        }
 
 }
