@@ -1152,7 +1152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 190434495}
+  midscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 190434494}
+  midDialogue: {fileID: 0}
 --- !u!1001 &207805664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2605,9 +2607,9 @@ MonoBehaviour:
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1718906911}
         m_TargetAssemblyTypeName: TestingText, Assembly-CSharp
-        m_MethodName: ChoseDifficulty
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3307,7 +3309,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 527512379}
+  midscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 527512377}
+  midDialogue: {fileID: 0}
 --- !u!114 &527512379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4228,13 +4232,13 @@ MonoBehaviour:
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1112572138}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4784,74 +4788,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &719400153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 719400155}
-  - component: {fileID: 719400154}
-  m_Layer: 0
-  m_Name: EAP_in_Action1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &719400154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719400153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: 'Lets begin by checking if the area is safe since their are fire arms
-    involved, Is it safe?
-
-'
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 1, g: 1, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 600912092}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
---- !u!4 &719400155
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719400153}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1718906918}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &724560940
 GameObject:
   m_ObjectHideFlags: 0
@@ -8122,6 +8058,108 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _dialogueOptions: []
+--- !u!1 &1208165064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208165065}
+  - component: {fileID: 1208165066}
+  m_Layer: 0
+  m_Name: Start2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208165065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208165064}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1718906918}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1208165066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208165064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: 'Lets begin by checking if the area is safe since their are fire arms
+    involved, Is it safe?
+
+'
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions:
+  - _option: Yes, It's Safe
+    _nextDialogueContent: {fileID: 600912092}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
+          m_MethodName: SetMinorDifficulty
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _option: No, it isnt safe
+    _nextDialogueContent: {fileID: 1365788858}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
+          m_MethodName: SetMinorDifficulty
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1224243560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8937,13 +8975,13 @@ MonoBehaviour:
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1112572138}
+  _nextDialogueContent: {fileID: 1208165066}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -11183,7 +11221,7 @@ GameObject:
   - component: {fileID: 1718906913}
   - component: {fileID: 1718906912}
   m_Layer: 5
-  m_Name: ScenarioDialogue(new Should work)
+  m_Name: MidScenarioDialogue(new Should work)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11196,13 +11234,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718906911}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a16a420ea24a19e4595cb0b531c6eba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 1718906913}
+  midscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 1718906911}
+  midDialogue: {fileID: 0}
 --- !u!114 &1718906913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11220,13 +11260,13 @@ MonoBehaviour:
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
-  - {fileID: 719400154}
+  - {fileID: 0}
   - {fileID: 600912092}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _firstDialogueContent: {fileID: 719400154}
+  _firstDialogueContent: {fileID: 0}
   _currentDialogueContent: {fileID: 0}
   _dialogueTextWithoutImage: {fileID: 1033664035}
   _dialogueTextForLeftImage: {fileID: 1750355022}
@@ -11320,7 +11360,7 @@ RectTransform:
   m_Children:
   - {fileID: 540716378}
   - {fileID: 781152844}
-  - {fileID: 719400155}
+  - {fileID: 1208165065}
   - {fileID: 600912093}
   - {fileID: 1365788857}
   - {fileID: 1112572137}
@@ -11496,7 +11536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 0}
+  midscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 0}
+  midDialogue: {fileID: 0}
 --- !u!1001 &1739440589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11990,19 +12032,7 @@ MonoBehaviour:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TestingText, Assembly-CSharp
-        m_MethodName: ChoseDifficulty
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _dialogueOptions: []
 --- !u!4 &1791396611
 Transform:
