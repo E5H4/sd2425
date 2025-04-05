@@ -664,7 +664,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24669600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -4.86}
   m_LocalScale: {x: 0.0045, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -672,7 +672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.275, y: -185.626}
+  m_AnchoredPosition: {x: 12.35, y: 20.69}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &24669602
@@ -775,6 +775,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6277690493701770557, guid: 34ae0a3a50e46824d86314fc34f71416, type: 3}
   m_PrefabInstance: {fileID: 27612246}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &38147409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38147410}
+  - component: {fileID: 38147411}
+  m_Layer: 0
+  m_Name: Allergic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &38147410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38147409}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143478604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38147411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38147409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Yeah, unfortunately I am.
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 163255216}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1 &39624468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,6 +3426,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 630026542805835320, guid: 2d8cee02df6d36749be043b3d7103822, type: 3}
   m_PrefabInstance: {fileID: 157760842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &163255214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163255215}
+  - component: {fileID: 163255216}
+  m_Layer: 0
+  m_Name: END
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163255215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163255214}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143478604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &163255216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163255214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Since she's allergic, she can't take any!
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &173249507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4057,6 +4187,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8822356805721986567, guid: 6e4de85358ed8664aa9bafd9061f8964, type: 3}
   m_PrefabInstance: {fileID: 207674290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &213214593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213214594}
+  - component: {fileID: 213214595}
+  m_Layer: 0
+  m_Name: Ans3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &213214594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213214593}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &213214595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213214593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: I needed that. Thank you so much.
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &215501150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6905,13 +7100,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373737307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35660768, z: 0, w: 0.9342542}
-  m_LocalPosition: {x: 3.37, y: 0.1372166, z: -4.07}
+  m_LocalRotation: {x: -0, y: -0.9260254, z: -0, w: 0.37746137}
+  m_LocalPosition: {x: 12.35, y: 20.69, z: -4.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 473869774}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.784, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -135.647, z: 0}
 --- !u!212 &373737309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7681,6 +7876,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -8675,6 +8876,136 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7096448880523448607, guid: 5edb0369c8bd189429f13df60b6f4152, type: 3}
   m_PrefabInstance: {fileID: 474365741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &475796566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475796567}
+  - component: {fileID: 475796568}
+  m_Layer: 0
+  m_Name: Ans3.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475796567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475796566}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &475796568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475796566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Nice. Staying hydrated is key.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
+--- !u!1 &475953201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475953202}
+  - component: {fileID: 475953203}
+  m_Layer: 0
+  m_Name: NotAllergic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475953202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475953201}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143478604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &475953203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475953201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: No, I'm not actually!
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 3fbabb53ece764222afe2bb9ae98636c, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &477522878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11643,7 +11974,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655148519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: 4.83}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -11651,7 +11982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.26978, y: -185.602}
+  m_AnchoredPosition: {x: 6.810135, y: 4.37}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655148521
@@ -11777,7 +12108,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666304070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -3.4}
   m_LocalScale: {x: 0.0045, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11785,7 +12116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.275, y: -185.626}
+  m_AnchoredPosition: {x: 11.71, y: 8.56}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666304072
@@ -13707,7 +14038,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762375530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -12.85}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -13715,7 +14046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.26978, y: -185.602}
+  m_AnchoredPosition: {x: 18.2, y: 12.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762375532
@@ -14150,13 +14481,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784085868}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35660768, z: 0, w: 0.9342542}
-  m_LocalPosition: {x: 3.37, y: 0.1372166, z: -4.07}
+  m_LocalRotation: {x: -0.72879267, y: -0.011009435, z: 0.6838874, w: -0.032219533}
+  m_LocalPosition: {x: 17.44, y: -2.87, z: -13.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1887502237}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.784, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.556, y: -93.591, z: 181.609}
 --- !u!212 &784085870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16950,6 +17281,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 276679921}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &885397079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885397080}
+  - component: {fileID: 885397081}
+  m_Layer: 0
+  m_Name: Reassurance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885397080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885397079}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &885397081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885397079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Perfect. Now, while we wait. How should we keep Yuki calm?
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions:
+  - _option: Tell her to take deep breaths
+    _nextDialogueContent: {fileID: 0}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - _option: Ask about the weather
+    _nextDialogueContent: {fileID: 0}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - _option: Give her water
+    _nextDialogueContent: {fileID: 0}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &887393170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17347,6 +17758,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8822356805721986567, guid: 6e4de85358ed8664aa9bafd9061f8964, type: 3}
   m_PrefabInstance: {fileID: 899839865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &906898840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 906898841}
+  - component: {fileID: 906898842}
+  m_Layer: 0
+  m_Name: Ans2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &906898841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906898840}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906898842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906898840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Oh, uh. It was really hot today.. I think?
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &911913946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17899,6 +18375,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -18129,6 +18611,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2882181510533148094, guid: 1b67c9ec51293cc48905db9e67692a93, type: 3}
   m_PrefabInstance: {fileID: 923558710}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &928251316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928251317}
+  - component: {fileID: 928251318}
+  m_Layer: 0
+  m_Name: Ans1.2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928251317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928251316}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &928251318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928251316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Good choice, she's relaxing a little now..
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &930094383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21780,7 +22327,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138694863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -4.86}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -21788,7 +22335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.26978, y: -185.602}
+  m_AnchoredPosition: {x: 12.35, y: 20.69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138694865
@@ -22350,13 +22897,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158137396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35660768, z: 0, w: 0.9342542}
-  m_LocalPosition: {x: 3.37, y: 0.1372166, z: -4.07}
+  m_LocalRotation: {x: 0.15114208, y: -0.8566046, z: -0.11809497, w: 0.4789973}
+  m_LocalPosition: {x: 6.810135, y: 4.37, z: 4.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 750672797}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.784, z: 0}
+  m_LocalEulerAnglesHint: {x: -3.298, y: -120.936, z: -21.882}
 --- !u!212 &1158137398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23029,13 +23576,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201328926}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35660768, z: 0, w: 0.9342542}
-  m_LocalPosition: {x: 3.37, y: 0.1372166, z: -4.07}
+  m_LocalRotation: {x: -0, y: -0.8618106, z: -0, w: 0.5072303}
+  m_LocalPosition: {x: 10.43, y: -9.92, z: -2.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2004866723}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.784, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -119.041, z: 0}
 --- !u!212 &1201328928
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24528,13 +25075,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239836705}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35660768, z: 0, w: 0.9342542}
-  m_LocalPosition: {x: 3.37, y: 0.1372166, z: -4.07}
+  m_LocalRotation: {x: -0, y: 0.46956855, z: -0, w: 0.88289607}
+  m_LocalPosition: {x: 18.2, y: 12.2, z: -12.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1500976005}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.784, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 56.013, z: 0}
 --- !u!212 &1239836707
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24893,7 +25440,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274583029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -0.27}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -24901,7 +25448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.26978, y: -185.602}
+  m_AnchoredPosition: {x: 9.63, y: -9.91}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274583031
@@ -26131,7 +26678,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348915235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -12.85}
   m_LocalScale: {x: 0.0045, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26139,7 +26686,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.275, y: -185.626}
+  m_AnchoredPosition: {x: 18.2, y: 12.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1348915237
@@ -27688,7 +28235,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441888640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -13.83}
   m_LocalScale: {x: 0.0045, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27696,7 +28243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.275, y: -185.626}
+  m_AnchoredPosition: {x: 17.44, y: -2.87}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441888642
@@ -29658,7 +30205,7 @@ GameObject:
   - component: {fileID: 1528838534}
   - component: {fileID: 1528838535}
   m_Layer: 0
-  m_Name: 911
+  m_Name: Call911
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29691,7 +30238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: '911 dialogue
+  _dialogue: 'Let''s grab their phone! [insert interaction where when you grab phone,
+    it allows you to get to the next dialogue]
 
 '
   _customizeFont: 1
@@ -29713,17 +30261,7 @@ MonoBehaviour:
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
-  _dialogueOptions:
-  - _option: All clear!
-    _nextDialogueContent: {fileID: 0}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - _option: Not safe!
-    _nextDialogueContent: {fileID: 0}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1530582549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29936,7 +30474,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538003970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -0.27}
   m_LocalScale: {x: 0.0045, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29944,7 +30482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.275, y: -185.626}
+  m_AnchoredPosition: {x: 9.63, y: -9.91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538003972
@@ -31182,6 +31720,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 755645736889428143, guid: bdf01b7e9203d8a429fcd6c3a2d187a0, type: 3}
   m_PrefabInstance: {fileID: 1589218360}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1590671390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1590671391}
+  - component: {fileID: 1590671392}
+  m_Layer: 0
+  m_Name: Ans1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1590671391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590671390}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1590671392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590671390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Okay.. I don't feel so stressed anymore.. but I still ache.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1596178574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33082,6 +33685,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4071672271326545964, guid: 2a17dd58c732afe4a9d8566e76de1902, type: 3}
   m_PrefabInstance: {fileID: 1674679460}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1676175618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676175619}
+  - component: {fileID: 1676175620}
+  m_Layer: 0
+  m_Name: AspirinNeed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676175619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676175618}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143478604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676175620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676175618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: That's great! Let's ask the nearest person if they have any aspirin.
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1677229958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33596,7 +34264,7 @@ GameObject:
   - component: {fileID: 1694659707}
   - component: {fileID: 1694659708}
   m_Layer: 0
-  m_Name: Aspirin
+  m_Name: IntroAspirin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33629,7 +34297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: aspirin check
+  _dialogue: She seems to be doing a little better. Now while we're still waiting
+    for 911, let's try giving aspirin!
   _customizeFont: 0
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
@@ -33649,17 +34318,7 @@ MonoBehaviour:
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
-  _dialogueOptions:
-  - _option: All clear!
-    _nextDialogueContent: {fileID: 0}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - _option: Not safe!
-    _nextDialogueContent: {fileID: 0}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls: []
+  _dialogueOptions: []
 --- !u!1 &1694817767
 GameObject:
   m_ObjectHideFlags: 0
@@ -34048,7 +34707,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708898763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: 4.83}
   m_LocalScale: {x: 0.0045, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34056,7 +34715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.275, y: -185.626}
+  m_AnchoredPosition: {x: 6.810135, y: 4.37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708898765
@@ -34159,6 +34818,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7096448880523448607, guid: 5edb0369c8bd189429f13df60b6f4152, type: 3}
   m_PrefabInstance: {fileID: 1710477277}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1711423221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711423222}
+  - component: {fileID: 1711423223}
+  m_Layer: 0
+  m_Name: AspirinCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1711423222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711423221}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143478604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711423223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711423221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Of course, we can't randomly do that. Let's check!
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1716278150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34717,6 +35441,14 @@ RectTransform:
   - {fileID: 1234222817}
   - {fileID: 497240927}
   - {fileID: 1528838534}
+  - {fileID: 1747089900}
+  - {fileID: 885397080}
+  - {fileID: 1590671391}
+  - {fileID: 928251317}
+  - {fileID: 906898841}
+  - {fileID: 2121838909}
+  - {fileID: 213214594}
+  - {fileID: 475796567}
   m_Father: {fileID: 922476525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -34738,6 +35470,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -34838,6 +35576,71 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1747089899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747089900}
+  - component: {fileID: 1747089901}
+  m_Layer: 0
+  m_Name: Called911
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747089900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747089899}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747089901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747089899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Good! Calling emergency services is the first and most important step.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1750330218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35172,13 +35975,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759420047}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.35660768, z: 0, w: 0.9342542}
-  m_LocalPosition: {x: 3.37, y: 0.1372166, z: -4.07}
+  m_LocalRotation: {x: -0, y: -0.92734325, z: -0, w: 0.37421188}
+  m_LocalPosition: {x: 11.71, y: 8.56, z: -3.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 525721624}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.784, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -136.049, z: 0}
 --- !u!212 &1759420049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36681,7 +37484,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843171345}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -13.83}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -36689,7 +37492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.26978, y: -185.602}
+  m_AnchoredPosition: {x: 17.44, y: -2.87}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843171347
@@ -37310,6 +38113,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -40079,6 +40888,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7905598992306171908, guid: c80c2e35fd3c4164d9977e335d25294c, type: 3}
   m_PrefabInstance: {fileID: 2006355522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2007169612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007169613}
+  - component: {fileID: 2007169614}
+  m_Layer: 0
+  m_Name: AspirinAsk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2007169613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007169612}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2143478604}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007169614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007169612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Are you allergic to Aspirin?
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions:
+  - _option: No
+    _nextDialogueContent: {fileID: 475953203}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - _option: Yes
+    _nextDialogueContent: {fileID: 38147411}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &2007211358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40898,7 +41782,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044044677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.821}
+  m_LocalPosition: {x: 0, y: 0, z: -3.4}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -40906,7 +41790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400.26978, y: -185.602}
+  m_AnchoredPosition: {x: 11.71, y: 8.56}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044044679
@@ -42585,6 +43469,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2660360607443793334, guid: 68314a2ab712c7041ab570164f647a5a, type: 3}
   m_PrefabInstance: {fileID: 202626646}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2121838908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121838909}
+  - component: {fileID: 2121838910}
+  m_Layer: 0
+  m_Name: Ans2.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121838909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121838908}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2121838910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121838908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Random but a good way to distract her!
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &2122527076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42945,6 +43894,12 @@ RectTransform:
   - {fileID: 896265057}
   - {fileID: 261883493}
   - {fileID: 1694659707}
+  - {fileID: 1711423222}
+  - {fileID: 2007169613}
+  - {fileID: 475953202}
+  - {fileID: 38147410}
+  - {fileID: 1676175619}
+  - {fileID: 163255215}
   m_Father: {fileID: 922476525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -42966,6 +43921,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
