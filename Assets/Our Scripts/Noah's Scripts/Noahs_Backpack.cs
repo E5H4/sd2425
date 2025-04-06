@@ -5,7 +5,7 @@ using DialogueSystemWithText;
 
 public class Noahs_Backpack : MonoBehaviour
 {
-    /*
+    
     [SerializeField] private DialogueUIController startdialoguecontroller2; // this is my StartDialogue (DIALOGUEUI) , premade and prenamed
     [SerializeField] private DialogueUIController midscenariodialoguecontroller2;
     [SerializeField] private DialogueUIController endscenariodialoguecontroller2;
@@ -22,31 +22,31 @@ public class Noahs_Backpack : MonoBehaviour
     [SerializeField] private GameObject GauzeDialogue;
     [SerializeField] private GameObject WaterBottleDialogue;
     [SerializeField] private GameObject PhoneDialogue;
-    //[SerializeField] private gameObject backpack;
+    [SerializeField] private GameObject backpack;
 
-
+/*
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    
+    */
     // Update is called once per frame
-    public void Updatedframe()
+    public void Updated()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) //checks if players clicks anything
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit) && TestingText.bookbagButton == true)
+            if (Physics.Raycast(ray, out hit) ) //
             {
-                if (hit.collider.gameObject == gameObject)
+                if (hit.collider.gameObject == gameObject) //check if player actually clicked it
                 {
                     Debug.Log("Backpack has been clicked chat!!");
-                    if (bag != null)
+                    if (backpack != null)
                     {
-                        bag.SetActive(true);
+                        backpack.SetActive(true);
                     }
                 }
             }
@@ -67,8 +67,9 @@ public class Noahs_Backpack : MonoBehaviour
             TowelDialogue.SetActive(true);
         }
         if(towelDialogueController != null){
-            towelDialogueController.SetActive(true);
+            towelDialogueController.gameObject.SetActive(true);
         }
+        towelDialogueController.ShowDialogueUI();
     }
     public void walletDialogue() {
         dialoguesTurnsOff();
@@ -76,9 +77,9 @@ public class Noahs_Backpack : MonoBehaviour
             WalletDialogue.SetActive(true);
         }
         if ( walletDialogueController != null){
-            walletDialogueController.SetActive(true);
+            walletDialogueController.gameObject.SetActive(true);
         }
-
+        walletDialogueController.ShowDialogueUI();
     }
     public void waterbottleDialogue() {
         dialoguesTurnsOff();
@@ -86,8 +87,9 @@ public class Noahs_Backpack : MonoBehaviour
             WaterBottleDialogue.SetActive(true);
         }
         if ( waterbottleDialogueController != null){
-            waterbottleDialogueController.SetActive(true);
+            waterbottleDialogueController.gameObject.SetActive(true);
         }
+        walletDialogueController.ShowDialogueUI();
 
     }
     public void gauzeDialogue (){
@@ -96,9 +98,9 @@ public class Noahs_Backpack : MonoBehaviour
             GauzeDialogue.SetActive(true);
         }
         if ( gauzeDialogueController!= null){
-            gauzeDialogueController.SetActive(true);
+            gauzeDialogueController.gameObject.SetActive(true);
         }
-
+        walletDialogueController.ShowDialogueUI();
     }
     public void phoneDialogue() {
         dialoguesTurnsOff();
@@ -106,10 +108,10 @@ public class Noahs_Backpack : MonoBehaviour
              PhoneDialogue.SetActive(true);
         }
         if ( phoneDialogueController!= null){
-            phoneDialogueController.SetActive(true)
+            phoneDialogueController.gameObject.SetActive(true);
         }
-
+        phoneDialogueController.ShowDialogueUI();
     }
-        DATE AS OF 4/3/25
-    */
+        //DATE AS OF 4/5/25
+    
 }
