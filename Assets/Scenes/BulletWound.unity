@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 85001247}
   - component: {fileID: 85001246}
   - component: {fileID: 85001244}
-  - component: {fileID: 85001245}
+  - component: {fileID: 85001250}
   m_Layer: 5
   m_Name: PhoneDialogue
   m_TagString: Untagged
@@ -687,24 +687,6 @@ MonoBehaviour:
   _characterRightImage: {fileID: 1475749344}
   _dialogueOptionsLayout: {fileID: 738753829}
   _dialogueOptionButton: {fileID: 78472275037168734, guid: 11e8dd9a2a11fb14d84d3f29e15a5d79, type: 3}
---- !u!114 &85001245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85001242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16a420ea24a19e4595cb0b531c6eba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startdialoguecontroller: {fileID: 0}
-  midscenariodialoguecontroller: {fileID: 0}
-  endscenariodialoguecontroller: {fileID: 0}
-  StartDialogue: {fileID: 85001242}
-  midDialogue: {fileID: 0}
-  endDialogue: {fileID: 0}
 --- !u!222 &85001246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -776,6 +758,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &85001250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85001242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startdialoguecontroller2: {fileID: 0}
+  midscenariodialoguecontroller2: {fileID: 0}
+  endscenariodialoguecontroller2: {fileID: 0}
+  walletDialogueController: {fileID: 0}
+  towelDialogueController: {fileID: 0}
+  gauzeDialogueController: {fileID: 0}
+  waterbottleDialogueController: {fileID: 0}
+  phoneDialogueController: {fileID: 0}
+  StartDialogue2: {fileID: 0}
+  midDialogue2: {fileID: 0}
+  endDialogue2: {fileID: 0}
+  WalletDialogue: {fileID: 0}
+  TowelDialogue: {fileID: 0}
+  GauzeDialogue: {fileID: 0}
+  WaterBottleDialogue: {fileID: 0}
+  PhoneDialogue: {fileID: 0}
+  backpack: {fileID: 0}
 --- !u!1 &86856916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1113,7 @@ GameObject:
   - component: {fileID: 116539934}
   - component: {fileID: 116539933}
   - component: {fileID: 116539931}
-  - component: {fileID: 116539932}
+  - component: {fileID: 116539937}
   m_Layer: 5
   m_Name: WaterbottleDialogue
   m_TagString: Untagged
@@ -1159,24 +1170,6 @@ MonoBehaviour:
   _characterRightImage: {fileID: 1282123238}
   _dialogueOptionsLayout: {fileID: 265141692}
   _dialogueOptionButton: {fileID: 78472275037168734, guid: 11e8dd9a2a11fb14d84d3f29e15a5d79, type: 3}
---- !u!114 &116539932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116539929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16a420ea24a19e4595cb0b531c6eba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startdialoguecontroller: {fileID: 0}
-  midscenariodialoguecontroller: {fileID: 0}
-  endscenariodialoguecontroller: {fileID: 0}
-  StartDialogue: {fileID: 116539929}
-  midDialogue: {fileID: 0}
-  endDialogue: {fileID: 0}
 --- !u!222 &116539933
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1248,6 +1241,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &116539937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116539929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startdialoguecontroller2: {fileID: 0}
+  midscenariodialoguecontroller2: {fileID: 0}
+  endscenariodialoguecontroller2: {fileID: 0}
+  walletDialogueController: {fileID: 0}
+  towelDialogueController: {fileID: 0}
+  gauzeDialogueController: {fileID: 0}
+  waterbottleDialogueController: {fileID: 0}
+  phoneDialogueController: {fileID: 0}
+  StartDialogue2: {fileID: 0}
+  midDialogue2: {fileID: 0}
+  endDialogue2: {fileID: 0}
+  WalletDialogue: {fileID: 0}
+  TowelDialogue: {fileID: 0}
+  GauzeDialogue: {fileID: 0}
+  WaterBottleDialogue: {fileID: 0}
+  PhoneDialogue: {fileID: 0}
+  backpack: {fileID: 0}
 --- !u!1 &128085869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,11 +1585,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 589fd26591a8e074386169ea5d3ddce9, type: 2}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 268.07
+      value: 268.101
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.095
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1575,36 +1597,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.05337182
+      value: -0.043167833
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.053371727
+      value: 0.043167833
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.73523027
+      value: 0.7057879
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6736018
+      value: 0.7057879
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -100
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 60
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 120
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 8524712265592654650, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8524712265592654650, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8524712265592654650, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.035
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3205032073706675860, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 873363433}
   m_SourcePrefab: {fileID: 100100000, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
 --- !u!1 &237503149
 GameObject:
@@ -5907,6 +5944,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4738568068548498, guid: f86a19e11c6b9734ba52832ec45ee16f, type: 3}
   m_PrefabInstance: {fileID: 836647154}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &873363430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3205032073706675860, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
+  m_PrefabInstance: {fileID: 207805664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &873363433
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873363430}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1928331
+  m_Height: 1.0444793
+  m_Direction: 1
+  m_Center: {x: 0.000025421385, y: 0.6251181, z: 0.012760334}
 --- !u!1 &894384302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,7 +6214,7 @@ MonoBehaviour:
   GauzeDialogue: {fileID: 1966931744}
   WaterBottleDialogue: {fileID: 116539929}
   PhoneDialogue: {fileID: 85001242}
-  backpack: {fileID: 910196079}
+  backpack: {fileID: 1159942234}
 --- !u!1 &908463996
 GameObject:
   m_ObjectHideFlags: 0
@@ -9053,6 +9118,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425512224}
   m_CullTransparentMesh: 1
+--- !u!1 &1438229771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438229776}
+  - component: {fileID: 1438229775}
+  - component: {fileID: 1438229774}
+  - component: {fileID: 1438229773}
+  - component: {fileID: 1438229772}
+  m_Layer: 5
+  m_Name: button masher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1438229772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438229771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb7218802f5b804480bf18bf4047ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mashDelay: 0.5
+  text: {fileID: 1581747465}
+--- !u!114 &1438229773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438229771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1438229774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438229771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1438229775
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438229771}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1438229776
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438229771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1581747466}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1454460891
 GameObject:
   m_ObjectHideFlags: 0
@@ -10168,6 +10350,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 86856923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1581747465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581747466}
+  - component: {fileID: 1581747468}
+  - component: {fileID: 1581747467}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1581747466
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581747465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1438229776}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -287, y: -156.1}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1581747467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581747465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press Space bar!!!
+--- !u!222 &1581747468
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581747465}
+  m_CullTransparentMesh: 1
 --- !u!1 &1593039829
 GameObject:
   m_ObjectHideFlags: 0
@@ -10788,7 +11049,7 @@ GameObject:
   - component: {fileID: 1703398652}
   - component: {fileID: 1703398651}
   - component: {fileID: 1703398649}
-  - component: {fileID: 1703398650}
+  - component: {fileID: 1703398655}
   m_Layer: 5
   m_Name: WalletDialogue
   m_TagString: Untagged
@@ -10845,24 +11106,6 @@ MonoBehaviour:
   _characterRightImage: {fileID: 698921699}
   _dialogueOptionsLayout: {fileID: 1485530890}
   _dialogueOptionButton: {fileID: 78472275037168734, guid: 11e8dd9a2a11fb14d84d3f29e15a5d79, type: 3}
---- !u!114 &1703398650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703398647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16a420ea24a19e4595cb0b531c6eba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startdialoguecontroller: {fileID: 0}
-  midscenariodialoguecontroller: {fileID: 0}
-  endscenariodialoguecontroller: {fileID: 0}
-  StartDialogue: {fileID: 1703398647}
-  midDialogue: {fileID: 0}
-  endDialogue: {fileID: 0}
 --- !u!222 &1703398651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10934,6 +11177,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1703398655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703398647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startdialoguecontroller2: {fileID: 0}
+  midscenariodialoguecontroller2: {fileID: 0}
+  endscenariodialoguecontroller2: {fileID: 0}
+  walletDialogueController: {fileID: 0}
+  towelDialogueController: {fileID: 0}
+  gauzeDialogueController: {fileID: 0}
+  waterbottleDialogueController: {fileID: 0}
+  phoneDialogueController: {fileID: 0}
+  StartDialogue2: {fileID: 0}
+  midDialogue2: {fileID: 0}
+  endDialogue2: {fileID: 0}
+  WalletDialogue: {fileID: 0}
+  TowelDialogue: {fileID: 0}
+  GauzeDialogue: {fileID: 0}
+  WaterBottleDialogue: {fileID: 0}
+  PhoneDialogue: {fileID: 0}
+  backpack: {fileID: 0}
 --- !u!1 &1722309938
 GameObject:
   m_ObjectHideFlags: 0
@@ -12134,7 +12406,7 @@ GameObject:
   - component: {fileID: 1964295096}
   - component: {fileID: 1964295095}
   - component: {fileID: 1964295093}
-  - component: {fileID: 1964295094}
+  - component: {fileID: 1964295099}
   m_Layer: 5
   m_Name: TowelDialogue
   m_TagString: Untagged
@@ -12191,24 +12463,6 @@ MonoBehaviour:
   _characterRightImage: {fileID: 1527473528}
   _dialogueOptionsLayout: {fileID: 244105203}
   _dialogueOptionButton: {fileID: 78472275037168734, guid: 11e8dd9a2a11fb14d84d3f29e15a5d79, type: 3}
---- !u!114 &1964295094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964295091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16a420ea24a19e4595cb0b531c6eba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startdialoguecontroller: {fileID: 0}
-  midscenariodialoguecontroller: {fileID: 0}
-  endscenariodialoguecontroller: {fileID: 0}
-  StartDialogue: {fileID: 1964295091}
-  midDialogue: {fileID: 0}
-  endDialogue: {fileID: 0}
 --- !u!222 &1964295095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12280,6 +12534,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1964295099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964295091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startdialoguecontroller2: {fileID: 0}
+  midscenariodialoguecontroller2: {fileID: 0}
+  endscenariodialoguecontroller2: {fileID: 0}
+  walletDialogueController: {fileID: 0}
+  towelDialogueController: {fileID: 0}
+  gauzeDialogueController: {fileID: 0}
+  waterbottleDialogueController: {fileID: 0}
+  phoneDialogueController: {fileID: 0}
+  StartDialogue2: {fileID: 0}
+  midDialogue2: {fileID: 0}
+  endDialogue2: {fileID: 0}
+  WalletDialogue: {fileID: 0}
+  TowelDialogue: {fileID: 0}
+  GauzeDialogue: {fileID: 0}
+  WaterBottleDialogue: {fileID: 0}
+  PhoneDialogue: {fileID: 0}
+  backpack: {fileID: 0}
 --- !u!1 &1966931744
 GameObject:
   m_ObjectHideFlags: 0
@@ -12294,7 +12577,7 @@ GameObject:
   - component: {fileID: 1966931749}
   - component: {fileID: 1966931748}
   - component: {fileID: 1966931746}
-  - component: {fileID: 1966931747}
+  - component: {fileID: 1966931752}
   m_Layer: 5
   m_Name: GauzeDialogue
   m_TagString: Untagged
@@ -12351,24 +12634,6 @@ MonoBehaviour:
   _characterRightImage: {fileID: 894384304}
   _dialogueOptionsLayout: {fileID: 2021363451}
   _dialogueOptionButton: {fileID: 78472275037168734, guid: 11e8dd9a2a11fb14d84d3f29e15a5d79, type: 3}
---- !u!114 &1966931747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966931744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16a420ea24a19e4595cb0b531c6eba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startdialoguecontroller: {fileID: 0}
-  midscenariodialoguecontroller: {fileID: 0}
-  endscenariodialoguecontroller: {fileID: 0}
-  StartDialogue: {fileID: 1966931744}
-  midDialogue: {fileID: 0}
-  endDialogue: {fileID: 0}
 --- !u!222 &1966931748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12440,6 +12705,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1966931752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966931744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startdialoguecontroller2: {fileID: 527512379}
+  midscenariodialoguecontroller2: {fileID: 747003529}
+  endscenariodialoguecontroller2: {fileID: 86856918}
+  walletDialogueController: {fileID: 1703398649}
+  towelDialogueController: {fileID: 1964295093}
+  gauzeDialogueController: {fileID: 1966931746}
+  waterbottleDialogueController: {fileID: 116539931}
+  phoneDialogueController: {fileID: 85001244}
+  StartDialogue2: {fileID: 0}
+  midDialogue2: {fileID: 0}
+  endDialogue2: {fileID: 0}
+  WalletDialogue: {fileID: 1703398647}
+  TowelDialogue: {fileID: 1964295091}
+  GauzeDialogue: {fileID: 1966931744}
+  WaterBottleDialogue: {fileID: 116539929}
+  PhoneDialogue: {fileID: 85001242}
+  backpack: {fileID: 0}
 --- !u!1 &1974741170
 GameObject:
   m_ObjectHideFlags: 0
@@ -13516,3 +13810,4 @@ SceneRoots:
   - {fileID: 923649631}
   - {fileID: 86856923}
   - {fileID: 1999601122}
+  - {fileID: 1438229776}

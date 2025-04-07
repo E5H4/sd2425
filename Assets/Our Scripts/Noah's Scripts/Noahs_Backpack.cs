@@ -32,7 +32,7 @@ public class Noahs_Backpack : MonoBehaviour
     }
     */
     // Update is called once per frame
-    public void Updated()
+    void Update()
     {
         if (Input.GetMouseButtonDown(0)) //checks if players clicks anything
         {
@@ -89,7 +89,7 @@ public class Noahs_Backpack : MonoBehaviour
         if ( waterbottleDialogueController != null){
             waterbottleDialogueController.gameObject.SetActive(true);
         }
-        walletDialogueController.ShowDialogueUI();
+       waterbottleDialogueController.ShowDialogueUI();
 
     }
     public void gauzeDialogue (){
@@ -100,7 +100,7 @@ public class Noahs_Backpack : MonoBehaviour
         if ( gauzeDialogueController!= null){
             gauzeDialogueController.gameObject.SetActive(true);
         }
-        walletDialogueController.ShowDialogueUI();
+        gauzeDialogueController.ShowDialogueUI();
     }
     public void phoneDialogue() {
         dialoguesTurnsOff();
