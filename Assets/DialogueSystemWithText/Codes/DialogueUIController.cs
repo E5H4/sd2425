@@ -438,7 +438,7 @@ namespace DialogueSystemWithText
                     // If this is the selected button, assign the hover sprite; otherwise, assign the default sprite.
                     btn.image.sprite = (i == index) ? hoverButtonSprite : defaultButtonSprite;
                     Text optionText = _dialogueOptionButtons[i].GetComponentInChildren<Text>();
-                    optionText.color = (i == index) ? Color.magenta : Color.white;
+                    optionText.color = (i == index) ? Color.grey : Color.white;
                 }
             }
         }
