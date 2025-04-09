@@ -6,11 +6,7 @@ public class EnableObjects : MonoBehaviour
     [SerializeField] private GameObject text;
     [SerializeField] private GameObject pen;
     [SerializeField] private GameObject bottleStrips;
-    [SerializeField] private GameObject playerBig;
-    [SerializeField] private GameObject characterBig;
-    [SerializeField] private GameObject player;
     [SerializeField] private GameObject blood;
-    [SerializeField] private GameObject character;
     [SerializeField] private GameObject Monitor8Dialogue;
     [SerializeField] private GameObject Monitor9Dialogue;
     [SerializeField] private GameObject Monitor10Dialogue;
@@ -28,10 +24,6 @@ public class EnableObjects : MonoBehaviour
         else Debug.Log("HELP");
         if (pen != null) pen.SetActive(true);
         if (bottleStrips != null) bottleStrips.SetActive(true);
-        if (playerBig != null) playerBig.SetActive(true);
-        if (characterBig != null) characterBig.SetActive(true);
-        //if (text) text.SetActive(false);
-
         Debug.Log("Monitor, Pen, and BottleStrips enabled!");
     }
 
@@ -39,10 +31,6 @@ public class EnableObjects : MonoBehaviour
     public void DisableAllObjects() //WORKS
     {
         if (text != null) text.SetActive(false);
-        if (player != null) player.SetActive(false);
-        if (character != null) character.SetActive(false);
-
-        Debug.Log("Regular characters disabled!");
     }
 
 
@@ -52,16 +40,10 @@ public class EnableObjects : MonoBehaviour
         else Debug.Log("HELP");
         if (pen != null) pen.SetActive(false);
         if (bottleStrips != null) bottleStrips.SetActive(false);
-        if (playerBig != null) playerBig.SetActive(false);
-        if (characterBig != null) characterBig.SetActive(false);
         if (blood != null) blood.SetActive(false);
         if (text != null) text.SetActive(false);
-        if (player != null) player.SetActive(true);
-        if (character != null) character.SetActive(true);
-
-        Debug.Log("Regular characters disabled!");
-        //if (text) text.SetActive(false);
     }
+
     public void TurnOffDialogue8()
     {
         if (Monitor8Dialogue != null) Monitor8Dialogue.SetActive(false);
