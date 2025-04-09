@@ -674,6 +674,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -770,23 +776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startdialoguecontroller2: {fileID: 0}
-  midscenariodialoguecontroller2: {fileID: 0}
-  endscenariodialoguecontroller2: {fileID: 0}
-  walletDialogueController: {fileID: 0}
-  towelDialogueController: {fileID: 0}
-  gauzeDialogueController: {fileID: 0}
-  waterbottleDialogueController: {fileID: 0}
-  phoneDialogueController: {fileID: 0}
-  StartDialogue2: {fileID: 0}
-  midDialogue2: {fileID: 0}
-  endDialogue2: {fileID: 0}
-  WalletDialogue: {fileID: 0}
-  TowelDialogue: {fileID: 0}
-  GauzeDialogue: {fileID: 0}
-  WaterBottleDialogue: {fileID: 0}
-  PhoneDialogue: {fileID: 0}
-  backpack: {fileID: 0}
 --- !u!1 &86856916
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,11 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 527512379}
-  midscenariodialoguecontroller: {fileID: 86856918}
-  endscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 527512377}
-  midDialogue: {fileID: 86856916}
-  endDialogue: {fileID: 0}
 --- !u!114 &86856918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,6 +826,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -1157,6 +1148,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -1253,23 +1250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startdialoguecontroller2: {fileID: 0}
-  midscenariodialoguecontroller2: {fileID: 0}
-  endscenariodialoguecontroller2: {fileID: 0}
-  walletDialogueController: {fileID: 0}
-  towelDialogueController: {fileID: 0}
-  gauzeDialogueController: {fileID: 0}
-  waterbottleDialogueController: {fileID: 0}
-  phoneDialogueController: {fileID: 0}
-  StartDialogue2: {fileID: 0}
-  midDialogue2: {fileID: 0}
-  endDialogue2: {fileID: 0}
-  WalletDialogue: {fileID: 0}
-  TowelDialogue: {fileID: 0}
-  GauzeDialogue: {fileID: 0}
-  WaterBottleDialogue: {fileID: 0}
-  PhoneDialogue: {fileID: 0}
-  backpack: {fileID: 0}
 --- !u!1 &128085869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,7 +2400,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266701053}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &266701056
 Camera:
   m_ObjectHideFlags: 0
@@ -2428,7 +2408,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266701053}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -3943,6 +3923,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -4072,11 +4058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 527512379}
-  midscenariodialoguecontroller: {fileID: 0}
-  endscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 527512377}
-  midDialogue: {fileID: 0}
-  endDialogue: {fileID: 0}
 --- !u!1001 &532902108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5326,11 +5308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startdialoguecontroller: {fileID: 527512379}
-  midscenariodialoguecontroller: {fileID: 747003529}
-  endscenariodialoguecontroller: {fileID: 0}
   StartDialogue: {fileID: 527512377}
-  midDialogue: {fileID: 747003527}
-  endDialogue: {fileID: 0}
 --- !u!114 &747003529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5345,6 +5323,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -6198,23 +6182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startdialoguecontroller2: {fileID: 0}
-  midscenariodialoguecontroller2: {fileID: 0}
-  endscenariodialoguecontroller2: {fileID: 0}
-  walletDialogueController: {fileID: 1703398649}
-  towelDialogueController: {fileID: 1964295093}
-  gauzeDialogueController: {fileID: 1966931746}
-  waterbottleDialogueController: {fileID: 116539931}
-  phoneDialogueController: {fileID: 85001244}
-  StartDialogue2: {fileID: 0}
-  midDialogue2: {fileID: 0}
-  endDialogue2: {fileID: 0}
-  WalletDialogue: {fileID: 1703398647}
-  TowelDialogue: {fileID: 1964295091}
-  GauzeDialogue: {fileID: 1966931744}
-  WaterBottleDialogue: {fileID: 116539929}
-  PhoneDialogue: {fileID: 85001242}
-  backpack: {fileID: 1159942234}
 --- !u!1 &908463996
 GameObject:
   m_ObjectHideFlags: 0
@@ -9118,123 +9085,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425512224}
   m_CullTransparentMesh: 1
---- !u!1 &1438229771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1438229776}
-  - component: {fileID: 1438229775}
-  - component: {fileID: 1438229774}
-  - component: {fileID: 1438229773}
-  - component: {fileID: 1438229772}
-  m_Layer: 5
-  m_Name: button masher
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1438229772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438229771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeb7218802f5b804480bf18bf4047ba0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mashDelay: 0.5
-  text: {fileID: 1581747465}
---- !u!114 &1438229773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438229771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1438229774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438229771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1438229775
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438229771}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &1438229776
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438229771}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1581747466}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1454460891
 GameObject:
   m_ObjectHideFlags: 0
@@ -10350,85 +10200,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 86856923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1581747465
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1581747466}
-  - component: {fileID: 1581747468}
-  - component: {fileID: 1581747467}
-  m_Layer: 5
-  m_Name: Text (Legacy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1581747466
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581747465}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1438229776}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: -156.1}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1581747467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581747465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Press Space bar!!!
---- !u!222 &1581747468
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581747465}
-  m_CullTransparentMesh: 1
 --- !u!1 &1593039829
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,6 +10864,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -11189,23 +10966,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startdialoguecontroller2: {fileID: 0}
-  midscenariodialoguecontroller2: {fileID: 0}
-  endscenariodialoguecontroller2: {fileID: 0}
-  walletDialogueController: {fileID: 0}
-  towelDialogueController: {fileID: 0}
-  gauzeDialogueController: {fileID: 0}
-  waterbottleDialogueController: {fileID: 0}
-  phoneDialogueController: {fileID: 0}
-  StartDialogue2: {fileID: 0}
-  midDialogue2: {fileID: 0}
-  endDialogue2: {fileID: 0}
-  WalletDialogue: {fileID: 0}
-  TowelDialogue: {fileID: 0}
-  GauzeDialogue: {fileID: 0}
-  WaterBottleDialogue: {fileID: 0}
-  PhoneDialogue: {fileID: 0}
-  backpack: {fileID: 0}
 --- !u!1 &1722309938
 GameObject:
   m_ObjectHideFlags: 0
@@ -12450,6 +12210,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -12546,23 +12312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startdialoguecontroller2: {fileID: 0}
-  midscenariodialoguecontroller2: {fileID: 0}
-  endscenariodialoguecontroller2: {fileID: 0}
-  walletDialogueController: {fileID: 0}
-  towelDialogueController: {fileID: 0}
-  gauzeDialogueController: {fileID: 0}
-  waterbottleDialogueController: {fileID: 0}
-  phoneDialogueController: {fileID: 0}
-  StartDialogue2: {fileID: 0}
-  midDialogue2: {fileID: 0}
-  endDialogue2: {fileID: 0}
-  WalletDialogue: {fileID: 0}
-  TowelDialogue: {fileID: 0}
-  GauzeDialogue: {fileID: 0}
-  WaterBottleDialogue: {fileID: 0}
-  PhoneDialogue: {fileID: 0}
-  backpack: {fileID: 0}
 --- !u!1 &1966931744
 GameObject:
   m_ObjectHideFlags: 0
@@ -12621,6 +12370,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
+  skipDialogueActionReference: {fileID: 0}
+  navigateUpActionReference: {fileID: 0}
+  navigateDownActionReference: {fileID: 0}
+  selectOptionActionReference: {fileID: 0}
+  defaultButtonSprite: {fileID: 0}
+  hoverButtonSprite: {fileID: 0}
   _dialogueFont: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _dialogueContents:
@@ -12717,23 +12472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42b0f5a2ea8fec444814b84297b9fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startdialoguecontroller2: {fileID: 527512379}
-  midscenariodialoguecontroller2: {fileID: 747003529}
-  endscenariodialoguecontroller2: {fileID: 86856918}
-  walletDialogueController: {fileID: 1703398649}
-  towelDialogueController: {fileID: 1964295093}
-  gauzeDialogueController: {fileID: 1966931746}
-  waterbottleDialogueController: {fileID: 116539931}
-  phoneDialogueController: {fileID: 85001244}
-  StartDialogue2: {fileID: 0}
-  midDialogue2: {fileID: 0}
-  endDialogue2: {fileID: 0}
-  WalletDialogue: {fileID: 1703398647}
-  TowelDialogue: {fileID: 1964295091}
-  GauzeDialogue: {fileID: 1966931744}
-  WaterBottleDialogue: {fileID: 116539929}
-  PhoneDialogue: {fileID: 85001242}
-  backpack: {fileID: 0}
 --- !u!1 &1974741170
 GameObject:
   m_ObjectHideFlags: 0
@@ -13810,4 +13548,3 @@ SceneRoots:
   - {fileID: 923649631}
   - {fileID: 86856923}
   - {fileID: 1999601122}
-  - {fileID: 1438229776}
