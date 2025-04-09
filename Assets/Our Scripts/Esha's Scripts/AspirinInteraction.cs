@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using System.Reflection;
+using DialogueSystemWithText;
 
 public class AspirinInteraction : MonoBehaviour
 {
-    [Header("triggered when picked up")]
-    [SerializeField] private GameObject DialogueToTrigger; 
-    [SerializeField] private string methodName = "OnAspirinPickup"; // Method name to call when picked
+    [Header("triggered when the aspirin touches the victim")]
+    [SerializeField] private DialogueUIController aspirinCheckVRController;  
+    [SerializeField] private GameObject aspirinCheckVR;            
+    [SerializeField] private GameObject assignedVictim;                 // Reference to the character to check for collision
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
+    // Set up for triggering
     private void Awake()
     {
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -22,43 +24,44 @@ public class AspirinInteraction : MonoBehaviour
         }
     }
 
+    // Called when the aspirin is picked up
     private void OnAspirinPickedUp(SelectEnterEventArgs args)
     {
         Debug.Log("Aspirin picked up!");
 
-        if (DialogueToTrigger != null)
-        {
-            
-            var script = DialogueToTrigger.GetComponent<MonoBehaviour>();
-
-            if (script != null)
-            {
-                // Get the method info based on method name
-                MethodInfo method = script.GetType().GetMethod(methodName, BindingFlags.Public | BindingFlags.Instance);
-
-                if (method != null)
-                {
-                    // Invoke the method
-                    method.Invoke(script, null);
-                    Debug.Log("Successfully invoked method: " + methodName);
-                }
-                else
-                {
-                    Debug.LogError("Method not found: " + methodName);
-                }
-            }
-            else
-            {
-                Debug.LogError("No MonoBehaviour script found on the assigned GameObject.");
-            }
-        }
-        else
-        {
-            Debug.LogError("No GameObject assigned to trigger.");
-        }
-
-        // pevent repeat triggering?
+        // Trigger the dialogue when picked up
+        TriggerAspirinCheckDialogue();
+        
+        // Prevent repeat triggering
         grabInteractable.selectEntered.RemoveListener(OnAspirinPickedUp);
+    }
+
+    // Called when the aspirin collides with the assigned character
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if the other object is the assigned character
+        if (other.gameObject == assignedVictim)
+        {
+            Debug.Log("Aspirin touched the assigned character!");
+
+            // Trigger the dialogue when the aspirin touches the character
+            TriggerAspirinCheckDialogue();
+        }
+    }
+
+    // Method to trigger the AspirinCheckVR dialogue UI
+    private void TriggerAspirinCheckDialogue()
+    {
+        if (aspirinCheckVR != null)
+        {
+            aspirinCheckVR.SetActive(true);
+            Debug.Log("AspirinCheckVR dialogue activated.");
+        }
+
+        if (aspirinCheckVRController != null)
+        {
+            aspirinCheckVRController.ShowDialogueUI();
+        }
     }
 
     private void OnDestroy()

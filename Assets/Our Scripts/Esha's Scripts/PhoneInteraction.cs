@@ -2,70 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using System.Reflection;
+using DialogueSystemWithText;
 
 public class PhoneInteraction : MonoBehaviour
 {
-    [Header("triggered when picked up")]
-    [SerializeField] private GameObject DialogueToTrigger;
-    [SerializeField] private string methodName = "OnPhonePickup"; // Method name to call
+    [Header("Triggered when the phone is selected/grabbed")]
+    [SerializeField] private DialogueUIController Called911PhoneDialogueController;  // Reference to the DialogueUIController
+    [SerializeField] private GameObject phoneDialogue;            // Reference to the Dialogue UI GameObject
 
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable simpleInteractable;
 
+    // Set up for triggering
     private void Awake()
     {
-        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+        simpleInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
 
-        if (grabInteractable != null)
+        if (simpleInteractable != null)
         {
-            grabInteractable.selectEntered.AddListener(OnPhonePickedUp);
-        }
-    }
-
-    private void OnPhonePickedUp(SelectEnterEventArgs args)
-    {
-        Debug.Log("Phone picked up!");
-
-        if (DialogueToTrigger != null)
-        {
-            
-            var script = DialogueToTrigger.GetComponent<MonoBehaviour>();
-
-            if (script != null)
-            {
-                // Get the method info based on method name
-                MethodInfo method = script.GetType().GetMethod(methodName, BindingFlags.Public | BindingFlags.Instance);
-
-                if (method != null)
-                {
-                    // Invoke the method
-                    method.Invoke(script, null);
-                    Debug.Log("Successfully invoked method: " + methodName);
-                }
-                else
-                {
-                    Debug.LogError("Method not found: " + methodName);
-                }
-            }
-            else
-            {
-                Debug.LogError("No MonoBehaviour script found on the assigned GameObject.");
-            }
+            simpleInteractable.selectEntered.AddListener(OnPhonePickedUp);
         }
         else
         {
-            Debug.LogError("No GameObject assigned to trigger.");
+            Debug.LogError("No XRSimpleInteractable component found on the phone!");
+        }
+    }
+
+    // Called when the phone is selected (picked up)
+    private void OnPhonePickedUp(SelectEnterEventArgs args)
+    {
+        Debug.Log("Phone selected!");
+
+        // Trigger the dialogue when the phone is selected
+        TriggerPhoneDialogue();
+        
+        // Prevent repeat triggering
+        simpleInteractable.selectEntered.RemoveListener(OnPhonePickedUp);
+    }
+
+    // Method to trigger the Phone dialogue UI
+    private void TriggerPhoneDialogue()
+    {
+        if (phoneDialogue != null)
+        {
+            phoneDialogue.SetActive(true);
+            Debug.Log("Phone dialogue activated.");
         }
 
-        // prevent repeat triggering?
-        grabInteractable.selectEntered.RemoveListener(OnPhonePickedUp);
+        if (Called911PhoneDialogueController != null)
+        {
+            Called911PhoneDialogueController.ShowDialogueUI();
+        }
     }
 
     private void OnDestroy()
     {
-        if (grabInteractable != null)
+        if (simpleInteractable != null)
         {
-            grabInteractable.selectEntered.RemoveListener(OnPhonePickedUp);
+            simpleInteractable.selectEntered.RemoveListener(OnPhonePickedUp);
         }
     }
 }
