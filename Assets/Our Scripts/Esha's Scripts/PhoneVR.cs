@@ -59,5 +59,11 @@ public class PhoneVR : MonoBehaviour
         {
             Call911DialogueController.ShowDialogueUI();
         }
+         else
+        {
+
+        Debug.LogWarning("call911 dialogue controller isn't attched properly");
+        }
+        
     }
 }
