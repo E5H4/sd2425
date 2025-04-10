@@ -16379,11 +16379,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 810442158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 968a88d94e9c24b96b80676c0c84a867, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ae27c9d6ca1b415a869bf3ec9b02631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Called911PhoneDialogueController: {fileID: 1746705339}
-  phoneDialogue: {fileID: 1747089899}
+  phone: {fileID: 810442158}
+  Call911DialogueController: {fileID: 1746705339}
+  call911Phone: {fileID: 1746705337}
 --- !u!1 &813790003
 GameObject:
   m_ObjectHideFlags: 0
@@ -19596,13 +19597,11 @@ RectTransform:
   - {fileID: 1449116624}
   - {fileID: 1238382431}
   - {fileID: 787588059}
-  - {fileID: 1746705338}
-  - {fileID: 2143478604}
   m_Father: {fileID: 1352645871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.57, y: -0.517}
+  m_AnchoredPosition: {x: -0.57, y: -0.306}
   m_SizeDelta: {x: 1920, y: 2956.066}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &922476526
@@ -19632,8 +19631,8 @@ MonoBehaviour:
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
   skipDialogueActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  navigateUpActionReference: {fileID: -8069514856583376848, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
-  navigateDownActionReference: {fileID: -3599823989380923159, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  navigateUpActionReference: {fileID: 589105675738313921, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  navigateDownActionReference: {fileID: -305629357011833259, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   selectOptionActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   defaultButtonSprite: {fileID: 21300000, guid: ff9e2472de4c2451db90d45604a1d251, type: 3}
   hoverButtonSprite: {fileID: 21300000, guid: 2e0227d82ceab454f9f22ccbde614f0b, type: 3}
@@ -30183,6 +30182,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 922476525}
+  - {fileID: 1746705338}
+  - {fileID: 2143478604}
   m_Father: {fileID: 1543113222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1357492018
@@ -32478,7 +32479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -14.872, y: -6, z: 1.545}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.57, y: -0.517}
+  m_AnchoredPosition: {x: -0.57, y: -0.306}
   m_SizeDelta: {x: 1920, y: 2956.066}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1449760661
@@ -32514,8 +32515,8 @@ MonoBehaviour:
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
   skipDialogueActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  navigateUpActionReference: {fileID: -8069514856583376848, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
-  navigateDownActionReference: {fileID: -3599823989380923159, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  navigateUpActionReference: {fileID: 589105675738313921, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  navigateDownActionReference: {fileID: -305629357011833259, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   selectOptionActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   defaultButtonSprite: {fileID: 21300000, guid: ff9e2472de4c2451db90d45604a1d251, type: 3}
   hoverButtonSprite: {fileID: 21300000, guid: 2e0227d82ceab454f9f22ccbde614f0b, type: 3}
@@ -39804,9 +39805,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746705337}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.12992913, y: -0.05014873, z: 0.0065778717, w: 0.9902324}
+  m_LocalPosition: {x: 0, y: 0, z: 1.43}
+  m_LocalScale: {x: 0.0006, y: 0.0006, z: 0.0006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1234222817}
@@ -39820,12 +39821,12 @@ RectTransform:
   - {fileID: 2121838909}
   - {fileID: 213214594}
   - {fileID: 475796567}
-  m_Father: {fileID: 922476525}
+  m_Father: {fileID: 1352645871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.57, y: -0.306}
+  m_SizeDelta: {x: 1920, y: 2956.066}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1746705339
 MonoBehaviour:
@@ -39842,7 +39843,7 @@ MonoBehaviour:
   _fontTypingSpeed: 0.05
   _keyCodeSkipDialogue: 32
   skipDialogueActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  navigateUpActionReference: {fileID: -8069514856583376848, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  navigateUpActionReference: {fileID: 589105675738313921, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   navigateDownActionReference: {fileID: -3599823989380923159, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
   selectOptionActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   defaultButtonSprite: {fileID: 21300000, guid: ff9e2472de4c2451db90d45604a1d251, type: 3}
@@ -39923,7 +39924,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1746705344
 Canvas:
   m_ObjectHideFlags: 0
@@ -39933,7 +39934,7 @@ Canvas:
   m_GameObject: {fileID: 1746705337}
   m_Enabled: 0
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -49397,9 +49398,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143478603}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.12992913, y: -0.05014873, z: 0.0065778717, w: 0.9902324}
+  m_LocalPosition: {x: 0, y: 0, z: 1.43}
+  m_LocalScale: {x: 0.0006, y: 0.0006, z: 0.0006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 896265057}
@@ -49417,12 +49418,12 @@ RectTransform:
   - {fileID: 1044340271}
   - {fileID: 163255215}
   - {fileID: 565438221}
-  m_Father: {fileID: 922476525}
+  m_Father: {fileID: 1352645871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.57, y: -0.306}
+  m_SizeDelta: {x: 1920, y: 2956.066}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2143478605
 MonoBehaviour:
@@ -49440,7 +49441,7 @@ MonoBehaviour:
   _keyCodeSkipDialogue: 32
   skipDialogueActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   navigateUpActionReference: {fileID: -8069514856583376848, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
-  navigateDownActionReference: {fileID: -3599823989380923159, guid: 0be0028c24f2a4c14a96b6aa39055933, type: 3}
+  navigateDownActionReference: {fileID: -305629357011833259, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   selectOptionActionReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   defaultButtonSprite: {fileID: 21300000, guid: ff9e2472de4c2451db90d45604a1d251, type: 3}
   hoverButtonSprite: {fileID: 21300000, guid: 2e0227d82ceab454f9f22ccbde614f0b, type: 3}
@@ -49520,7 +49521,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2143478610
 Canvas:
   m_ObjectHideFlags: 0
@@ -49530,7 +49531,7 @@ Canvas:
   m_GameObject: {fileID: 2143478603}
   m_Enabled: 0
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
