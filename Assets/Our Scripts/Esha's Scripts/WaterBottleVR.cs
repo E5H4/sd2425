@@ -1,23 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using DialogueSystemWithText;
 
-public class WaterBottleInteraction : MonoBehaviour //used later lol
+public class WaterBottleVR : MonoBehaviour
 {
-    [Header("triggered when the water bottle touches the victim")]
-    [SerializeField] private DialogueUIController waterBottleDialogueController;  
-    [SerializeField] private GameObject waterBottleDialogue;          
-    [SerializeField] private GameObject assignedVictim;                
+    [Header("triggered when the water bottle is picked up")]
+    [SerializeField] private DialogueUIController waterBottleDialogueController;
+    [SerializeField] private GameObject waterBottleDialogue;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
-    // Set up for triggering
     private void Awake()
     {
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -26,39 +20,28 @@ public class WaterBottleInteraction : MonoBehaviour //used later lol
         {
             grabInteractable.selectEntered.AddListener(OnWaterBottlePickedUp);
         }
+        else
+        {
+            Debug.LogError("Grab Interactable not found on water bottle.");
+        }
     }
 
-    // Called when the water bottle is picked up
     private void OnWaterBottlePickedUp(SelectEnterEventArgs args)
     {
         Debug.Log("Water bottle picked up!");
 
-        
         TriggerWaterBottleDialogue();
-        
-        
+
+        // only allows dialogue to go thru ONCE
         grabInteractable.selectEntered.RemoveListener(OnWaterBottlePickedUp);
     }
 
-    // Called when the water bottle collides with the assigned character
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.gameObject == assignedVictim)
-        {
-            Debug.Log("Water bottle touched the assigned victim!");
-
-            TriggerWaterBottleDialogue();
-        }
-    }
-
-    // Method to trigger the Water Bottle dialogue UI
     private void TriggerWaterBottleDialogue()
     {
         if (waterBottleDialogue != null)
         {
             waterBottleDialogue.SetActive(true);
-            Debug.Log("WaterBottleDialogue activated.");
+            Debug.Log("Water bottle dialogue activated.");
         }
 
         if (waterBottleDialogueController != null)
