@@ -26,7 +26,7 @@ public class Noahs_Backpack : MonoBehaviour
     [SerializeField] private GameObject backpack;
 
 
-/*
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +56,7 @@ public class Noahs_Backpack : MonoBehaviour
         }
     }
    
-    private void dialoguesTurnsOff() {
+    public void dialoguesTurnsOff() {
         TowelDialogue.SetActive(false);
         WalletDialogue.SetActive(false);
         WaterBottleDialogue.SetActive(false);
