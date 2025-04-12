@@ -10,19 +10,15 @@ public class Noahs_Backpack : MonoBehaviour
     [SerializeField] private DialogueUIController startdialoguecontroller2; // this is my StartDialogue (DIALOGUEUI) , premade and prenamed
     [SerializeField] private DialogueUIController midscenariodialoguecontroller2;
     [SerializeField] private DialogueUIController endscenariodialoguecontroller2;
-    [SerializeField] private DialogueUIController walletDialogueController;
-    [SerializeField] private DialogueUIController towelDialogueController;
     [SerializeField] private DialogueUIController gauzeDialogueController;
-    [SerializeField] private DialogueUIController waterbottleDialogueController;
     [SerializeField] private DialogueUIController phoneDialogueController;
+    [SerializeField] private DialogueUIController cannedSodaDrinkController;
     [SerializeField] private GameObject StartDialogue2;  // Reference to the StartDialogue object
     [SerializeField] private GameObject midDialogue2;
     [SerializeField] private GameObject endDialogue2;
-    [SerializeField] private GameObject WalletDialogue;
-    [SerializeField] private GameObject TowelDialogue;
     [SerializeField] private GameObject GauzeDialogue;
-    [SerializeField] private GameObject WaterBottleDialogue;
     [SerializeField] private GameObject PhoneDialogue;
+    [SerializeField] private GameObject cannedSodaDrinkDialogue;
     [SerializeField] private GameObject backpack;
 
 
@@ -34,7 +30,7 @@ public class Noahs_Backpack : MonoBehaviour
     }
     */
     // Update is called once per frame
-    void Update()
+  void Update()
     {
         if (Input.GetMouseButtonDown(0)) //checks if players clicks anything
         {
@@ -57,46 +53,22 @@ public class Noahs_Backpack : MonoBehaviour
     }
    
     public void dialoguesTurnsOff() {
-        TowelDialogue.SetActive(false);
-        WalletDialogue.SetActive(false);
-        WaterBottleDialogue.SetActive(false);
         GauzeDialogue.SetActive(false);
         PhoneDialogue.SetActive(false);
+        cannedSodaDrinkDialogue.SetActive(false);
     }
 
-
-    public void towelDialogue() {
+     public void cannedDrinkDialogue(){
         dialoguesTurnsOff();
-        if(TowelDialogue != null){
-            TowelDialogue.SetActive(true);
+        if( cannedSodaDrinkDialogue != null){
+            cannedSodaDrinkDialogue.SetActive(true);
         }
-        if(towelDialogueController != null){
-            towelDialogueController.gameObject.SetActive(true);
+        if ( cannedSodaDrinkController!= null){
+            cannedSodaDrinkController.gameObject.SetActive(true);
         }
-        towelDialogueController.ShowDialogueUI();
+        cannedSodaDrinkController.ShowDialogueUI();
     }
-    public void walletDialogue() {
-        dialoguesTurnsOff();
-        if( WalletDialogue != null){
-            WalletDialogue.SetActive(true);
-        }
-        if ( walletDialogueController != null){
-            walletDialogueController.gameObject.SetActive(true);
-        }
-        walletDialogueController.ShowDialogueUI();
-    }
-    public void waterbottleDialogue() {
-        dialoguesTurnsOff();
-        if( WaterBottleDialogue != null){
-            WaterBottleDialogue.SetActive(true);
-        }
-        if ( waterbottleDialogueController != null){
-            waterbottleDialogueController.gameObject.SetActive(true);
-        }
-       waterbottleDialogueController.ShowDialogueUI();
-
-
-    }
+    
     public void gauzeDialogue (){
         dialoguesTurnsOff();
         if( GauzeDialogue != null){

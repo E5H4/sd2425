@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Tape_interaction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+   public GameObject pressureGameBegin; //this is a name for the pressure game to st
+   public string medicalTapeObjectTag = "Medical Tape"; //this tag is so no other object can interact an trigger the mini game
 
-    // Update is called once per frame
-    void Update()
+   private void pressureGameTrigger(Collider other)
+   {
+    if(other.CompareTag(medicalTapeObjectTag))
     {
-        
+        //logs to the console that the pressure game has been activated
+        Debug.Log("PRESSURE GAME ACTIVATED!!!!!");
+        if(pressureGameBegin != null) 
+        {
+            pressureGameBegin.SetActive(true); //this trigger the game to then begin
+        }
+
+        //This will destroy the Medical tape object causing it to not re-appear
+        Destroy(other.gameObject);
     }
+   }
+    
 }
