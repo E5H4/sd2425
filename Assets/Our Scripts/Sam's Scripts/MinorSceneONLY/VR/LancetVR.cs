@@ -12,8 +12,8 @@ public class DragLancetVR : MonoBehaviour
     [SerializeField] private DialogueUIController Monitor11dialoguecontroller;
 
 
-    [SerializeField] private float lowerThreshold = 1.83f;
-    [SerializeField] private float upperThreshold = 1.87f;
+    [SerializeField] private float lowerThreshold = .8f;
+    [SerializeField] private float upperThreshold = 1f;
 
     // Reference to the XR Grab Interactable component on the lancet.
     private XRGrabInteractable grabInteractable;

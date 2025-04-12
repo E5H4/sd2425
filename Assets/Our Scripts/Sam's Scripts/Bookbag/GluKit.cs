@@ -9,6 +9,12 @@ public class Kit : MonoBehaviour
     [SerializeField] private DialogueUIController SevereDialogue2controller;
     [SerializeField] private GameObject SevereDialogue2;
     [SerializeField] private GameObject bag;
+    [SerializeField] private GameObject Dialogue1;
+    [SerializeField] private GameObject Dialogue2;
+    [SerializeField] private GameObject Dialogue3;
+    [SerializeField] private GameObject Dialogue4;
+    [SerializeField] private GameObject Dialogue5;
+    [SerializeField] private GameObject Dialogue6;
 
 
     // Reference to the XR Interactable component 
@@ -72,6 +78,18 @@ public class Kit : MonoBehaviour
                 SevereDialogue2controller.ShowDialogueUI();
             }
         }
+    }
+
+    public void DeactivateAllDialogues()
+    {
+        Dialogue1?.SetActive(false);
+        Dialogue2?.SetActive(false);
+        Dialogue3?.SetActive(false);
+        Dialogue4?.SetActive(false);
+        Dialogue5?.SetActive(false);
+        Dialogue6?.SetActive(false);
+        KitDialogue?.SetActive(false);
+        SevereDialogue2?.SetActive(false);
     }
 
 }

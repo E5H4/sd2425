@@ -10,6 +10,12 @@ public class Pop : MonoBehaviour
     [SerializeField] private GameObject SodaDialogue;
     [SerializeField] private GameObject bag;
     public static bool soda = false;
+    [SerializeField] private GameObject Dialogue1;
+    [SerializeField] private GameObject Dialogue2;
+    [SerializeField] private GameObject Dialogue3;
+    [SerializeField] private GameObject Dialogue4;
+    [SerializeField] private GameObject Dialogue5;
+    [SerializeField] private GameObject Dialogue6;
 
 
 
@@ -80,6 +86,18 @@ public class Pop : MonoBehaviour
     public void debugmessage()
     {
         Debug.Log("I AM CALLED.");
+    }
+
+    public void DeactivateAllDialogues()
+    {
+        Dialogue1?.SetActive(false);
+        Dialogue2?.SetActive(false);
+        Dialogue3?.SetActive(false);
+        Dialogue4?.SetActive(false);
+        Dialogue5?.SetActive(false);
+        Dialogue6?.SetActive(false);
+        MinorDialogue4?.SetActive(false);
+        SodaDialogue?.SetActive(false);
     }
 }
 

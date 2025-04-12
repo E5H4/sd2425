@@ -8,19 +8,11 @@ public class DragMonitor : MonoBehaviour
     private bool isDragging = false;
     private Vector3 offset;
 
-    [SerializeField] private GameObject bigCharacter;  // Assign the character in Inspector
+    [SerializeField] private GameObject Character;  // Assign the character in Inspector
     [SerializeField] private GameObject monitorTab;    // Assign the monitor tab in Inspector
     [SerializeField] private GameObject monitorTop;    // Assign the monitor top in Inspector
-    [SerializeField] private GameObject text;    // Assign the blood image in Inspector
     [SerializeField] private DialogueUIController MinorDialogue3; // Trigger next dialogue
 
-    void Start()
-    {
-        if (text != null)
-        {
-            text.SetActive(false); // Hide blood initially
-        }
-    }
 
     void Update()
     {
@@ -55,11 +47,6 @@ public class DragMonitor : MonoBehaviour
         {
             Debug.Log("Monitor placed correctly!");
 
-            if (text != null)
-            {
-                text.SetActive(true); // Show blood image
-            }
-
             if (MinorDialogue3 != null)
             {
                 MinorDialogue3.ShowDialogueUI(); // Trigger next dialogue
@@ -77,7 +64,7 @@ public class DragMonitor : MonoBehaviour
 
     bool IsNearCharacter(GameObject obj)
     {
-        float distance = Vector3.Distance(obj.transform.position, bigCharacter.transform.position);
+        float distance = Vector3.Distance(obj.transform.position, Character.transform.position);
         Debug.Log(obj.name + " Distance to character: " + distance);
         return (distance < 2.0f && distance > 1.85f); // Ensures it's within the correct range
     }

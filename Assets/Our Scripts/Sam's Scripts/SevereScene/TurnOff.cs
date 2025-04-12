@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TurnOff : MonoBehaviour
+public class TurnOffs : MonoBehaviour
 {
     [SerializeField] private GameObject SevereDialogue3;
     [SerializeField] private GameObject SevereDialogue4;
@@ -9,6 +9,8 @@ public class TurnOff : MonoBehaviour
     [SerializeField] private GameObject SevereDialogue7;
     [SerializeField] private GameObject SevereDialogue8;
     [SerializeField] private GameObject SevereDialogue9;
+
+    public static object Instance { get; internal set; }
 
     public void TurnOffDialogue3()
     {

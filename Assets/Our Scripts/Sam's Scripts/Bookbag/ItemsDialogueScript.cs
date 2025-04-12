@@ -6,7 +6,13 @@ public class ItemsDialogueScript : MonoBehaviour
 {
     [SerializeField] private DialogueUIController dialoguecontroller;
     [SerializeField] private GameObject dialogue;
-
+    [SerializeField] private GameObject Dialogue1;
+    [SerializeField] private GameObject Dialogue2;
+    [SerializeField] private GameObject Dialogue3;
+    [SerializeField] private GameObject Dialogue4;
+    [SerializeField] private GameObject Dialogue5;
+    [SerializeField] private GameObject Dialogue6;
+    [SerializeField] private GameObject Dialogue7;
 
     // Reference to the XR Interactable component 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
@@ -41,7 +47,7 @@ public class ItemsDialogueScript : MonoBehaviour
     private void OnObjSelected(SelectEnterEventArgs args)
     {
         Debug.Log("Obj: Obj selected via VR.");
-
+        DeactivateAllDialogues();
         dialogue.SetActive(true);
         dialoguecontroller.ShowDialogueUI();
 
@@ -52,6 +58,18 @@ public class ItemsDialogueScript : MonoBehaviour
     public void debugmessage()
     {
         Debug.Log("I AM CALLED.");
+    }
+
+    public void DeactivateAllDialogues()
+    {
+        Dialogue1?.SetActive(false);
+        Dialogue2?.SetActive(false);
+        Dialogue3?.SetActive(false);
+        Dialogue4?.SetActive(false);
+        Dialogue5?.SetActive(false);
+        Dialogue6?.SetActive(false);
+        Dialogue7?.SetActive(false);
+        dialogue?.SetActive(false);
     }
 }
 

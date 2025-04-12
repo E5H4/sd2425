@@ -5,7 +5,9 @@ using DialogueSystemWithText;
 public class BookbagVR : MonoBehaviour
 {
     [SerializeField] public GameObject bag;
-    
+    public static bool minorsecond = false;
+    private int count = 0;
+
 
     // Reference to the XR Interactable component 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
@@ -40,9 +42,15 @@ public class BookbagVR : MonoBehaviour
     private void OnBagSelected(SelectEnterEventArgs args)
     {
         Debug.Log("BookbagVR: Backpack selected via VR.");
-        if (bag != null)
+        count++;
+
+        if (Difficulty.difficulty=="Minor" && count==2)
+        {
+            minorsecond = true;
+        }
+        if (bag != null && TestingText.bookbagButton)
         {
             bag.SetActive(true);
         }
     }
-    }
+}

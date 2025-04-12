@@ -8,6 +8,12 @@ public class Meter : MonoBehaviour
     [SerializeField] private GameObject MinorDialogue2;
     [SerializeField] private DialogueUIController MeterDialoguecontroller;
     [SerializeField] private GameObject MeterDialogue;
+    [SerializeField] private GameObject Dialogue1;
+    [SerializeField] private GameObject Dialogue2;
+    [SerializeField] private GameObject Dialogue3;
+    [SerializeField] private GameObject Dialogue4;
+    [SerializeField] private GameObject Dialogue5;
+    [SerializeField] private GameObject Dialogue6;
 
     [SerializeField] private GameObject bag;
 
@@ -45,7 +51,7 @@ public class Meter : MonoBehaviour
     {
         if (Difficulty.difficulty == "Minor")
         {
-            if (Bookbag.minorsecond == false)
+            if (BookbagVR.minorsecond == false)
             {
                 if (bag.activeInHierarchy)
                 {
@@ -89,6 +95,18 @@ public class Meter : MonoBehaviour
             }
 
         }
+    }
+
+    public void DeactivateAllDialogues()
+    {
+        Dialogue1?.SetActive(false);
+        Dialogue2?.SetActive(false);
+        Dialogue3?.SetActive(false);
+        Dialogue4?.SetActive(false);
+        Dialogue5?.SetActive(false);
+        Dialogue6?.SetActive(false);
+        MinorDialogue2?.SetActive(false);
+        MeterDialogue?.SetActive(false);
     }
 }
 

@@ -7,26 +7,28 @@ public class Bookbag : MonoBehaviour
 {
     [SerializeField] private GameObject bag;
     [SerializeField] private DialogueUIController minordialogue2controller;
-    [SerializeField] private GameObject MinorDialogue2;
+    [SerializeField] public GameObject MinorDialogue2;
     [SerializeField] private DialogueUIController minordialogue4controller;
-    [SerializeField] private GameObject MinorDialogue4;
+    [SerializeField] public GameObject MinorDialogue4;
     [SerializeField] private DialogueUIController MeterDialoguecontroller;
-    [SerializeField] private GameObject MeterDialogue;
+    [SerializeField] public GameObject MeterDialogue;
     [SerializeField] private DialogueUIController MoneyDialoguecontroller;
-    [SerializeField] private GameObject MoneyDialogue;
+    [SerializeField] public GameObject MoneyDialogue;
     [SerializeField] private DialogueUIController SodaDialoguecontroller;
-    [SerializeField] private GameObject SodaDialogue;
+    [SerializeField] public GameObject SodaDialogue;
     [SerializeField] private DialogueUIController PhoneDialoguecontroller;
-    [SerializeField] private GameObject PhoneDialogue;
+    [SerializeField] public GameObject PhoneDialogue;
     [SerializeField] private DialogueUIController KitDialoguecontroller;
-    [SerializeField] private GameObject KitDialogue;
+    [SerializeField] public GameObject KitDialogue;
     [SerializeField] private DialogueUIController NotebookDialoguecontroller;
-    [SerializeField] private GameObject NotebookDialogue;
+    [SerializeField] public GameObject NotebookDialogue;
     [SerializeField] private DialogueUIController SevereDialogue2controller;
-    [SerializeField] private GameObject SevereDialogue2;
+    [SerializeField] public GameObject SevereDialogue2;
 
     public static bool minorsecond = false;
     public static bool soda = false;
+
+    public static object Instance { get; internal set; }
 
     void Update()
     {
@@ -49,7 +51,7 @@ public class Bookbag : MonoBehaviour
         }
     }
 
-    private void DeactivateAllDialogues()
+    public void DeactivateAllDialogues()
     {
         MinorDialogue2?.SetActive(false);
         MeterDialogue?.SetActive(false);
@@ -60,6 +62,8 @@ public class Bookbag : MonoBehaviour
         NotebookDialogue?.SetActive(false);
         SevereDialogue2?.SetActive(false);
     }
+
+  
     public void MinorSecondTrue()
     {
         minorsecond = true;
