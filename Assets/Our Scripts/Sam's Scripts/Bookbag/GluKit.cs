@@ -53,6 +53,7 @@ public class Kit : MonoBehaviour
         {
             if (KitDialogue != null)
             {
+                DeactivateAllDialogues();
                 KitDialogue.SetActive(true);
             }
 
@@ -70,6 +71,7 @@ public class Kit : MonoBehaviour
 
             if (SevereDialogue2 != null)
             {
+                DeactivateAllDialogues();
                 SevereDialogue2.SetActive(true);
             }
 

@@ -60,6 +60,7 @@ public class Meter : MonoBehaviour
 
                 if (MinorDialogue2 != null)
                 {
+                    DeactivateAllDialogues();
                     MinorDialogue2.SetActive(true);
                     Debug.Log("Minor dialogue 2 activated.");
                     minordialogue2controller.ShowDialogueUI();
@@ -70,6 +71,7 @@ public class Meter : MonoBehaviour
             {
                 if (MeterDialogue != null)
                 {
+                    DeactivateAllDialogues();
                     MeterDialogue.SetActive(true);
                     Debug.Log("Meter dialogue activated.");
                 }
@@ -85,6 +87,7 @@ public class Meter : MonoBehaviour
         {
             if (MeterDialogue != null)
             {
+                DeactivateAllDialogues();
                 MeterDialogue.SetActive(true);
                 Debug.Log("Meter dialogue activated.");
             }

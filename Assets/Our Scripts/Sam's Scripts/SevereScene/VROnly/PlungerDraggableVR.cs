@@ -1,111 +1,105 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using DialogueSystemWithText;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-[RequireComponent(typeof(Collider))]
-public class PlungerDraggableVR_Triggers : MonoBehaviour
+public class PlungerDraggableVR : MonoBehaviour
 {
-    [Header("Dialogue Settings")]
-    [Tooltip("Dialogue controller to trigger when push‑in trigger is reached.")]
+    [Header("Dialogue Controllers")]
+    [Tooltip("Dialogue controller triggered when the plunger is pushed down (first press).")]
     [SerializeField] private DialogueUIController severeDialogue7;
-    [Tooltip("Dialogue object for push‑in dialogue.")]
-    [SerializeField] private GameObject severedialogue7;
-
-    [Tooltip("Dialogue controller to trigger when pull‑out trigger is reached.")]
+    [Tooltip("Dialogue controller triggered when the plunger is pulled up (second press).")]
     [SerializeField] private DialogueUIController severeDialogue10;
-    [Tooltip("Dialogue object for pull‑out dialogue.")]
-    [SerializeField] private GameObject severedialogue10;
 
-    [Header("Mode Settings")]
-    [Tooltip("False = push‑in mode (default), true = pull‑out mode.")]
-    [SerializeField] private bool pullOutMode = false;
+    [Header("Plunger State Objects")]
+    [Tooltip("GameObject representing the plunger in the up state.")]
+    [SerializeField] private GameObject plungerUpObject;
+    [Tooltip("GameObject representing the plunger in the down state.")]
+    [SerializeField] private GameObject plungerDownObject;
 
-    // This flag prevents multiple triggers.
-    private bool dialogueTriggered = false;
+    [SerializeField] private GameObject vilesyringeUp;
+    [SerializeField] private GameObject VileShakable;
 
-    // Reference to the XR Grab Interactable component on the plunger.
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
+
+    [Header("Interaction")]
+    [Tooltip("The simple interactable component used for interaction.")]
+    [SerializeField] private XRBaseInteractable simpleInteractable;
+
+    
+
+    // Boolean flag: false = currently up; true = currently down.
+    private bool pushUp = false;
 
     private void Awake()
     {
-        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        if (grabInteractable == null)
+        if (simpleInteractable == null)
         {
-            Debug.LogError("PlungerDraggableVR_Triggers: XRGrabInteractable component not found on " + gameObject.name);
+            simpleInteractable = GetComponent<XRBaseInteractable>();
+            if (simpleInteractable == null)
+            {
+                Debug.LogError("PlungerToggleBySimpleInteractable: XRBaseInteractable component not found on " + gameObject.name);
+            }
         }
     }
 
     private void OnEnable()
     {
-        // Subscribe to XR events.
-        if (grabInteractable != null)
+        if (simpleInteractable != null)
         {
-            grabInteractable.selectExited.AddListener(OnRelease);
-            grabInteractable.selectEntered.AddListener(OnGrabbed);
+            simpleInteractable.selectEntered.AddListener(OnPlungerPressed);
         }
     }
 
     private void OnDisable()
     {
-        if (grabInteractable != null)
+        if (simpleInteractable != null)
         {
-            grabInteractable.selectExited.RemoveListener(OnRelease);
-            grabInteractable.selectEntered.RemoveListener(OnGrabbed);
+            simpleInteractable.selectEntered.RemoveListener(OnPlungerPressed);
         }
     }
 
-    // Optional: Reset the dialogue trigger flag when the plunger is grabbed.
-    private void OnGrabbed(SelectEnterEventArgs args)
+    private void OnPlungerPressed(SelectEnterEventArgs args)
     {
-        dialogueTriggered = false;
-        Debug.Log("PlungerDraggableVR_Triggers: Plunger grabbed; resetting dialogue trigger.");
-    }
-
-    // This event is triggered when the player releases the plunger.
-    // We assume the triggers will fire OnTriggerEnter if the plunger is in the correct zone.
-    private void OnRelease(SelectExitEventArgs args)
-    {
-        Debug.Log("PlungerDraggableVR_Triggers: Plunger released.");
-        // No direct checks here. The trigger colliders will handle the dialogue.
-    }
-
-    // When the plunger enters one of the trigger colliders (set as children or separate objects in the scene)
-    private void OnTriggerEnter(Collider other)
-    {
-        // Make sure this triggers only once per grab-release cycle.
-        if (dialogueTriggered)
-            return;
-
-        // Use tags on the trigger colliders for identification.
-        if (other.CompareTag("PlungerDown") && !pullOutMode)
+        if (!pushUp)
         {
-            // In push‑in mode, if the plunger enters the downward trigger, trigger Dialogue 7.
-            Debug.Log("PlungerDraggableVR_Triggers: Down trigger activated. Triggering Dialogue 7.");
-            if (severedialogue7 != null)
-            {
-                severedialogue7.SetActive(true);
-            }
+            // First press: assume the plunger is up; we want to push it down.
+            // Hide the 'up' plunger, enable the 'down' plunger.
+            if (plungerUpObject != null)
+                plungerUpObject.SetActive(false);
+            if (plungerDownObject != null)
+                plungerDownObject.SetActive(true);
+
+            pushUp = true;
+            Debug.Log("PlungerToggleBySimpleInteractable: Plunger pushed down. Triggering Dialogue 7.");
+
+            // Trigger Dialogue 7.
             if (severeDialogue7 != null)
             {
+                severeDialogue7.gameObject.SetActive(true);
                 severeDialogue7.ShowDialogueUI();
+                VileShakable.SetActive(true);
+                vilesyringeUp.SetActive(false);
+
+
             }
-            dialogueTriggered = true;
-            pullOutMode = true; // Switch mode for future interactions.
         }
-        else if (other.CompareTag("PlungerUp") && pullOutMode)
+        else
         {
-            // In pull‑out mode, if the plunger enters the upward trigger, trigger Dialogue 10.
-            Debug.Log("PlungerDraggableVR_Triggers: Up trigger activated. Triggering Dialogue 10.");
-            if (severedialogue10 != null)
-            {
-                severedialogue10.SetActive(true);
-            }
+            // Second press: the plunger is down; we want to pull it up.
+            if (plungerDownObject != null)
+                plungerDownObject.SetActive(false);
+            if (plungerUpObject != null)
+                plungerUpObject.SetActive(true);
+
+            pushUp = false;
+            Debug.Log("PlungerToggleBySimpleInteractable: Plunger pulled up. Triggering Dialogue 10.");
+
+            // Trigger Dialogue 10.
             if (severeDialogue10 != null)
             {
+                severeDialogue10.gameObject.SetActive(true);
                 severeDialogue10.ShowDialogueUI();
             }
-            dialogueTriggered = true;
         }
     }
 }

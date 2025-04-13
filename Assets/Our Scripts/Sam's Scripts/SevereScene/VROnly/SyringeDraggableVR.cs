@@ -1,60 +1,94 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
 using DialogueSystemWithText;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class SyringeShotDraggableVR : MonoBehaviour
+public class SyringeShotDraggableVR_OneDialogue : MonoBehaviour
 {
-    [Header("Dialogue References")]
-    [SerializeField] private DialogueUIController severeDialogue10;
-    [SerializeField] private DialogueUIController severeDialogue11;
+ 
+    [SerializeField] private GameObject thighShotF;
+    [SerializeField] private GameObject thighShotB;
+    [SerializeField] private GameObject armShotF;
+    [SerializeField] private GameObject armShotB;
 
-    [Header("Optional: Additional Settings")]
-    // You can add any additional settings here if needed.
+    [SerializeField] private DialogueUIController Severedialogue10;
+    [SerializeField] private DialogueUIController Severedialogue11;
 
     // Reference to the XRGrabInteractable component.
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
+    private XRGrabInteractable grabInteractable;
+
+    // Flag to ensure dialogue is triggered only once.
+    private bool dialogueTriggered = false;
 
     private void Awake()
     {
-        // Get the XRGrabInteractable component on this syringe.
-        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
+        grabInteractable = GetComponent<XRGrabInteractable>();
         if (grabInteractable == null)
         {
-            Debug.LogError("SyringeShotDraggableVR: XRGrabInteractable component not found on " + gameObject.name);
+            Debug.LogError("SyringeShotDraggableVR_OneDialogue: XRGrabInteractable component not found on " + gameObject.name);
         }
     }
 
-    // No need for OnMouseDown/Drag/Up since XR handles dragging.
 
-    // This method is called when the syringe collides with a target.
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("NeedleTarget"))
+        if (dialogueTriggered)
+            return;
+
+        // Determine which shot object to activate based on the collision layer.
+        int hitLayer = other.gameObject.layer;
+        GameObject shotObj = null;
+        if (hitLayer == LayerMask.NameToLayer("thighcolidf"))
         {
-            Debug.Log("SyringeShotDraggableVR: Needle entered target area: " + other.name);
-
-            // Turn off Dialogue 10.
-            if (severeDialogue10 != null)
-            {
-                severeDialogue10.gameObject.SetActive(false);
-            }
-
-            // Activate and show Dialogue 11.
-            if (severeDialogue11 != null)
-            {
-                severeDialogue11.gameObject.SetActive(true);
-                severeDialogue11.ShowDialogueUI();
-            }
-
-            // Optionally, disable further interaction.
-            if (grabInteractable != null)
-            {
-                grabInteractable.enabled = false;
-            }
-
-            // Disable the syringe (or you could reposition it, etc.).
-            gameObject.SetActive(false);
+            Debug.Log("SyringeShotDraggableVR_OneDialogue: Hit layer 'thighcolidf': " + other.name);
+            shotObj = thighShotF;
         }
+        else if (hitLayer == LayerMask.NameToLayer("thighcolidb"))
+        {
+            Debug.Log("SyringeShotDraggableVR_OneDialogue: Hit layer 'thighcolidb': " + other.name);
+            shotObj = thighShotB;
+        }
+        else if (hitLayer == LayerMask.NameToLayer("armcolidf"))
+        {
+            Debug.Log("SyringeShotDraggableVR_OneDialogue: Hit layer 'armcolidf': " + other.name);
+            shotObj = armShotF;
+        }
+        else if (hitLayer == LayerMask.NameToLayer("armcolidb"))
+        {
+            Debug.Log("SyringeShotDraggableVR_OneDialogue: Hit layer 'armcolidb': " + other.name);
+            shotObj = armShotB;
+        }
+        else
+        {
+            // If the collider isn't on one of the expected layers, do nothing.
+            return;
+        }
+
+        // If we determined a shot object, then activate it.
+        if (shotObj != null)
+        {
+            shotObj.SetActive(true);
+        }
+
+        // Trigger the common dialogue.
+        if (Severedialogue11 != null)
+        {
+            Severedialogue10.gameObject.SetActive(false);
+            Severedialogue11.gameObject.SetActive(true);
+            Severedialogue11.ShowDialogueUI();
+            Debug.Log("SyringeShotDraggableVR_OneDialogue: Dialogue triggered.");
+        }
+
+        dialogueTriggered = true;
+
+        // Disable further grabbing.
+        if (grabInteractable != null)
+        {
+            grabInteractable.enabled = false;
+        }
+
+        // Optionally, disable the syringe so it cannot be moved further.
+        gameObject.SetActive(false);
     }
 }

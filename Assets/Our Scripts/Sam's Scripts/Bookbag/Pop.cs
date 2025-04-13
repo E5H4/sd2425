@@ -51,12 +51,13 @@ public class Pop : MonoBehaviour
     // This is called when the backpack is activated via VR
     private void OnObjSelected(SelectEnterEventArgs args)
     {
-        if (Bookbag.minorsecond)
+        if (BookbagVR.minorsecond)
         {
             soda = true;
             bag.SetActive(false);
             
             {
+                DeactivateAllDialogues();
                 MinorDialogue4.SetActive(true);
                 Debug.Log("Minor dialogue 4 activated.");
             }
@@ -70,6 +71,7 @@ public class Pop : MonoBehaviour
         {
             if (SodaDialogue != null)
             {
+                DeactivateAllDialogues();
                 SodaDialogue.SetActive(true);
             }
 
