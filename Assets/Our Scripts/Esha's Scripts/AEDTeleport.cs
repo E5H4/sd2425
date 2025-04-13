@@ -8,6 +8,9 @@ public class AEDTeleport : MonoBehaviour
     [SerializeField] private GameObject AED;
     [SerializeField] private Transform teleportedHere;
 
+    // call children to be interactable still
+    [SerializeField] private List<GameObject> allowedInteractableChildren;
+
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable;
     private bool hasTeleported = false;
 
@@ -16,7 +19,7 @@ public class AEDTeleport : MonoBehaviour
         interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
         if (interactable == null)
         {
-            Debug.LogError("xr interactable not found!");
+            Debug.LogError("XR Interactable not found on parent!");
         }
     }
 
@@ -36,7 +39,6 @@ public class AEDTeleport : MonoBehaviour
     {
         if (hasTeleported)
         {
-            Debug.Log("AED already teleported, cant do this again");
             return;
         }
 
@@ -46,10 +48,27 @@ public class AEDTeleport : MonoBehaviour
             AED.transform.rotation = teleportedHere.rotation;
             hasTeleported = true;
 
-            // Disable the interactable so it doesn't block other button clicks
-            interactable.enabled = false;
+            // Disable all child colliders EXCEPT the ones i want
+            Collider[] allChildColliders = AED.GetComponentsInChildren<Collider>(true);
+            foreach (var col in allChildColliders)
+            {
+                if (!allowedInteractableChildren.Contains(col.gameObject))
+                {
+                    col.enabled = false;
+                }
+            }
 
-            Debug.Log("AED teleport/interaction TURNED OFF, so no conflicts with inner buttons.");
+            // Disable parent’s own colliders and interaction
+            Collider[] parentColliders = GetComponents<Collider>();
+            foreach (var col in parentColliders)
+            {
+                col.enabled = false;
+            }
+
+            interactable.enabled = false;
+            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+
+            Debug.Log("AED teleported. this parent isn't clickable anymore.");
         }
     }
 }
