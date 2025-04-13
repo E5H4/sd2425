@@ -2119,7 +2119,7 @@ PrefabInstance:
       addedObject: {fileID: 207805667}
     - targetCorrespondingSourceObject: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 207805671}
+      addedObject: {fileID: 207805668}
   m_SourcePrefab: {fileID: 100100000, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
 --- !u!1 &207805665 stripped
 GameObject:
@@ -2220,7 +2220,7 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
---- !u!114 &207805671
+--- !u!114 &207805668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2229,11 +2229,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 207805665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21f298dd8cf67b746b140afec48cca02, type: 3}
+  m_Script: {fileID: 11500000, guid: 80eb19b683714dc48aa099d5868a1dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressureGameBegin: {fileID: 82088280}
-  medicalTapeObjectTag: Medical Tape
+  tapeOjectAllowed: {fileID: 295564112}
+  pressureUIVisible: {fileID: 82088280}
 --- !u!1 &237503149
 GameObject:
   m_ObjectHideFlags: 0

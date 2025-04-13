@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using DialogueSystemWithText;
 
 public class TAPETRIGGER : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class TAPETRIGGER : MonoBehaviour
     [SerializeField] GameObject pressureUIVisible;
     
 
-    private void onTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject == tapeOjectAllowed)
         {
@@ -19,7 +21,7 @@ public class TAPETRIGGER : MonoBehaviour
             }
         }
         else{
-            Debug.Log("wrong object nothing is happening!!")
+            Debug.Log("wrong object nothing is happening!!");
         }
     }
 }
