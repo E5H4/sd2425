@@ -1,9 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class mashtimer : MonoBehaviour
 {
+
+    public TextMeshProUGUI percentOfPressure;
+    int percent;
+
+    public void ButtonPressed()
+    {
+        percent += 10;
+        percentOfPressure.text = percent + "";
+    }
     // Start is called before the first frame update
     void Start()
     {

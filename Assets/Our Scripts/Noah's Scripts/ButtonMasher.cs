@@ -9,6 +9,47 @@ using TMPro;
 
 public class ButtonMasher : MonoBehaviour
 {
+
+/*
+    [SerializeField] private TextMeshProUGUI pressurePercent;
+    [SerializeField] private int max = 100;
+    private int current = 0;
+
+    
+
+    public void IncreaseValue()
+    {
+        if (current < max)
+        {
+            current += 10;
+            current = Mathf.Min(current, max);
+            UpdateText();
+        }
+        
+    }
+private void UpdateText()
+        {
+            if(current >= max)
+            {
+            pressurePercent.text = "CONGRATS!!";
+            }
+            else
+            {
+            pressurePercent.text = $"{current}";
+            }
+           
+        }
+
+
+
+
+*/
+
+
+
+
+
+    /*
     public Slider pressureBar;
     public float pressureIncrese = 10f;
     public TextMeshProUGUI endingText;
@@ -84,4 +125,5 @@ public class ButtonMasher : MonoBehaviour
             }
         }
     }
+    */
 }
