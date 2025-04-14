@@ -44,7 +44,7 @@ public class ClickableCharacterVR : MonoBehaviour
         Debug.Log("ClickableCharacterVR: Character selected via VR!");
 
         // Check the static condition from Bookbag.
-        if (Bookbag.soda)
+        if (Pop.soda)
         {
             Debug.Log("ClickableCharacterVR: Soda is true! Switching dialogues.");
 

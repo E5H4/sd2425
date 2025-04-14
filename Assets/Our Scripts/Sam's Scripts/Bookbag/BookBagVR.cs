@@ -5,6 +5,8 @@ using DialogueSystemWithText;
 public class BookbagVR : MonoBehaviour
 {
     [SerializeField] public GameObject bag;
+    [SerializeField] public GameObject soda;
+    [SerializeField] public GameObject sodaVR;
     public static bool minorsecond = false;
     private int count = 0;
 
@@ -47,6 +49,9 @@ public class BookbagVR : MonoBehaviour
         if (Difficulty.difficulty=="Minor" && count==2)
         {
             minorsecond = true;
+            sodaVR.SetActive(true);
+            soda.SetActive(false);
+
         }
         if (bag != null && TestingText.bookbagButton)
         {
