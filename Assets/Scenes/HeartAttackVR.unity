@@ -1673,7 +1673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7882842974771544393, guid: 388fe04b67c13eb448ced043cdd919d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23449999
+      value: -0.34
       objectReference: {fileID: 0}
     - target: {fileID: 7882842974771544393, guid: 388fe04b67c13eb448ced043cdd919d2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6355,7 +6355,7 @@ MonoBehaviour:
   _dialogue: You chose the minor difficulty option !
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -8446,7 +8446,11 @@ PrefabInstance:
       objectReference: {fileID: 3295742942915133511, guid: 132195e57bc6ef540a86d24f703d0339, type: 3}
     - target: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_Name
-      value: Victim (Interact)
+      value: Victim
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
+      propertyPath: m_TagString
+      value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 7630683439406129268, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: characterData
@@ -8498,7 +8502,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1777906400}
+      addedObject: {fileID: 1777906402}
     - targetCorrespondingSourceObject: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1777906401}
@@ -10563,13 +10567,25 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 75492810}
+  _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1848784640}
+        m_TargetAssemblyTypeName: DelayScript, Assembly-CSharp
+        m_MethodName: nextDialogueWithDelay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueOptions: []
 --- !u!1001 &456423019
 PrefabInstance:
@@ -10691,7 +10707,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 879815910}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -13174,7 +13190,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 968544593}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -14984,7 +15000,7 @@ MonoBehaviour:
     surroundings. Is it safe/clear?
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -15462,7 +15478,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1519475218}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -15660,19 +15676,7 @@ MonoBehaviour:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 286102415}
-        m_TargetAssemblyTypeName: LayDown, Assembly-CSharp
-        m_MethodName: LayDownCharacter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _dialogueOptions: []
 --- !u!1 &669538182
 GameObject:
@@ -17026,8 +17030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue: 'An AED or Automated External Defibrillator, can restore the heartbeat.
-    When we checked on her, she''s completely unconscious. Therefore requiring emergency
-    treatment. '
+    When we checked on her, she''s completely unconscious. '
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
@@ -17040,7 +17043,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1543398670}
+  _nextDialogueContent: {fileID: 1621035991}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -17745,35 +17748,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4422586
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7352837
+      value: -0.257
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.20301819
+      value: 0.076
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6969260504080521446, guid: 27b9ffb8695e8b34d8f6c8541a56e0b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -18028,7 +18031,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f0ec13ea2cf7b5647a54649aed57af28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 984065678}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0ec13ea2cf7b5647a54649aed57af28, type: 3}
       insertIndex: -1
@@ -18063,7 +18069,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 5
@@ -18233,12 +18239,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 748825002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0057bd385d12249609e93ebb64b80ad2, type: 3}
+  m_Script: {fileID: 11500000, guid: d5b83f31c068a4e9bbdefd0e503ae13b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aspirinCheckVRController: {fileID: 1464124799}
-  aspirinCheckVR: {fileID: 1464124797}
-  assignedVictim: {fileID: 1777906396}
+  aspirinObject: {fileID: 748825002}
+  aspirinDialogueController: {fileID: 1464124799}
+  aspirinDialogueUI: {fileID: 1464124797}
 --- !u!1 &749110368
 GameObject:
   m_ObjectHideFlags: 0
@@ -19750,7 +19756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue: Oh no.. wait. What was that sound? Is Yuki okay? Go and see!!
-  _customizeFont: 0
+  _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
   _characterName: Sameshalos
@@ -19762,13 +19768,37 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1900640274}
+  _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 286102415}
+        m_TargetAssemblyTypeName: LayDown, Assembly-CSharp
+        m_MethodName: LayDownCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1848784638}
+        m_TargetAssemblyTypeName: DelayScript, Assembly-CSharp
+        m_MethodName: nextDialogueWithDelay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueOptions: []
 --- !u!1001 &798174944
 PrefabInstance:
@@ -20861,19 +20891,7 @@ MonoBehaviour:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 286102415}
-        m_TargetAssemblyTypeName: LayDown, Assembly-CSharp
-        m_MethodName: LayDownCharacter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _dialogueOptions: []
 --- !u!1 &827096040
 GameObject:
@@ -22422,7 +22440,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 665749809}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -26526,6 +26544,59 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &984065677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984065678}
+  - component: {fileID: 984065679}
+  m_Layer: 0
+  m_Name: ColliderShell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &984065678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984065677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0011, y: 0.0185, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 748825006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &984065679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984065677}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.07, y: 0.02, z: 0.02}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &985632225
 GameObject:
   m_ObjectHideFlags: 0
@@ -27261,35 +27332,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3056209
+      value: -0.219
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.731956
+      value: -0.389
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1491816
+      value: 0.055
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7050465859021094462, guid: 358aafb24a6300f4c96d21721a61ef10, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -34937,7 +35008,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 550501695}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -39664,6 +39735,7 @@ RectTransform:
   - {fileID: 75492809}
   - {fileID: 1205665550}
   - {fileID: 716621293}
+  - {fileID: 1621035992}
   - {fileID: 1543398671}
   - {fileID: 268539041}
   - {fileID: 1871231177}
@@ -40256,7 +40328,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449760659}
   m_LocalRotation: {x: -0.12992913, y: -0.050148584, z: 0.006577892, w: 0.99023247}
-  m_LocalPosition: {x: 0, y: 0, z: 1.43}
+  m_LocalPosition: {x: 0, y: 0, z: 0.969}
   m_LocalScale: {x: 0.0006, y: 0.0006, z: 0.0006}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40272,7 +40344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -14.872, y: -6, z: 1.545}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.57, y: -0.306}
+  m_AnchoredPosition: {x: -0.564, y: -0.306}
   m_SizeDelta: {x: 1920, y: 2956.066}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1449760661
@@ -42980,7 +43052,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1871231178}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -43491,7 +43563,7 @@ Transform:
   m_GameObject: {fileID: 1555777610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.375, y: 1.608, z: -2.813}
+  m_LocalPosition: {x: -1.672, y: 0.152, z: -2.813}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45643,6 +45715,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8822356805721986567, guid: 6e4de85358ed8664aa9bafd9061f8964, type: 3}
   m_PrefabInstance: {fileID: 1620652384}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1621035990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621035992}
+  - component: {fileID: 1621035991}
+  m_Layer: 0
+  m_Name: AEDInfo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1621035991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621035990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: 'herefore requiring emergency treatment. '
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 1543398670}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
+--- !u!4 &1621035992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621035990}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1430811586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621164982
 GameObject:
   m_ObjectHideFlags: 0
@@ -49862,7 +49999,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: m_Name
-      value: Barista (Interact)
+      value: Barista
       objectReference: {fileID: 0}
     - target: {fileID: 7630683439406129268, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
       propertyPath: characterData
@@ -50731,28 +50868,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7288174367802448652, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
   m_PrefabInstance: {fileID: 344602443}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1777906400
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777906396}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 1
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5129217031695232740, guid: 9f3d82b2a09311041a4567540ba6cc2f, type: 3}
 --- !u!114 &1777906401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50825,6 +50940,29 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
+--- !u!136 &1777906402
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777906396}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.32303545
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: -0.006139338, y: 0.7775504, z: 2.9494601e-12}
 --- !u!1001 &1778250591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52456,6 +52594,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8862465252871566077, guid: ea6a2df8945db2442a24b93572393393, type: 3}
   m_PrefabInstance: {fileID: 1848139557}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848784637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848784639}
+  - component: {fileID: 1848784638}
+  - component: {fileID: 1848784640}
+  m_Layer: 0
+  m_Name: Delay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1848784638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848784637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8121515029c3b4977976cd06c3dfe0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextDialogueController: {fileID: 1107737188}
+  nextDialogueUI: {fileID: 1107737186}
+  delayInSeconds: 10
+--- !u!4 &1848784639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848784637}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3128533, y: 1.9400673, z: -7.692889}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848784640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848784637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8121515029c3b4977976cd06c3dfe0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextDialogueController: {fileID: 1430811587}
+  nextDialogueUI: {fileID: 1430811585}
+  delayInSeconds: 10
 --- !u!1001 &1849627273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53113,7 +53314,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1941727724}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -54209,13 +54410,25 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1604043261}
+  _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1848784638}
+        m_TargetAssemblyTypeName: DelayScript, Assembly-CSharp
+        m_MethodName: nextDialogueWithDelay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueOptions: []
 --- !u!1 &1905660020
 GameObject:
@@ -55135,7 +55348,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 458383941}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -58785,7 +58998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogue: Welcome to the Heart Attack simulator ! Which difficulty would you like
     to start with ?
-  _customizeFont: 1
+  _customizeFont: 0
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
   _characterName: Sameshalos
@@ -60087,6 +60300,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 39624469}
     m_Modifications:
+    - target: {fileID: 2803914861146287834, guid: c4d0def4285490d478e419bcf099352b, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914861146287834, guid: c4d0def4285490d478e419bcf099352b, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7278758737907681494, guid: c4d0def4285490d478e419bcf099352b, type: 3}
       propertyPath: m_Name
       value: SM_barmans_table_5 (3)
@@ -61551,6 +61772,7 @@ SceneRoots:
   - {fileID: 286102416}
   - {fileID: 151810981}
   - {fileID: 1555777611}
+  - {fileID: 1848784639}
   - {fileID: 921455823}
   - {fileID: 1043378430}
   - {fileID: 768194268}

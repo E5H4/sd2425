@@ -6,28 +6,27 @@ using DialogueSystemWithText;
 
 public class MoreAEDDialoguesPlsActivate : MonoBehaviour
 {
-    // 3D buttons
+    [Header("3D Buttons")]
     [SerializeField] private GameObject onButt;
     [SerializeField] private GameObject analyzeButt;
     [SerializeField] private GameObject chargeButt;
     [SerializeField] private GameObject shockButt;
-    [SerializeField] private GameObject bag1; // Correct name
+    [SerializeField] private GameObject bag1;
 
-    // DialogueUIControllers
+    [Header("Dialogue Controllers")]
     [SerializeField] private DialogueUIController onDialogueDialogueController;
     [SerializeField] private DialogueUIController analyzeDialogueDialogueController;
     [SerializeField] private DialogueUIController chargeDialogueDialogueController;
     [SerializeField] private DialogueUIController shockDialogueDialogueController;
     [SerializeField] private DialogueUIController bag1DialogueDialogueController;
 
-    // Dialogue GameObjects
+    [Header("Dialogue GameObjects")]
     [SerializeField] private GameObject onDialogue;
     [SerializeField] private GameObject analyzeDialogue;
     [SerializeField] private GameObject chargeDialogue;
     [SerializeField] private GameObject shockDialogue;
     [SerializeField] private GameObject bag1Dialogue;
 
-    // interactables
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable onInteractable;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable analyzeInteractable;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable chargeInteractable;
@@ -79,7 +78,7 @@ public class MoreAEDDialoguesPlsActivate : MonoBehaviour
 
     private void AnalyzeClicked(SelectEnterEventArgs args)
     {
-        if (analyzeClicked) return;
+        if (!onClicked || analyzeClicked) return;
         analyzeClicked = true;
 
         Debug.Log("ANALYZE button clicked");
@@ -89,7 +88,7 @@ public class MoreAEDDialoguesPlsActivate : MonoBehaviour
 
     private void ChargeClicked(SelectEnterEventArgs args)
     {
-        if (chargeClicked) return;
+        if (!analyzeClicked || chargeClicked) return;
         chargeClicked = true;
 
         Debug.Log("CHARGE button clicked");
@@ -99,7 +98,7 @@ public class MoreAEDDialoguesPlsActivate : MonoBehaviour
 
     private void ShockClicked(SelectEnterEventArgs args)
     {
-        if (shockClicked) return;
+        if (!chargeClicked || shockClicked) return;
         shockClicked = true;
 
         Debug.Log("SHOCK button clicked");
