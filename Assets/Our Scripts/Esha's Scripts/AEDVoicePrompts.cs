@@ -12,10 +12,13 @@ public class AEDVoicePrompts : MonoBehaviour
     public AudioClip applyPadsClip;
     public AudioClip analyzingClip;
     public AudioClip shockAdvisedClip;
+    public AudioClip preparingShock;
     public AudioClip noShockClip;
     public AudioClip chargingClip;
     public AudioClip shockDeliveredClip;
     public AudioClip patientStableClip;
+    public AudioClip flatlined;
+    public AudioClip slowHeartbeat;
 
     private void Start()
     {
@@ -60,6 +63,18 @@ public class AEDVoicePrompts : MonoBehaviour
     public void PlayPatientStable()
     {
         PlayClip(patientStableClip);
+    }
+
+    public void PlayFlatline(){
+        PlayClip(flatlined);
+    }
+
+    public void PlaySlowHeartbeat(){
+        PlayClip(slowHeartbeat);
+    }
+
+        public void PlayPreparingShock(){
+        PlayClip(preparingShock);
     }
 
     private void PlayClip(AudioClip clip)
