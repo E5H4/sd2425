@@ -10,6 +10,7 @@ public class DisplayAEDStuff : MonoBehaviour
     [SerializeField] private GameObject leftPadToDrag;
     [SerializeField] private GameObject rightPadToDrag;
     [SerializeField] private GameObject wiresToClick;
+    [SerializeField] private GameObject connectedPadsWire;
 
     public void ShowDummy()
     {
@@ -113,6 +114,13 @@ public class DisplayAEDStuff : MonoBehaviour
         if (wiresToClick != null) {
             wiresToClick.SetActive(false);
             Debug.Log("clickable wires hidden");
+        }
+    }
+
+    public void ShowConnectedSet() {
+        if (connectedPadsWire != null) {
+            connectedPadsWire.SetActive(true);
+            Debug.Log("whole pads & wires appeared after pads and wire clicked");
         }
     }
 }
