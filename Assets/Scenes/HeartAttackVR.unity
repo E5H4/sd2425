@@ -358,7 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogue: Hello, I'm Yuki..
   _customizeFont: 1
-  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _dialogueFont: {fileID: 12800000, guid: 428b51f0ed7cc43e8bd1bcf186ae8927, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Yuki
   _customizeCharacterName: 1
@@ -367,7 +367,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 380b02b8a321a4b95944fb3a4ee5f91b, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 2004052187}
   _dialogueStartEvent:
@@ -1626,6 +1626,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8206022503496328183, guid: f0626dc7f5ac1bc46a0c2be8b7d5bd8f, type: 3}
   m_PrefabInstance: {fileID: 41599104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &45266225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45266226}
+  - component: {fileID: 45266227}
+  m_Layer: 0
+  m_Name: goToLobby
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &45266226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45266225}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2110457289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45266227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45266225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: You may now go back to the lobby to play other scenarios! Have a good
+    day and stay safe!
+  _customizeFont: 0
+  _dialogueFont: {fileID: 12800000, guid: e8f7e9cf289ab4c1aa6ccf45844fdd52, type: 3}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &50417688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2740,7 +2806,7 @@ Transform:
   m_GameObject: {fileID: 75753368}
   serializedVersion: 2
   m_LocalRotation: {x: 0.03677693, y: 0.3945332, z: 0.02843496, w: 0.91770506}
-  m_LocalPosition: {x: 2.380127, y: 26.330002, z: -1.5200019}
+  m_LocalPosition: {x: 2.25, y: 24.83, z: 0.21}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4026,7 +4092,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -4342,7 +4408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue: The victim's skin becomes clammy and sweaty, feeling lightheaded even
-    if the area is cool
+    if the area is cool.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4554,7 +4620,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 2004052187}
   _dialogueStartEvent:
@@ -5054,71 +5120,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 630026542805835320, guid: 2d8cee02df6d36749be043b3d7103822, type: 3}
   m_PrefabInstance: {fileID: 157760842}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &163255214
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 163255215}
-  - component: {fileID: 163255216}
-  m_Layer: 0
-  m_Name: END
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &163255215
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163255214}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2143478604}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &163255216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163255214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: Since she's allergic, she can't take any!
-  _customizeFont: 1
-  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 1, g: 1, b: 1, a: 1}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 668076476}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
 --- !u!1 &165502673
 GameObject:
   m_ObjectHideFlags: 0
@@ -6374,7 +6375,7 @@ MonoBehaviour:
     take any risks, continue evaluating."
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -7085,7 +7086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &258448379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8496,14 +8497,14 @@ MonoBehaviour:
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: f4b3706fe4fa1b04db414d0575a5dc6e, type: 3}
   _fontColor: {r: 0.7075472, g: 0, b: 0, a: 1}
-  _characterName: Sameshalos
+  _characterName: 
   _customizeCharacterName: 1
   _withLineBreak: 0
   _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 0}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -9468,7 +9469,7 @@ MonoBehaviour:
     _optionEvent:
       m_PersistentCalls:
         m_Calls: []
-  - _option: Heartbeat
+  - _option: A heartbeat
     _nextDialogueContent: {fileID: 1357329190}
     _optionEvent:
       m_PersistentCalls:
@@ -10287,13 +10288,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373737307}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9260254, z: -0, w: 0.37746137}
-  m_LocalPosition: {x: 12.35, y: 20.69, z: -4.86}
+  m_LocalRotation: {x: 0.041900508, y: -0.9219327, z: -0.08405288, w: 0.37579185}
+  m_LocalPosition: {x: 10.24, y: 19.17, z: -6.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 473869774}
-  m_LocalEulerAnglesHint: {x: 0, y: -135.647, z: 0}
+  m_LocalEulerAnglesHint: {x: -7.094, y: -135.142, z: -8.136}
 --- !u!212 &373737309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11560,7 +11561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Oh my! Fortunately, I have some in my pocket. Here.
+  _dialogue: Oh my! Fortunately, I have some from the med kit. Here.
   _customizeFont: 0
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
@@ -11571,7 +11572,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImageSprite: {fileID: 0}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -11710,7 +11711,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -12193,19 +12194,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473869773}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.03768896, z: -0, w: 0.9992896}
+  m_LocalPosition: {x: 0, y: 0, z: 3.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 75753369}
   - {fileID: 373737308}
+  - {fileID: 75753369}
   - {fileID: 1610990904}
   m_Father: {fileID: 1905660021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4.32, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.75, y: -68.25}
+  m_AnchoredPosition: {x: 113.42907, y: -1142.08}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &474365741
@@ -12646,14 +12647,14 @@ MonoBehaviour:
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: f4b3706fe4fa1b04db414d0575a5dc6e, type: 3}
   _fontColor: {r: 1, g: 0.9957263, b: 0, a: 1}
-  _characterName: Sameshalos
+  _characterName: 
   _customizeCharacterName: 1
   _withLineBreak: 0
   _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 0}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -12934,16 +12935,16 @@ MonoBehaviour:
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
   _fontColor: {r: 1, g: 0.89164263, b: 0, a: 1}
-  _characterName: Sameshalos
+  _characterName: 
   _customizeCharacterName: 1
   _withLineBreak: 0
   _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 0}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1499312701}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13936,8 +13937,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525721623}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.03768896, z: -0, w: 0.9992896}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13945,10 +13946,10 @@ RectTransform:
   - {fileID: 1759420048}
   - {fileID: 1119211276}
   m_Father: {fileID: 1905660021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4.32, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.75, y: -68.25}
+  m_AnchoredPosition: {x: 113.42907, y: -1142.08}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &526541842
@@ -14616,7 +14617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Perfect, now let's talk to the victim to see what's going on
+  _dialogue: Perfect, now let's talk to the victim to see what's going on.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -14632,19 +14633,7 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 1376225993}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1905660020}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -14898,11 +14887,11 @@ MonoBehaviour:
   _dialogue: FAILED! You cannot be serious. Let's talk to the Barista again.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0.8301887, g: 0, b: 0, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontColor: {r: 0.8301887, g: 0, b: 0, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
@@ -15149,7 +15138,7 @@ Transform:
   m_GameObject: {fileID: 594382133}
   serializedVersion: 2
   m_LocalRotation: {x: 0.033146475, y: 0.2829533, z: 0.032594476, w: 0.95800644}
-  m_LocalPosition: {x: 24.96, y: 18.93, z: -19.49}
+  m_LocalPosition: {x: 24.87, y: 16.61, z: -18.33}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -15844,8 +15833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: A crushing pain spreads across the chest, discomfort may radiate to
-    left arm, neck, or jaw
+  _dialogue: A crushing pain spreads across the chest and discomfort may radiate
+    to left arm, neck, or jaw.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -15926,7 +15915,7 @@ MonoBehaviour:
     to it.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0, g: 0.7075472, b: 0.021213574, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -17538,6 +17527,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterBottleDialogueController: {fileID: 529600977}
   waterBottleDialogue: {fileID: 529600975}
+--- !u!1 &672388701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672388702}
+  - component: {fileID: 672388703}
+  m_Layer: 0
+  m_Name: NotNecessary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672388702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672388701}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1746705338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &672388703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672388701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: That's not what she said..
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 1192771391}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1 &678136804
 GameObject:
   m_ObjectHideFlags: 0
@@ -18017,7 +18071,7 @@ MonoBehaviour:
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontColor: {r: 0.8301887, g: 0, b: 0, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
@@ -18238,7 +18292,7 @@ GameObject:
   - component: {fileID: 703727767}
   - component: {fileID: 703727768}
   m_Layer: 0
-  m_Name: Allergic
+  m_Name: AskPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18253,7 +18307,7 @@ Transform:
   m_GameObject: {fileID: 703727766}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00017827254, y: -0.00005125683, z: 0.00021104695}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18271,27 +18325,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Yeah, unfortunately I am.
+  _dialogue: Should we give it to her then?
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Yuki
   _customizeCharacterName: 1
   _withLineBreak: 0
-  _characterNameFontColor: {r: 0.72156864, g: 0.08235294, b: 1, a: 1}
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 163255216}
+  _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
-  _dialogueOptions: []
+  _dialogueOptions:
+  - _option: Yes, quickly
+    _nextDialogueContent: {fileID: 1192771391}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - _option: It's not necessary
+    _nextDialogueContent: {fileID: 672388703}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &704754697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19220,7 +19284,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739360890}
   m_LocalRotation: {x: 0.026365725, y: -0.8996488, z: -0.044253103, w: 0.43356502}
-  m_LocalPosition: {x: 0, y: 0, z: 10.4}
+  m_LocalPosition: {x: 0, y: 0, z: 11.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19228,7 +19292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.254, y: -128.399, z: -4.931}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 9.5}
+  m_AnchoredPosition: {x: 6.31, y: 7.38}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739360892
@@ -19251,10 +19315,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cold Sweatss
+  m_text: Cold Sweats
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
+  m_sharedMaterial: {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19343,7 +19407,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20049,8 +20113,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750672796}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.03768896, z: -0, w: 0.9992896}
+  m_LocalPosition: {x: 0, y: 0, z: -0.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20058,10 +20122,10 @@ RectTransform:
   - {fileID: 1158137397}
   - {fileID: 739360891}
   m_Father: {fileID: 1905660021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4.32, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.75, y: -68.25}
+  m_AnchoredPosition: {x: 113.42907, y: -1142.08}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &755257373
@@ -20722,7 +20786,7 @@ Transform:
   m_GameObject: {fileID: 784085868}
   serializedVersion: 2
   m_LocalRotation: {x: -0.72879267, y: -0.011009435, z: 0.6838874, w: -0.032219533}
-  m_LocalPosition: {x: 17.44, y: -2.87, z: -13.83}
+  m_LocalPosition: {x: 19.06, y: -3.86, z: -13.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -20889,7 +20953,7 @@ MonoBehaviour:
   _dialogue: You're right! Let's call 911 as soon as possible!
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0, g: 0.7075472, b: 0.021213574, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -21151,7 +21215,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793409527}
   m_LocalRotation: {x: 0.031426165, y: -0.94470495, z: -0.040815234, w: 0.32385048}
-  m_LocalPosition: {x: 0, y: 0, z: -22.28}
+  m_LocalPosition: {x: 0, y: 0, z: -21.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21159,7 +21223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.254, y: -142.016, z: -4.931}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.14, y: 18.89}
+  m_AnchoredPosition: {x: 29.050007, y: 15.63}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793409529
@@ -21184,8 +21248,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Severe Chest Pain
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
+  m_sharedMaterial: {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21274,7 +21338,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21352,7 +21416,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -22972,7 +23036,7 @@ MonoBehaviour:
   _dialogue: "It came suddenly. My left arm feels numb, and there\u2019s a dull ache
     in my jaw."
   _customizeFont: 1
-  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _dialogueFont: {fileID: 12800000, guid: 428b51f0ed7cc43e8bd1bcf186ae8927, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Yuki
   _customizeCharacterName: 1
@@ -22981,7 +23045,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: f5bbf54ba2ba643cba7251d127469ac9, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1449116625}
   _dialogueStartEvent:
@@ -23046,7 +23110,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1082466624}
   _dialogueStartEvent:
@@ -24135,7 +24199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Prepare to let the AED analyze the heart's rhythm,. Then deliver the
+  _dialogue: Prepare to let the AED analyze the heart's rhythm, then deliver the
     shock.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
@@ -24306,7 +24370,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -24936,7 +25000,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: f02ce69e806c14cc892fc436f35008c6, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -26028,7 +26092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Congrats!
+  _dialogue: Congrats! You've saved Yuki!
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -26039,7 +26103,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -27320,7 +27384,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -27834,7 +27898,7 @@ MonoBehaviour:
   _dialogue: Let's begin. Press the ON (green) button on the defibrillator.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0.084905684, g: 0.068485245, b: 0.068485245, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -28213,7 +28277,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975267673}
   m_LocalRotation: {x: 0.031426165, y: -0.94470495, z: -0.040815234, w: 0.32385048}
-  m_LocalPosition: {x: 0, y: 0, z: -23.99}
+  m_LocalPosition: {x: 0, y: 0, z: -20.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28221,7 +28285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.254, y: -142.016, z: -4.931}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.9, y: -6.8000107}
+  m_AnchoredPosition: {x: 24.03, y: -9.83}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975267675
@@ -28246,8 +28310,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nausea
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
+  m_sharedMaterial: {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -28271,8 +28335,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -28336,7 +28400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30839,6 +30903,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1871251250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1057927452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057927453}
+  - component: {fileID: 1057927454}
+  m_Layer: 0
+  m_Name: Yayyy4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1057927453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057927452}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2110457289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057927454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057927452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Normally, the AED would show the rhythm on the screen AND it would speak
+    just like the prompts.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1 &1063558247
 GameObject:
   m_ObjectHideFlags: 0
@@ -31591,7 +31721,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImageSprite: {fileID: 0}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -32629,7 +32759,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119211275}
   m_LocalRotation: {x: 0.026365725, y: -0.8996488, z: -0.044253103, w: 0.43356502}
-  m_LocalPosition: {x: 0, y: 0, z: -0.6000042}
+  m_LocalPosition: {x: 0, y: 0, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32637,7 +32767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.254, y: -128.399, z: -4.931}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.579974, y: 14.93}
+  m_AnchoredPosition: {x: 6.24, y: 14.03}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119211277
@@ -32662,8 +32792,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shortness of Breath
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
+  m_sharedMaterial: {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -32687,8 +32817,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32752,7 +32882,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32883,7 +33013,7 @@ MonoBehaviour:
   _dialogue: Yeah, I feel really sick to my stomach, like I might throw up.. I feel
     like the absolute worst..
   _customizeFont: 1
-  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _dialogueFont: {fileID: 12800000, guid: 428b51f0ed7cc43e8bd1bcf186ae8927, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Yuki
   _customizeCharacterName: 1
@@ -32892,7 +33022,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 380b02b8a321a4b95944fb3a4ee5f91b, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1082466624}
   _dialogueStartEvent:
@@ -34454,7 +34584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: That's great! Let's ask the nearest person if they have any aspirin.
+  _dialogue: Let's ask the nearest person if they have any aspirin.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -34783,7 +34913,7 @@ Transform:
   m_GameObject: {fileID: 1201328926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.8618106, z: -0, w: 0.5072303}
-  m_LocalPosition: {x: 10.43, y: -9.92, z: -2.68}
+  m_LocalPosition: {x: 11.84, y: -10.59, z: -2.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -35044,6 +35174,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202509344}
   m_CullTransparentMesh: 1
+--- !u!1 &1205258983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205258984}
+  - component: {fileID: 1205258985}
+  m_Layer: 0
+  m_Name: Yayyy3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205258984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205258983}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2110457289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1205258985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205258983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: However, since we hear a steady slow heartbeat, make sure you monitor
+    the victim in case any irregularities appear.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1 &1205665549
 GameObject:
   m_ObjectHideFlags: 0
@@ -35091,7 +35287,7 @@ MonoBehaviour:
   _dialogue: Correct!
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0, g: 0.7075472, b: 0.021213574, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -36757,7 +36953,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1449116625}
   _dialogueStartEvent:
@@ -37398,8 +37594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Perfect! Now, we need those to have power. Click on the wires to connect
-    them to the AED and the pads.
+  _dialogue: Perfect! Now, notice the wires, they are connected to the AED for power.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -37412,7 +37607,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 794137230}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -40020,9 +40215,9 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 922081919}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -40150,7 +40345,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 955072167}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -42488,6 +42683,7 @@ RectTransform:
   - {fileID: 1543398671}
   - {fileID: 268539041}
   - {fileID: 1871231177}
+  - {fileID: 2096861083}
   - {fileID: 1941727723}
   - {fileID: 458383940}
   - {fileID: 879815909}
@@ -42820,7 +43016,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 2085260017}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -42854,7 +43050,7 @@ Transform:
   m_GameObject: {fileID: 1442854661}
   serializedVersion: 2
   m_LocalRotation: {x: 0.033146475, y: 0.2829533, z: 0.032594476, w: 0.95800644}
-  m_LocalPosition: {x: 21.72026, y: -6.760002, z: -21.2}
+  m_LocalPosition: {x: 21.63, y: -8.93, z: -19.96}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -44771,7 +44967,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 212194}
   _dialogueStartEvent:
@@ -44866,19 +45062,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500976004}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.03768896, z: -0, w: 0.9992896}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 594382134}
   - {fileID: 1239836706}
+  - {fileID: 594382134}
   - {fileID: 793409528}
   m_Father: {fileID: 1905660021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4.32, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.75, y: -68.25}
+  m_AnchoredPosition: {x: 115.1, y: -1142.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1503162334
@@ -46082,7 +46278,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1871231178}
   _dialogueStartEvent:
@@ -47327,7 +47523,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573999428}
   m_LocalRotation: {x: 0.026365725, y: -0.8996488, z: -0.044253103, w: 0.43356502}
-  m_LocalPosition: {x: 0, y: 0, z: -3.9000034}
+  m_LocalPosition: {x: 0, y: 0, z: 0.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47335,7 +47531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.254, y: -128.399, z: -4.931}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.57, y: -5.8}
+  m_AnchoredPosition: {x: 9.42, y: -8.84}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573999430
@@ -47360,8 +47556,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Unusual Fatigue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
+  m_sharedMaterial: {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -47385,8 +47581,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -47450,7 +47646,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47717,7 +47913,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 110216512}
   _dialogueStartEvent:
@@ -47775,14 +47971,14 @@ MonoBehaviour:
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: f4b3706fe4fa1b04db414d0575a5dc6e, type: 3}
   _fontColor: {r: 0, g: 0.7075472, b: 0.021213574, a: 1}
-  _characterName: Sameshalos
+  _characterName: 
   _customizeCharacterName: 1
   _withLineBreak: 0
   _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImageSprite: {fileID: 0}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1580142611}
   _dialogueStartEvent:
@@ -48071,7 +48267,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 380b02b8a321a4b95944fb3a4ee5f91b, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 928251318}
   _dialogueStartEvent:
@@ -48582,7 +48778,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610990903}
   m_LocalRotation: {x: 0.026365725, y: -0.8996488, z: -0.044253103, w: 0.43356502}
-  m_LocalPosition: {x: 0, y: 0, z: -4.31}
+  m_LocalPosition: {x: 0, y: 0, z: -1.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48590,7 +48786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.254, y: -128.399, z: -4.931}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.559924, y: 26.290005}
+  m_AnchoredPosition: {x: 4.25, y: 23.55}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610990905
@@ -48615,8 +48811,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dizziness
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
+  m_sharedMaterial: {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -48640,8 +48836,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -48705,7 +48901,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 6169627706843614799, guid: 0daafa4b9dd204ceb99f723711f4ab80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49679,7 +49875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: A sickening feeling in the stomach, maybe even leading to vomiting
+  _dialogue: A sickening feeling in the stomach, maybe even leading to vomiting.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -50913,6 +51109,72 @@ RectTransform:
   m_AnchoredPosition: {x: -290, y: -55}
   m_SizeDelta: {x: 1050, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1680943308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680943309}
+  - component: {fileID: 1680943310}
+  m_Layer: 0
+  m_Name: Yayyy2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680943309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680943308}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2110457289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1680943310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680943308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: In a real life scenario and this one, aid with CPR would be useful as
+    well.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1682459420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51999,8 +52261,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717955697}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00017827254, y: -0.00005125683, z: 0.00021104695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52029,7 +52291,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: f02ce69e806c14cc892fc436f35008c6, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 1192771391}
   _dialogueStartEvent:
@@ -52218,7 +52480,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: f02ce69e806c14cc892fc436f35008c6, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 626334020}
   _dialogueStartEvent:
@@ -52694,7 +52956,7 @@ Transform:
   m_GameObject: {fileID: 1740872198}
   serializedVersion: 2
   m_LocalRotation: {x: 0.03677693, y: 0.3945332, z: 0.02843496, w: 0.91770506}
-  m_LocalPosition: {x: 1.390213, y: -6.390007, z: -1.1100054}
+  m_LocalPosition: {x: 6.2, y: -7.46, z: 4.11}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -52860,6 +53122,7 @@ RectTransform:
   - {fileID: 1868865452}
   - {fileID: 1761850466}
   - {fileID: 1717955698}
+  - {fileID: 672388702}
   - {fileID: 703727767}
   - {fileID: 1192771390}
   m_Father: {fileID: 1352645871}
@@ -53036,7 +53299,7 @@ MonoBehaviour:
   _dialogue: Good! Calling emergency services is the first and most important step.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
-  _fontColor: {r: 0, g: 0.7075472, b: 0.021213574, a: 1}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
   _characterName: Sameshalos
   _customizeCharacterName: 1
   _withLineBreak: 0
@@ -53397,13 +53660,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759420047}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.92734325, z: -0, w: 0.37421188}
-  m_LocalPosition: {x: 11.71, y: 8.56, z: -3.4}
+  m_LocalRotation: {x: 0.06480776, y: -0.91736597, z: -0.13115491, w: 0.37018657}
+  m_LocalPosition: {x: 11.67, y: 10.03, z: -2.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 525721624}
-  m_LocalEulerAnglesHint: {x: 0, y: -136.049, z: 0}
+  m_LocalEulerAnglesHint: {x: -11.108, y: -134.807, z: -12.717}
 --- !u!212 &1759420049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53513,24 +53776,14 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1717955699}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
-  _dialogueOptions:
-  - _option: No
-    _nextDialogueContent: {fileID: 1717955699}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - _option: Yes
-    _nextDialogueContent: {fileID: 703727768}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls: []
+  _dialogueOptions: []
 --- !u!1001 &1767114107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56327,8 +56580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: To use an AED, turn it on and follow the voice prompts. In this case,
-    I will be leading you along with them.
+  _dialogue: To use an AED, turn it on and follow the voice prompts.
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -56890,19 +57142,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887502236}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.03768896, z: -0, w: 0.9992896}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1442854662}
   - {fileID: 784085869}
+  - {fileID: 1442854662}
   - {fileID: 975267674}
   m_Father: {fileID: 1905660021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4.32, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.75, y: -68.25}
+  m_AnchoredPosition: {x: 113.42907, y: -1142.08}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1891503993
@@ -58361,7 +58613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue: For now, I'll explain all of the steps to you. Don't worry, this is
-    so you have a general idea.
+    so you have a general idea. I will still lead you fully through!
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -60346,7 +60598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: Oof, she's not doing so well. Hurry! Ask the most important questions!
+  _dialogue: Oof, she doesn't seem that well. Hurry! Ask the most important questions!
   _customizeFont: 1
   _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
   _fontColor: {r: 1, g: 1, b: 1, a: 1}
@@ -60357,7 +60609,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
@@ -60410,19 +60662,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004866722}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.03768896, z: -0, w: 0.9992896}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1740872199}
   - {fileID: 1201328927}
+  - {fileID: 1740872199}
   - {fileID: 1573999429}
   m_Father: {fileID: 1905660021}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4.32, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.75, y: -68.25}
+  m_AnchoredPosition: {x: 113.42907, y: -1142.08}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2005765223
@@ -61549,7 +61801,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: f5bbf54ba2ba643cba7251d127469ac9, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 140601450}
   _dialogueStartEvent:
@@ -62275,7 +62527,7 @@ MonoBehaviour:
       m_Calls: []
   _dialogueOptions:
   - _option: Minor
-    _nextDialogueContent: {fileID: 258448379}
+    _nextDialogueContent: {fileID: 2014221996}
     _optionEvent:
       m_PersistentCalls:
         m_Calls:
@@ -62625,7 +62877,7 @@ MonoBehaviour:
   _characterNameFontBold: 1
   _characterNameFontItalic: 1
   _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 7f2e2f3c41f5a469ca0fee13f7daf1c2, type: 3}
+  _characterImageSprite: {fileID: 21300000, guid: f5bbf54ba2ba643cba7251d127469ac9, type: 3}
   _characterImagePosition: 0
   _nextDialogueContent: {fileID: 232606987}
   _dialogueStartEvent:
@@ -62754,7 +63006,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
+  _nextDialogueContent: {fileID: 1362368310}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -63224,6 +63476,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7339537045294460266, guid: c29c7d32a66a93049964401f11a026e2, type: 3}
   m_PrefabInstance: {fileID: 2096036768}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096861082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096861083}
+  - component: {fileID: 2096861084}
+  m_Layer: 0
+  m_Name: realLifeVer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096861083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096861082}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1430811586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2096861084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096861082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: Keep in mind that in a real life situation, the AED displays the heart
+    rhythm on the screen.
+  _customizeFont: 1
+  _dialogueFont: {fileID: 12800000, guid: a8e37423b00defb43aa7ed160780efde, type: 3}
+  _fontColor: {r: 1, g: 1, b: 1, a: 1}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.08235294, g: 0.4392157, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 1941727724}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
 --- !u!1 &2103006287
 GameObject:
   m_ObjectHideFlags: 0
@@ -63645,6 +63963,10 @@ RectTransform:
   - {fileID: 1987987154}
   - {fileID: 1894176820}
   - {fileID: 922081918}
+  - {fileID: 1680943309}
+  - {fileID: 1205258984}
+  - {fileID: 1057927453}
+  - {fileID: 45266226}
   m_Father: {fileID: 1821068111}
   m_LocalEulerAnglesHint: {x: -14.872, y: -6, z: 1.545}
   m_AnchorMin: {x: 0, y: 0}
@@ -64872,7 +65194,6 @@ RectTransform:
   - {fileID: 1079204473}
   - {fileID: 423181261}
   - {fileID: 936807448}
-  - {fileID: 163255215}
   - {fileID: 565438221}
   m_Father: {fileID: 1352645871}
   m_LocalEulerAnglesHint: {x: -14.872, y: -6, z: 1.545}
