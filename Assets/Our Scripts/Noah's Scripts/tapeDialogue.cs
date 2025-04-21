@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-public class phonedialogue : MonoBehaviour
+
+public class tapeDialogue : MonoBehaviour
 {
-   [SerializeField] private AudioSource phoneSource;
-   [SerializeField] private AudioClip phoneClip; // sound that plays on click
+      [SerializeField] private AudioSource tapeSource;
+   [SerializeField] private AudioClip tapeClip; // sound that plays on click
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable action;
 
@@ -18,12 +19,12 @@ public class phonedialogue : MonoBehaviour
         }
 
 
-         if (phoneSource == null)
+         if (tapeSource == null)
         {
-            phoneSource = GetComponent<AudioSource>();
-            if (phoneSource == null)
+            tapeSource = GetComponent<AudioSource>();
+            if (tapeSource == null)
             {
-                phoneSource = gameObject.AddComponent<AudioSource>();
+                tapeSource = gameObject.AddComponent<AudioSource>();
             }
         }
     }
@@ -32,7 +33,7 @@ public class phonedialogue : MonoBehaviour
     {
         if (action != null)
         {
-            action.selectEntered.AddListener(phoneAudio);
+            action.selectEntered.AddListener(tapeAudio);
         }
     }
     
@@ -40,19 +41,18 @@ public class phonedialogue : MonoBehaviour
     {
         if (action != null)
         {
-            action.selectEntered.RemoveListener(phoneAudio);
+            action.selectEntered.RemoveListener(tapeAudio);
         }
     }
 
-    private void phoneAudio(SelectEnterEventArgs args)
+    private void tapeAudio(SelectEnterEventArgs args)
     {
-        if(phoneSource != null && phoneClip != null)
+        if(tapeSource != null && tapeClip != null)
         {
-            phoneSource.clip = phoneClip;
-            phoneSource.loop = false;
-            phoneSource.Play();
+            tapeSource.clip = tapeClip;
+            tapeSource.loop = false;
+            tapeSource.Play();
             Debug.Log("IM BEING PLAYED ON CLICK SIR");
         }
     }
-
 }

@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-public class phonedialogue : MonoBehaviour
+
+public class sodaDialogue : MonoBehaviour
 {
-   [SerializeField] private AudioSource phoneSource;
-   [SerializeField] private AudioClip phoneClip; // sound that plays on click
+    [SerializeField] private AudioSource sodaSource;
+   [SerializeField] private AudioClip sodaClip; // sound that plays on click
 
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable action;
 
@@ -18,12 +19,12 @@ public class phonedialogue : MonoBehaviour
         }
 
 
-         if (phoneSource == null)
+         if (sodaSource == null)
         {
-            phoneSource = GetComponent<AudioSource>();
-            if (phoneSource == null)
+            sodaSource = GetComponent<AudioSource>();
+            if (sodaSource == null)
             {
-                phoneSource = gameObject.AddComponent<AudioSource>();
+                sodaSource = gameObject.AddComponent<AudioSource>();
             }
         }
     }
@@ -32,7 +33,7 @@ public class phonedialogue : MonoBehaviour
     {
         if (action != null)
         {
-            action.selectEntered.AddListener(phoneAudio);
+            action.selectEntered.AddListener(sodaAudio);
         }
     }
     
@@ -40,19 +41,18 @@ public class phonedialogue : MonoBehaviour
     {
         if (action != null)
         {
-            action.selectEntered.RemoveListener(phoneAudio);
+            action.selectEntered.RemoveListener(sodaAudio);
         }
     }
 
-    private void phoneAudio(SelectEnterEventArgs args)
+    private void sodaAudio(SelectEnterEventArgs args)
     {
-        if(phoneSource != null && phoneClip != null)
+        if(sodaSource != null && sodaClip != null)
         {
-            phoneSource.clip = phoneClip;
-            phoneSource.loop = false;
-            phoneSource.Play();
+            sodaSource.clip = sodaClip;
+            sodaSource.loop = false;
+            sodaSource.Play();
             Debug.Log("IM BEING PLAYED ON CLICK SIR");
         }
     }
-
 }

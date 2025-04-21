@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MUSICBACKGROUND : MonoBehaviour
 {
-    /*
+    
     [SerializeField] private AudioSource backgroundAudio;
     [SerializeField] private AudioClip sceneClip; 
 
@@ -22,12 +22,12 @@ public class MUSICBACKGROUND : MonoBehaviour
         if (sceneClip != null)
         {
             backgroundAudio.clip = sceneClip;
-            backgroundAudio.loop = true;
-            backgroundAudio.volume = 0.064f;
+            backgroundAudio.loop = false;
+            backgroundAudio.volume = 1.0f;
             backgroundAudio.Play();
             Debug.Log("bg music playing");
         }
 
     }
-    */
+    
 }

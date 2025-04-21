@@ -9,7 +9,8 @@ public class VR_BACKPACK : MonoBehaviour
 {
     
     [SerializeField] public GameObject backPackVR;
-
+    [SerializeField] private AudioSource backpackAudioSource;
+    [SerializeField] private AudioClip backpackClip;
     
 
     // This is a reference to the XR Interactable component 
@@ -21,6 +22,15 @@ public class VR_BACKPACK : MonoBehaviour
         if (action == null)
         {
             Debug.LogError("BookbagVR: XR Interactable component not found on " + gameObject.name);
+        }
+
+        if (backpackAudioSource == null)
+        {
+            backpackAudioSource = GetComponent<AudioSource>();
+            if (backpackAudioSource == null)
+            {
+                backpackAudioSource = gameObject.AddComponent<AudioSource>();
+            }
         }
     }
 
@@ -49,6 +59,13 @@ public class VR_BACKPACK : MonoBehaviour
         if (backPackVR != null)
         {
             backPackVR.SetActive(true);
+        }
+        if (backpackAudioSource != null && backpackClip != null)
+        {
+            backpackAudioSource.clip = backpackClip;
+            backpackAudioSource.loop = false; // Only play's once
+            backpackAudioSource.volume = 1.0f; 
+            backpackAudioSource.Play();
         }
     }
     
