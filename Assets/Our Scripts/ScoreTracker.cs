@@ -11,6 +11,8 @@ public class ScoreTracker : MonoBehaviour
     private int maxScore = 100;
 
     private int currentScore;
+    private float startTime;
+    private bool timerStarted = false;
 
     void Start()
     {
@@ -57,6 +59,58 @@ public class ScoreTracker : MonoBehaviour
         currentScore = Mathf.Clamp(currentScore, 0, maxScore); // keep score within 0 and 100
         Debug.Log("Score Updated: " + currentScore);
     }
+
+    public void StartTimer()
+    {
+        startTime = Time.time;
+        timerStarted = true;
+        Debug.Log("Timer Started.");
+    }
+
+    public void EndTimer()
+    {
+        if (!timerStarted)
+        {
+            Debug.LogWarning("Timer was not started.");
+            return;
+        }
+
+        float endTime = Time.time;
+        float elapsedTime = (endTime - startTime) / 60f; // convert to minutes
+
+        Debug.Log($"Game completed in {elapsedTime:F2} minutes.");
+
+
+        if (elapsedTime <= 5f)
+        {
+            AddFivePoints();
+        }
+        else if (elapsedTime <= 8f)
+        {
+            AddThreePoints();
+        }
+        else if (elapsedTime <= 10f)
+        {
+            AddOnePoint();
+        }
+        else if (elapsedTime >= 20f)
+        {
+            SubtractFivePoints();
+        }
+        else if (elapsedTime >= 15f)
+        {
+            SubtractThreePoints();
+        }
+        else if (elapsedTime >= 11f)
+        {
+            SubtractOnePoint();
+        }
+
+        timerStarted = false;
+    }
+
+
+
 
     // --- Get the total score ---
     public int GetTotalScore()

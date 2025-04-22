@@ -10318,6 +10318,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -13742,6 +13754,18 @@ MonoBehaviour:
       - m_Target: {fileID: 295709839}
         m_TargetAssemblyTypeName: TurnOff, Assembly-CSharp
         m_MethodName: TurnOffDialogue4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43179,7 +43203,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: SubtractFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -48296,7 +48332,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 1464742110}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -48569,7 +48617,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -52840,7 +52900,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -56378,6 +56450,18 @@ MonoBehaviour:
       - m_Target: {fileID: 295709839}
         m_TargetAssemblyTypeName: TurnOff, Assembly-CSharp
         m_MethodName: TurnOffDialogue6
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64458,6 +64542,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls:
@@ -70721,7 +70817,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 2012449396}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -79847,7 +79955,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: SubtractFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -84435,12 +84555,36 @@ MonoBehaviour:
     _nextDialogueContent: {fileID: 377070806}
     _optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 166089238}
+          m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+          m_MethodName: AddThreePoints
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - _option: Looks unsafe!
     _nextDialogueContent: {fileID: 516369942}
     _optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 166089238}
+          m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+          m_MethodName: SubtractThreePoints
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &928004489
 Transform:
   m_ObjectHideFlags: 0
@@ -96639,7 +96783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -103834,12 +103978,36 @@ MonoBehaviour:
     _nextDialogueContent: {fileID: 2012449396}
     _optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 166089238}
+          m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+          m_MethodName: AddOnePoint
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - _option: Let's do it!
     _nextDialogueContent: {fileID: 1626230048}
     _optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 166089238}
+          m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+          m_MethodName: AddOnePoint
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1132651381
 Transform:
   m_ObjectHideFlags: 0
@@ -108342,6 +108510,18 @@ MonoBehaviour:
       - m_Target: {fileID: 295709839}
         m_TargetAssemblyTypeName: TurnOff, Assembly-CSharp
         m_MethodName: TurnOffDialogue5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -125495,6 +125675,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -138849,7 +139041,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -139249,7 +139453,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: SubtractFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -153746,12 +153962,36 @@ MonoBehaviour:
     _nextDialogueContent: {fileID: 289291263}
     _optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 166089238}
+          m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+          m_MethodName: AddFivePoints
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - _option: That sucks
     _nextDialogueContent: {fileID: 1955029480}
     _optionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 166089238}
+          m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+          m_MethodName: SubtractFivePoints
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1664876466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -164209,8 +164449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue: 'Now that the cap is off! Make sure to drag or rotate objects to the
-    right orientation before inserting them! '
+  _dialogue: 'Now that the cap is off! Make sure to drag or rotate vile upside down
+    before inserting the syringe! '
   _customizeFont: 0
   _dialogueFont: {fileID: 0}
   _fontColor: {r: 0, g: 0, b: 0, a: 0}
@@ -164226,7 +164466,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -176312,7 +176564,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 0}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -180529,7 +180793,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 966196645}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: EndTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -187289,7 +187565,19 @@ MonoBehaviour:
   _nextDialogueContent: {fileID: 1464742110}
   _dialogueStartEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: SubtractFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -197940,6 +198228,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddThreePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueEndEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -200551,6 +200851,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1806008035}
     m_Modifications:
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 166089238}
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SubtractFivePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScoreTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 183083095295761034, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2054845366661334715, guid: 7b7b75abdb2c6486a8e671c1e15af55d, type: 3}
       propertyPath: m_Name
       value: MoneyDialogue
@@ -201726,6 +202054,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhoneDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 166089238}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SubtractThreePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScoreTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -201852,6 +202208,34 @@ PrefabInstance:
       propertyPath: severedialoguecontroller
       value: 
       objectReference: {fileID: 880479467}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 166089238}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ScoreTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
       propertyPath: _dialogueOptions.Array.size
       value: 4
@@ -202034,13 +202418,69 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 395229963}
     - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
       propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 638407276}
     - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 166089238}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
       propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 638407276}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 166089238}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddOnePoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: AddFivePoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScoreTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScoreTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3837333400564616480, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4615972858517455603, guid: 33d7e1ec9c89a408eafa772428eeb04b, type: 3}
       propertyPath: m_Name
       value: SevereDialogue2
@@ -203440,9 +203880,37 @@ PrefabInstance:
     m_TransformParent: {fileID: 1806008035}
     m_Modifications:
     - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
       propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1974329530}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 166089238}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SubtractOnePoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ScoreTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314085275448209100, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
+      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5526901578507441974, guid: e7b7a67d509194cf2b96a5bc21d835cc, type: 3}
       propertyPath: m_Name
       value: NotebookDialogue
