@@ -11,6 +11,7 @@ public class DisplayAEDStuff : MonoBehaviour
     [SerializeField] private GameObject rightPadToDrag;
     [SerializeField] private GameObject wiresToClick;
     [SerializeField] private GameObject connectedPadsWire;
+    [SerializeField] private GameObject wiresToAED;
 
     public void ShowDummy()
     {
@@ -113,7 +114,7 @@ public class DisplayAEDStuff : MonoBehaviour
     public void HideWiresToClick(){
         if (wiresToClick != null) {
             wiresToClick.SetActive(false);
-            Debug.Log("clickable wires hidden");
+            Debug.Log("wires hidden");
         }
     }
 
@@ -123,4 +124,13 @@ public class DisplayAEDStuff : MonoBehaviour
             Debug.Log("whole pads & wires appeared after pads and wire clicked");
         }
     }
+
+    public void ShowWiresToAED(){
+        if (wiresToAED != null) {
+            wiresToAED.SetActive(true);
+            Debug.Log("wires connected to aed.");
+        }
+    }
+
+
 }
