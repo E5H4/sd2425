@@ -44,17 +44,18 @@ public class BookbagVR : MonoBehaviour
     private void OnBagSelected(SelectEnterEventArgs args)
     {
         Debug.Log("BookbagVR: Backpack selected via VR.");
-        count++;
-
-        if (Difficulty.difficulty=="Minor" && count==2)
-        {
-            minorsecond = true;
-            sodaVR.SetActive(true);
-            soda.SetActive(false);
-
-        }
+        
         if (bag != null && TestingText.bookbagButton)
         {
+            count++;
+
+            if (Difficulty.difficulty == "Minor" && minorsecond)
+            {
+                sodaVR.SetActive(true);
+                soda.SetActive(false);
+
+            }
+
             bag.SetActive(true);
         }
     }

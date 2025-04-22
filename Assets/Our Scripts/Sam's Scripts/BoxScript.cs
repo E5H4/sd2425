@@ -31,6 +31,7 @@ public class BoxScript : MonoBehaviour
     [SerializeField] private GameObject Needleshot;
     [SerializeField] private GameObject CharBack;
     [SerializeField] private GameObject CharReg;
+    [SerializeField] private GameObject CharReg2;
     [SerializeField] private GameObject CharFront;
     [SerializeField] private GameObject B1;
     [SerializeField] private GameObject B2;
@@ -111,7 +112,7 @@ public class BoxScript : MonoBehaviour
     public void turnofffront()
     {
       CharFront.SetActive(false);
-      CharReg.SetActive(true);
+      CharReg2.SetActive(true);
     }
 
     public void turnoffshot()

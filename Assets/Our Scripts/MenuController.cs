@@ -28,4 +28,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Stroke");
     }
+
+    public void LobbyBtn()
+    {
+        SceneManager.LoadScene("Lobby VR");
+    }
 }

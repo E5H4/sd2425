@@ -61,6 +61,7 @@ public class Meter : MonoBehaviour
                 if (MinorDialogue2 != null)
                 {
                     DeactivateAllDialogues();
+                    BookbagVR.minorsecond = true;
                     MinorDialogue2.SetActive(true);
                     Debug.Log("Minor dialogue 2 activated.");
                     minordialogue2controller.ShowDialogueUI();
