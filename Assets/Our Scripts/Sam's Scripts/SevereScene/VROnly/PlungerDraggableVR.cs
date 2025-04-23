@@ -75,7 +75,6 @@ public class PlungerDraggableVR : MonoBehaviour
             // Trigger Dialogue 7.
             if (severeDialogue7 != null)
             {
-                severeDialogue7.gameObject.SetActive(true);
                 severeDialogue7.ShowDialogueUI();
                 VileShakable.SetActive(true);
                 vilesyringeUp.SetActive(false);
@@ -97,7 +96,6 @@ public class PlungerDraggableVR : MonoBehaviour
             // Trigger Dialogue 10.
             if (severeDialogue10 != null)
             {
-                severeDialogue10.gameObject.SetActive(true);
                 severeDialogue10.ShowDialogueUI();
             }
         }

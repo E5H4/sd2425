@@ -5,6 +5,7 @@ using DialogueSystemWithText;
 public class BottleVR : MonoBehaviour
 {
     [SerializeField] private GameObject tabs;
+    [SerializeField] private DialogueUIController Monitor8dialoguecontroller;
     [SerializeField] private DialogueUIController Monitor9dialoguecontroller;
 
 
@@ -50,6 +51,9 @@ public class BottleVR : MonoBehaviour
 
         if (Monitor9dialoguecontroller != null)
         {
+            if (Monitor8dialoguecontroller != null)
+                Monitor8dialoguecontroller.HideDialogueUI();
+            Debug.Log("Dialogue Turned Off");
             Monitor9dialoguecontroller.ShowDialogueUI();
             Debug.Log("New dialogue triggered!");
         }

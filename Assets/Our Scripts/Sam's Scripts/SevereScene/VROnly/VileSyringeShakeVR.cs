@@ -66,11 +66,10 @@ public class VileSyringeShakingVR : MonoBehaviour
                 Debug.Log("Shake complete: Disabling Dialogue 7, enabling Dialogue 8.");
                 if (severeDialogue7 != null)
                 {
-                    severeDialogue7.gameObject.SetActive(false);
+                    severeDialogue7.HideDialogueUI();
                 }
                 if (severeDialogue8 != null)
                 {
-                    severeDialogue8.gameObject.SetActive(true);
                     severeDialogue8.ShowDialogueUI();
                 }
             }
@@ -97,11 +96,10 @@ public class VileSyringeShakingVR : MonoBehaviour
                 Debug.Log("Target rotation reached. Turning off Dialogue 8 and triggering Dialogue 9.");
                 if (severeDialogue8 != null)
                 {
-                    severeDialogue8.gameObject.SetActive(false);
+                    severeDialogue8.HideDialogueUI();
                 }
                 if (severeDialogue9 != null)
                 {
-                    severeDialogue9.gameObject.SetActive(true);
                     severeDialogue9.ShowDialogueUI();
                 }
                 if (VileSyringePlunger != null)

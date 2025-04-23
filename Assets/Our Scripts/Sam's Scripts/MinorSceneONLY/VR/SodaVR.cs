@@ -9,6 +9,15 @@ public class SodaVRCollisionTrigger : MonoBehaviour
     [SerializeField] private DialogueUIController minorDialogue4Controller;
     [Tooltip("The DialogueUIController for MinorDialogue5 (this will be triggered)")]
     [SerializeField] private DialogueUIController minorDialogue5Controller;
+    [SerializeField] private DialogueUIController Dialogue1;
+    [SerializeField] private DialogueUIController Dialogue2;
+    [SerializeField] private DialogueUIController Dialogue3;
+    [SerializeField] private DialogueUIController Dialogue4;
+    [SerializeField] private DialogueUIController Dialogue5;
+    [SerializeField] private DialogueUIController Dialogue6;
+
+    [SerializeField] private GameObject bag;
+
 
     // Reference to the XRGrabInteractable component on this object.
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
@@ -50,6 +59,7 @@ public class SodaVRCollisionTrigger : MonoBehaviour
     {
         isHeld = true;
         Debug.Log("SodaVRCollisionTrigger: Object grabbed.");
+        DeactivateAllDialogues();
         minorDialogue4Controller.ShowDialogueUI();
     }
 
@@ -71,16 +81,15 @@ public class SodaVRCollisionTrigger : MonoBehaviour
             Debug.Log("SodaVRCollisionTrigger: Collided with character while held.");
 
             // Turn off MinorDialogue4.
-            if (minorDialogue4Controller != null)
-            {
-                minorDialogue4Controller.gameObject.SetActive(false);
-            }
+            minorDialogue4Controller.HideDialogueUI();
+            Debug.Log("Dialogue Turned Off");
 
             // Activate and show MinorDialogue5.
             if (minorDialogue5Controller != null)
             {
                 minorDialogue5Controller.gameObject.SetActive(true);
                 minorDialogue5Controller.ShowDialogueUI();
+                bag.SetActive(false);
             }
 
             hasTriggered = true;
@@ -88,5 +97,15 @@ public class SodaVRCollisionTrigger : MonoBehaviour
             // Optionally, disable this object so it is no longer visible.
             gameObject.SetActive(false);
         }
+    }
+
+    public void DeactivateAllDialogues()
+    {
+        Dialogue1?.HideDialogueUI();
+        Dialogue2?.HideDialogueUI();
+        Dialogue3?.HideDialogueUI();
+        Dialogue4?.HideDialogueUI();
+        Dialogue5?.HideDialogueUI();
+        Dialogue6?.HideDialogueUI();
     }
 }

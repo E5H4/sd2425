@@ -74,8 +74,7 @@ public class SyringeShotDraggableVR_OneDialogue : MonoBehaviour
         // Trigger the common dialogue.
         if (Severedialogue11 != null)
         {
-            Severedialogue10.gameObject.SetActive(false);
-            Severedialogue11.gameObject.SetActive(true);
+            Severedialogue10.HideDialogueUI();
             Severedialogue11.ShowDialogueUI();
             Debug.Log("SyringeShotDraggableVR_OneDialogue: Dialogue triggered.");
         }

@@ -71,8 +71,7 @@ public class PlungerShotVR : MonoBehaviour
             // Trigger Dialogue 7.
             if (severeDialogue12 != null)
             {
-                severeDialogue11.gameObject.SetActive(true);
-                severeDialogue12.gameObject.SetActive(true);
+                severeDialogue11.HideDialogueUI();
                 severeDialogue12.ShowDialogueUI();
             }
         }

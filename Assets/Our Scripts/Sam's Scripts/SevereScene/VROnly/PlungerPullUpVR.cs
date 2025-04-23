@@ -51,13 +51,12 @@ public class PlungerPullUpVR : MonoBehaviour
         // Turn off Dialogue 9.
         if (severeDialogue9 != null)
         {
-            severeDialogue9.gameObject.SetActive(false);
+            severeDialogue9.HideDialogueUI();
         }
 
         // Activate and show Dialogue 10.
         if (severeDialogue10 != null)
         {
-            severeDialogue10.gameObject.SetActive(true);
             severeDialogue10.ShowDialogueUI();
         }
 

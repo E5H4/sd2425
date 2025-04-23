@@ -9,6 +9,7 @@ public class DragMonitorVR : MonoBehaviour
     [SerializeField] private GameObject character;
     [SerializeField] private GameObject monitorTab;
     [SerializeField] private GameObject monitorTop;
+    [SerializeField] private DialogueUIController Monitor11dialoguecontroller;
     [SerializeField] private DialogueUIController MinorDialogue3;
 
     [Header("Threshold Settings")]
@@ -56,12 +57,15 @@ public class DragMonitorVR : MonoBehaviour
         if (tabNear || topNear)
         {
             Debug.Log("DragMonitorVR: Monitor placed correctly!");
-            if (MinorDialogue3 != null)
-            {
+            
+                if (Monitor11dialoguecontroller != null)
+                    Monitor11dialoguecontroller.HideDialogueUI();
+                Debug.Log("Dialogue Turned Off");
                 MinorDialogue3.ShowDialogueUI(); // Trigger the dialogue.
                 Debug.Log("DragMonitorVR: Dialogue triggered!");
-            }
-            StartCoroutine(HideMonitorAfterDelay());
+   
+            //StartCoroutine(HideMonitorAfterDelay());
+            gameObject.SetActive(false);
         }
         else
         {

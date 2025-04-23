@@ -119,13 +119,12 @@ public class VileSyringeDownVR : MonoBehaviour
         // Turn off Dialogue 5.
         if (dialogue5Controller != null)
         {
-            dialogue5Controller.gameObject.SetActive(false);
+            dialogue5Controller.HideDialogueUI();
         }
 
         // Activate and show Dialogue 6.
         if (dialogue6Controller != null)
         {
-            dialogue6Controller.gameObject.SetActive(true);
             dialogue6Controller.ShowDialogueUI();
         }
 

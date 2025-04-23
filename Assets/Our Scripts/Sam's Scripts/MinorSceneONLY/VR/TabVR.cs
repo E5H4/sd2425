@@ -10,6 +10,7 @@ public class DragStripVR : MonoBehaviour
     [SerializeField] private GameObject monitorTop;
     [SerializeField] private GameObject monitorTab;
 
+    [SerializeField] private DialogueUIController Monitor9dialoguecontroller;
     [SerializeField] private DialogueUIController Monitor10dialoguecontroller;
 
     [SerializeField] private float insertionThreshold = 0.2f;
@@ -64,13 +65,19 @@ public class DragStripVR : MonoBehaviour
         {
             Debug.Log("DragStripVR: Tab placed correctly!");
             // Optionally, you can set a flag or enable further interactions here.
-            StartCoroutine(HideStripAfterDelay());
+            //StartCoroutine(HideStripAfterDelay());
+
 
             if (Monitor10dialoguecontroller != null)
             {
+                if (Monitor9dialoguecontroller != null)
+                    Monitor9dialoguecontroller.HideDialogueUI();
+                Debug.Log("Dialogue Turned Off");
                 Monitor10dialoguecontroller.ShowDialogueUI();
                 Debug.Log("DragStripVR: Dialogue triggered!");
             }
+            monitorTab.SetActive(true);
+            gameObject.SetActive(false);
         }
         else
         {

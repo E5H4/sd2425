@@ -7,7 +7,6 @@ public class SyringeVRDraggable : MonoBehaviour
 {
     [Header("Dialogue References")]
     [SerializeField] private DialogueUIController severeDialogue5;  // Dialogue controller to trigger.
-    [SerializeField] private GameObject severeDialogue5Object;        // Dialogue panel (or similar).
 
     [Header("Vile References")]
     [SerializeField] private Transform vileTransform;    // General position reference for the vile.
@@ -59,10 +58,7 @@ public class SyringeVRDraggable : MonoBehaviour
         if (distance < insertionThreshold && IsNeedleAtTop())
         {
             Debug.Log("SyringeVRDraggable: Needle is at the top of the vile. Triggering dialogue and activating combined object.");
-            if (severeDialogue5Object != null)
-            {
-                severeDialogue5Object.SetActive(true);
-            }
+
             if (severeDialogue5 != null)
             {
                 severeDialogue5.ShowDialogueUI();

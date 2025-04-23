@@ -9,6 +9,8 @@ public class DragLancetVR : MonoBehaviour
 
     [SerializeField] private GameObject characterHand;
 
+
+    [SerializeField] private DialogueUIController Monitor10dialoguecontroller;
     [SerializeField] private DialogueUIController Monitor11dialoguecontroller;
 
 
@@ -63,6 +65,9 @@ public class DragLancetVR : MonoBehaviour
 
             if (Monitor11dialoguecontroller != null)
             {
+                if (Monitor10dialoguecontroller != null)
+                    Monitor10dialoguecontroller.HideDialogueUI();
+                Debug.Log("Dialogue Turned Off");
                 Monitor11dialoguecontroller.ShowDialogueUI();
                 Debug.Log("DragLancetVR: Dialogue triggered!");
             }

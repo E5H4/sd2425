@@ -53,11 +53,6 @@ public class OrangeCapVR : MonoBehaviour
 
         Debug.Log("OrangeCapVR: Orange cap selected via VR.");
 
-        if (severeDialogue3Object != null)
-        {
-            severeDialogue3Object.SetActive(true);
-        }
-
         if (severeDialogue3 != null)
         {
             severeDialogue3.ShowDialogueUI();
