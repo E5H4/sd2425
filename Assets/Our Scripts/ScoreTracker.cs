@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueSystemWithText;
+using TMPro;
 
 public class ScoreTracker : MonoBehaviour
 {
@@ -14,11 +16,20 @@ public class ScoreTracker : MonoBehaviour
     private float startTime;
     private bool timerStarted = false;
 
+    [SerializeField] private GameObject[] gradePanels;  // A, B, C, D, F in order
+    [SerializeField] private DialogueUIController[] gradeDialogues; 
+    [SerializeField] private TextMeshProUGUI[] scoreTexts;
+
+
+    //Print out on screen
+    [SerializeField] private TextMeshProUGUI scoreText;
+
     void Start()
     {
         currentScore = startingScore;
         Debug.Log("Starting Score: " + currentScore);
     }
+
 
     // --- Add points ---
     public void AddOnePoint()
@@ -58,7 +69,9 @@ public class ScoreTracker : MonoBehaviour
         currentScore += amount;
         currentScore = Mathf.Clamp(currentScore, 0, maxScore); // keep score within 0 and 100
         Debug.Log("Score Updated: " + currentScore);
+        UpdateScoreDisplay();
     }
+ 
 
     public void StartTimer()
     {
@@ -109,7 +122,20 @@ public class ScoreTracker : MonoBehaviour
         timerStarted = false;
     }
 
-
+    //Print percent on screen
+    private void UpdateScoreDisplay()
+    {
+        if (scoreTexts != null && scoreTexts.Length > 0)
+        {
+            foreach (TextMeshProUGUI text in scoreTexts)
+            {
+                if (text != null)
+                {
+                    text.text = currentScore.ToString() + "%";
+                }
+            }
+        }
+    }
 
 
     // --- Get the total score ---
@@ -135,11 +161,65 @@ public class ScoreTracker : MonoBehaviour
         }
     }
 
+
     public void PrintScore()
     {
         int score = GetTotalScore();
         string grade = GetLetterGrade();
         Debug.Log($"Final Score: {score} ({grade})");
+        //currentScore = startingScore;
+    }
+
+
+    //MAKE SURE TO RESET SCORE BEFORE ENDING YOUR GAME
+    public void ResetScore()
+    {
         currentScore = startingScore;
     }
+
+
+    //FOR SAM'S SCENE UNLESS YALL WANNA DO IT TOO
+    //Arrays
+    private int GradeToIndex(string grade)
+    {
+        switch (grade)
+        {
+            case "A": return 0;
+            case "B": return 1;
+            case "C": return 2;
+            case "D": return 3;
+            default: return 4; // F or anything else goes to index 4
+        }
+    }
+
+    //Pop-ups
+    public void SamsPrintScore()
+    {
+        string grade = GetLetterGrade();
+        int gradeIndex = GradeToIndex(grade);
+
+        // Disable all grade panels first
+        for (int i = 0; i < gradePanels.Length; i++)
+        {
+            gradePanels[i].SetActive(false);
+        }
+
+        if (gradeIndex >= 0 && gradeIndex < gradePanels.Length)
+        {
+            // Enable the correct one
+            gradePanels[gradeIndex].SetActive(true);
+
+            // Show the correct dialogue
+            if (gradeDialogues[gradeIndex] != null)
+            {
+                gradeDialogues[gradeIndex].ShowDialogueUI();
+            }
+            UpdateScoreDisplay();
+        }
+        else
+        {
+            Debug.LogWarning("Grade not recognized: " + grade);
+        }
+    }
+
 }

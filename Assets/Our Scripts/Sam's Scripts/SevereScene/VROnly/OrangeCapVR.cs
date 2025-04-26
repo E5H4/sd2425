@@ -11,6 +11,8 @@ public class OrangeCapVR : MonoBehaviour
 
     [Tooltip("The dialogue GameObject (e.g. a panel) that will be activated when the cap is selected.")]
     [SerializeField] private GameObject severeDialogue3Object;
+    [SerializeField] private GameObject NoCap;
+    [SerializeField] private GameObject Cap;
 
     // Flag to prevent multiple activations.
     private bool canClick = true;
@@ -56,6 +58,9 @@ public class OrangeCapVR : MonoBehaviour
         if (severeDialogue3 != null)
         {
             severeDialogue3.ShowDialogueUI();
+            NoCap.SetActive(true);
+            Cap.SetActive(false);
+
         }
 
         // Prevent further activations.

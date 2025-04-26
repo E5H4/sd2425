@@ -25,7 +25,7 @@ public class VileSyringeShakingVR : MonoBehaviour
 
     [Header("Shake Detection Settings")]
     [Tooltip("Movement threshold (in world units per frame) to register as a shake.")]
-    [SerializeField] private float shakeMovementThreshold = 0.1f;
+    [SerializeField] private float shakeMovementThreshold = 0.09f;
     [Tooltip("Number of shakes required before triggering Dialogue 8.")]
     [SerializeField] private int requiredShakeCount = 5;
 

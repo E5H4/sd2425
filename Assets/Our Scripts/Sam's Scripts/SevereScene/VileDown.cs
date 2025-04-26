@@ -3,11 +3,20 @@ using UnityEngine;
 using DialogueSystemWithText;
 
 [RequireComponent(typeof(Collider))]
-public class VileDraggable : MonoBehaviour
+public class VileSyringeVRDraggable : MonoBehaviour
 {
+    [Header("Dialogue Controllers")]
+    [Tooltip("Dialogue 5 controller (will be turned off)")]
+    [SerializeField] private DialogueUIController dialogue5Controller;
+    [Tooltip("Dialogue 6 controller (will be triggered)")]
+    [SerializeField] private DialogueUIController dialogue6Controller;
 
-    [SerializeField] private DialogueUIController severeDialogue4;
-    [SerializeField] private GameObject severedialogue4;
+    [Header("Syringe State Objects")]
+    [Tooltip("GameObject representing vilesyringedown (current state)")]
+    [SerializeField] private GameObject vilesyringeDown;
+    [Tooltip("GameObject representing vilesyringeup (target state)")]
+    [SerializeField] private GameObject vilesyringeUp;
+
     // Drag and double-click variables
     private bool isDragging = false;
     private Vector3 offset;
@@ -26,12 +35,14 @@ public class VileDraggable : MonoBehaviour
             if (Mathf.Abs(currentZ - 180f) < 5f)
             {
                 Debug.Log("VileDraggable: Detected rotation near 180° in Update. Triggering dialogue.");
-                severedialogue4.SetActive(true);
-                if (severeDialogue4 != null)
+                if (dialogue6Controller != null)
                 {
-                    severeDialogue4.ShowDialogueUI();
+                    dialogue5Controller.HideDialogueUI();
+                    dialogue6Controller.ShowDialogueUI();
                 }
                 actionCompleted = true;
+                vilesyringeUp.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
     }
@@ -84,13 +95,17 @@ public class VileDraggable : MonoBehaviour
                 float zRotation = NormalizeAngle(transform.eulerAngles.z);
                 if (Mathf.Abs(zRotation - 180f) < 5f)
                 {
-                    Debug.Log("VileDraggable: Vile is approximately upside down. Triggering dialogue.");
-                    if (severeDialogue4 != null)
+                    Debug.Log("VileDraggable: Detected rotation near 180° in Update. Triggering dialogue.");
+                    if (dialogue6Controller != null)
                     {
-                        severeDialogue4.ShowDialogueUI();
+                        dialogue5Controller.HideDialogueUI();
+                        dialogue6Controller.ShowDialogueUI();
                     }
                     actionCompleted = true;
+                    vilesyringeUp.SetActive(true);
+                    gameObject.SetActive(false);
                 }
+
                 lastClickTime = 0f;
             }
             else

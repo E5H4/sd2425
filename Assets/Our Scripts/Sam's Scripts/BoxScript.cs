@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueSystemWithText;
 
 public class BoxScript : MonoBehaviour
 {
@@ -38,7 +39,6 @@ public class BoxScript : MonoBehaviour
     [SerializeField] private GameObject B3;
     [SerializeField] private GameObject B4;
     [SerializeField] private GameObject SyringeShot;
-
 
 
 
@@ -299,6 +299,9 @@ public class BoxScript : MonoBehaviour
         {
             SyringeShot.SetActive(true);
         }
+
+
+
     }
 
 
