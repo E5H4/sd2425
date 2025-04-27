@@ -178,7 +178,7 @@ public class ScoreTracker : MonoBehaviour
     }
 
 
-    //FOR SAM'S SCENE UNLESS YALL WANNA DO IT TOO
+    //FOR SAM'S SCENE UNLESS YALL WANNA DO IT TOO (hi sam -E)
     //Arrays
     private int GradeToIndex(string grade)
     {
