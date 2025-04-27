@@ -6,6 +6,7 @@ using DialogueSystemWithText;
 public class SyringeVRDraggable : MonoBehaviour
 {
     [Header("Dialogue References")]
+    [SerializeField] private DialogueUIController severeDialogue4;
     [SerializeField] private DialogueUIController severeDialogue5;  // Dialogue controller to trigger.
 
     [Header("Vile References")]
@@ -61,6 +62,7 @@ public class SyringeVRDraggable : MonoBehaviour
 
             if (severeDialogue5 != null)
             {
+                severeDialogue4.HideDialogueUI();
                 severeDialogue5.ShowDialogueUI();
             }
             if (bottleSyringeObject != null)

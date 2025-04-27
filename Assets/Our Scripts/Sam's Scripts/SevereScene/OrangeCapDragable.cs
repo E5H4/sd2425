@@ -6,6 +6,7 @@ using DialogueSystemWithText;
 public class OrangeCapDraggable : MonoBehaviour
 {
     // Dialogue controller for step one.
+    [SerializeField] private DialogueUIController severeDialogue2;
     [SerializeField] private DialogueUIController severeDialogue3;
     [SerializeField] private GameObject severedialogue3;
 
@@ -20,6 +21,7 @@ public class OrangeCapDraggable : MonoBehaviour
             severedialogue3.SetActive(true);
             if (severeDialogue3 != null)
             {
+                severeDialogue2.HideDialogueUI();
                 severeDialogue3.ShowDialogueUI();
             }
             // Disable further interaction by starting the coroutine.

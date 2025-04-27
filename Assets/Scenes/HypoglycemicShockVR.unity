@@ -9244,7 +9244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f938c01d673d44470aee51f17b4df276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue6: {fileID: 1295201005}
   severeDialogue7: {fileID: 1264074692}
+  severeDialogue9: {fileID: 1235493266}
   severeDialogue10: {fileID: 1365546640}
   plungerUpObject: {fileID: 104832001}
   plungerDownObject: {fileID: 1276589251}
@@ -49211,6 +49213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02d36940a9a645eb91a7927e1004420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue3: {fileID: 1848686809}
   severeDialogue4: {fileID: 364038180}
   severedialogue4: {fileID: 625688718}
 --- !u!54 &521182254
@@ -94972,7 +94975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f938c01d673d44470aee51f17b4df276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue6: {fileID: 0}
   severeDialogue7: {fileID: 1264074692}
+  severeDialogue9: {fileID: 0}
   severeDialogue10: {fileID: 1365546640}
   plungerUpObject: {fileID: 1395496466}
   plungerDownObject: {fileID: 988216689}
@@ -114348,6 +114353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0a12a2d38ac4c488cbfe7b4610340f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue4: {fileID: 364038180}
   severeDialogue5: {fileID: 1757096781}
   vileTransform: {fileID: 521182251}
   vileTopTransform: {fileID: 1535470665}
@@ -120034,12 +120040,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f938c01d673d44470aee51f17b4df276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue6: {fileID: 1295201005}
   severeDialogue7: {fileID: 1264074692}
+  severeDialogue9: {fileID: 1235493266}
   severeDialogue10: {fileID: 1365546640}
   plungerUpObject: {fileID: 104832001}
   plungerDownObject: {fileID: 1276589251}
-  vilesyringeUp: {fileID: 0}
-  VileShakable: {fileID: 0}
+  vilesyringeUp: {fileID: 104832001}
+  VileShakable: {fileID: 1858305855}
   simpleInteractable: {fileID: 0}
 --- !u!114 &1276589254
 MonoBehaviour:
@@ -171384,6 +171392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c37a081bad8c479fbbab64fb22c1391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue2: {fileID: 593083533}
   severeDialogue3: {fileID: 1848686809}
   severeDialogue3Object: {fileID: 1848686808}
   NoCap: {fileID: 521182250}
@@ -171472,6 +171481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e70d32494b0f42afbcc49260594ef62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  severeDialogue2: {fileID: 593083533}
   severeDialogue3: {fileID: 1848686809}
   severedialogue3: {fileID: 1848686808}
 --- !u!54 &1782879025

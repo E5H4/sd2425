@@ -87,7 +87,7 @@ public class SodaVRCollisionTrigger : MonoBehaviour
             // Activate and show MinorDialogue5.
             if (minorDialogue5Controller != null)
             {
-                minorDialogue5Controller.gameObject.SetActive(true);
+                minorDialogue5Controller.HideDialogueUI();
                 minorDialogue5Controller.ShowDialogueUI();
                 bag.SetActive(false);
             }

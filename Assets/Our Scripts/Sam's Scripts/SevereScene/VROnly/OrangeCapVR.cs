@@ -6,6 +6,7 @@ using DialogueSystemWithText;
 public class OrangeCapVR : MonoBehaviour
 {
     [Header("Dialogue References")]
+    [SerializeField] private DialogueUIController severeDialogue2;
     [Tooltip("The Dialogue UI Controller to show when the cap is selected.")]
     [SerializeField] private DialogueUIController severeDialogue3;
 
@@ -57,6 +58,7 @@ public class OrangeCapVR : MonoBehaviour
 
         if (severeDialogue3 != null)
         {
+            severeDialogue2.HideDialogueUI();
             severeDialogue3.ShowDialogueUI();
             NoCap.SetActive(true);
             Cap.SetActive(false);

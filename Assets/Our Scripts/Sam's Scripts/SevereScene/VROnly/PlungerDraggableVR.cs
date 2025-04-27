@@ -6,8 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class PlungerDraggableVR : MonoBehaviour
 {
     [Header("Dialogue Controllers")]
+    [SerializeField] private DialogueUIController severeDialogue6;
     [Tooltip("Dialogue controller triggered when the plunger is pushed down (first press).")]
     [SerializeField] private DialogueUIController severeDialogue7;
+    [SerializeField] private DialogueUIController severeDialogue9;
     [Tooltip("Dialogue controller triggered when the plunger is pulled up (second press).")]
     [SerializeField] private DialogueUIController severeDialogue10;
 
@@ -75,6 +77,7 @@ public class PlungerDraggableVR : MonoBehaviour
             // Trigger Dialogue 7.
             if (severeDialogue7 != null)
             {
+                severeDialogue6.HideDialogueUI();
                 severeDialogue7.ShowDialogueUI();
                 VileShakable.SetActive(true);
                 vilesyringeUp.SetActive(false);
@@ -96,6 +99,7 @@ public class PlungerDraggableVR : MonoBehaviour
             // Trigger Dialogue 10.
             if (severeDialogue10 != null)
             {
+                severeDialogue9.HideDialogueUI();
                 severeDialogue10.ShowDialogueUI();
             }
         }

@@ -5,7 +5,7 @@ using DialogueSystemWithText;
 [RequireComponent(typeof(Collider))]
 public class VileDraggable : MonoBehaviour
 {
-
+    [SerializeField] private DialogueUIController severeDialogue3;
     [SerializeField] private DialogueUIController severeDialogue4;
     [SerializeField] private GameObject severedialogue4;
     // Drag and double-click variables
@@ -29,6 +29,7 @@ public class VileDraggable : MonoBehaviour
                 severedialogue4.SetActive(true);
                 if (severeDialogue4 != null)
                 {
+                    severeDialogue3.HideDialogueUI();
                     severeDialogue4.ShowDialogueUI();
                 }
                 actionCompleted = true;
@@ -87,6 +88,7 @@ public class VileDraggable : MonoBehaviour
                     Debug.Log("VileDraggable: Vile is approximately upside down. Triggering dialogue.");
                     if (severeDialogue4 != null)
                     {
+                        severeDialogue3.HideDialogueUI();
                         severeDialogue4.ShowDialogueUI();
                     }
                     actionCompleted = true;
