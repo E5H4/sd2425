@@ -8252,7 +8252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &274097613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29463,7 +29463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &957816002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44501,9 +44501,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingScore: 50
   maxScore: 100
-  gradePanels: []
-  gradeDialogues: []
-  scoreTexts: []
+  gradePanels:
+  - {fileID: 1249942715}
+  - {fileID: 518056535}
+  - {fileID: 1162170318}
+  - {fileID: 1106692995}
+  - {fileID: 2005813814}
+  gradeDialogues:
+  - {fileID: 957816003}
+  - {fileID: 1942466193}
+  - {fileID: 274097614}
+  - {fileID: 1780696294}
+  - {fileID: 2036466779}
+  scoreTexts:
+  - {fileID: 626298083}
+  - {fileID: 1765645859}
+  - {fileID: 1075798532}
+  - {fileID: 1526646110}
+  - {fileID: 518254952}
   scoreText: {fileID: 0}
 --- !u!1001 &1379994687
 PrefabInstance:
@@ -58837,7 +58852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1780696293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63441,7 +63456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1942466192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -66767,7 +66782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2036466778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -67995,7 +68010,19 @@ MonoBehaviour:
       m_Calls: []
   _dialogueEndEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1378648733}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _dialogueOptions:
   - _option: Minor
     _nextDialogueContent: {fileID: 2014221996}

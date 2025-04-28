@@ -161,7 +161,7 @@ public class ScoreTracker : MonoBehaviour
         }
     }
 
-
+    //Print score in console, NOT ON SCREEN
     public void PrintScore()
     {
         int score = GetTotalScore();
@@ -195,6 +195,7 @@ public class ScoreTracker : MonoBehaviour
     //Pop-ups
     public void SamsPrintScore()
     {
+        Debug.Log("Im calling the grades");
         string grade = GetLetterGrade();
         int gradeIndex = GradeToIndex(grade);
 
@@ -208,11 +209,13 @@ public class ScoreTracker : MonoBehaviour
         {
             // Enable the correct one
             gradePanels[gradeIndex].SetActive(true);
+            Debug.Log("Pannel Enabled");
 
             // Show the correct dialogue
             if (gradeDialogues[gradeIndex] != null)
             {
                 gradeDialogues[gradeIndex].ShowDialogueUI();
+                Debug.Log("Dialogue called");
             }
             UpdateScoreDisplay();
         }
