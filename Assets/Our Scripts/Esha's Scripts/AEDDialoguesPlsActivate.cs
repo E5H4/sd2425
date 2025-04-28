@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using DialogueSystemWithText;
 
-public class MoreAEDDialoguesPlsActivate : MonoBehaviour
+public class AEDDialoguesPlsActivate : MonoBehaviour
 {
     [Header("3D Buttons")]
     [SerializeField] private GameObject onButt;
