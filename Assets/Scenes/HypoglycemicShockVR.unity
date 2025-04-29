@@ -22051,6 +22051,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7619631847569807018, guid: b1cc38298d83b224a910d533db985aa7, type: 3}
   m_PrefabInstance: {fileID: 229510216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &229607494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229607496}
+  - component: {fileID: 229607495}
+  m_Layer: 0
+  m_Name: Rule15-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &229607495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229607494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: "Now, let\u2019s click on Jennifer\u2019s bag again and look for fast-acting
+    carbs!"
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 0}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 277700337}
+        m_TargetAssemblyTypeName: Bookbag, Assembly-CSharp
+        m_MethodName: MinorSecondTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 395229963}
+        m_TargetAssemblyTypeName: TestingText, Assembly-CSharp
+        m_MethodName: bookbagTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _dialogueOptions: []
+--- !u!4 &229607496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229607494}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.000049670532, z: 0.0005960465}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 762898510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &229754066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61803,6 +61893,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8655970888854311886, guid: 46fc821c4c2379a46a85988fca1b82fa, type: 3}
   m_PrefabInstance: {fileID: 650679148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &651315259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 651315261}
+  - component: {fileID: 651315260}
+  m_Layer: 0
+  m_Name: No
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &651315260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651315259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: "For the purposes of this simulation, we\u2019ll help Jennifer out\u2026\n"
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 01490b0e46f1643d99414f2517728295, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 1618458476}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: SubtractFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
+--- !u!4 &651315261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651315259}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.000049670532, z: 0.0005960465}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 762898510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &651680848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71536,7 +71703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &762898510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -71552,6 +71719,11 @@ RectTransform:
   - {fileID: 1291361730}
   - {fileID: 987224312}
   - {fileID: 1545384078}
+  - {fileID: 1464736033}
+  - {fileID: 651315261}
+  - {fileID: 1618458477}
+  - {fileID: 1845361549}
+  - {fileID: 229607496}
   m_Father: {fileID: 1806008035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -101152,7 +101324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105487,6 +105659,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1806008035}
     m_Modifications:
+    - target: {fileID: 650230562900307810, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: CharReg
+      value: 
+      objectReference: {fileID: 395229959}
+    - target: {fileID: 650230562900307810, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: CharSev
+      value: 
+      objectReference: {fileID: 1618384378}
     - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
       propertyPath: MinorDialogue
       value: 
@@ -105524,12 +105704,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1080668362}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
       propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 166089236}
     - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
       propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSevereDifficulty
       objectReference: {fileID: 0}
     - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
       propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -105637,6 +105825,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
   m_PrefabInstance: {fileID: 1080668360}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1080668362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 650230562900307810, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+  m_PrefabInstance: {fileID: 1080668360}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf639ad5a10442b7b2ed35323700348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1081333297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141121,6 +141320,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3889620047389009613, guid: d5af55d224c7d7b4c8da00eae8c98b93, type: 3}
   m_PrefabInstance: {fileID: 1464635441}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1464736031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464736033}
+  - component: {fileID: 1464736032}
+  m_Layer: 0
+  m_Name: Inform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1464736032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464736031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: "Oh my, no wonder I don\u2019t feel well! Could you check my bag for
+    me? I think there\u2019s something in there I can eat or drink."
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Jennifer
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.44644418, g: 0.6792453, b: 0.36205056, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 39a6a6bbd499f46109205cbc853a5b16, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 651315260}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions:
+  - _option: Sure!
+    _nextDialogueContent: {fileID: 1618458476}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - _option: No thanks
+    _nextDialogueContent: {fileID: 651315260}
+    _optionEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!4 &1464736033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464736031}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.000049670532, z: 0.0005960465}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 762898510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464742108
 GameObject:
   m_ObjectHideFlags: 0
@@ -149319,7 +149594,7 @@ MonoBehaviour:
   _characterNameFontSize: 0
   _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
   _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 2059306427}
+  _nextDialogueContent: {fileID: 1464736032}
   _dialogueStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -150253,7 +150528,7 @@ MonoBehaviour:
   Character: {fileID: 0}
   monitorTab: {fileID: 1479248324}
   monitorTop: {fileID: 381282735}
-  MinorDialogue3: {fileID: 356276836}
+  MinorDialogue3: {fileID: 0}
 --- !u!114 &1556096560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156770,6 +157045,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7957609120742801846, guid: 828d2ce3c8fb74f498e8bb757fa113a6, type: 3}
   m_PrefabInstance: {fileID: 912532262}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1618458475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618458477}
+  - component: {fileID: 1618458476}
+  m_Layer: 0
+  m_Name: Rule15-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1618458476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618458475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: "Before we help, let\u2019s quickly review Rule 15! It stands for: 15
+    grams of fast-acting carbohydrates \u2192 wait 15 minutes \u2192 recheck blood
+    sugar \u2192 repeat if needed.\n"
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 1845361548}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 166089238}
+        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
+        m_MethodName: AddFivePoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
+--- !u!4 &1618458477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618458475}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.000049670532, z: 0.0005960465}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 762898510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1618513989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -180532,6 +180886,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4221185836472946435, guid: dae0f3f59e4f97f4597bf57b11462a67, type: 3}
   m_PrefabInstance: {fileID: 1844275372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1845361547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845361549}
+  - component: {fileID: 1845361548}
+  m_Layer: 0
+  m_Name: Rule15-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1845361548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845361547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogue: 'Here''s examples of fast acting carbs: 3 to 4 glucose tablets or one
+    gel, 4 ounces of fruit juice, 6 ounces of regular soda, 1 tablespoon of honey,
+    1 tablespoon of table sugar, or a packet of fruit snacks '
+  _customizeFont: 0
+  _dialogueFont: {fileID: 0}
+  _fontColor: {r: 0, g: 0, b: 0, a: 0}
+  _characterName: Sameshalos
+  _customizeCharacterName: 1
+  _withLineBreak: 0
+  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
+  _characterNameFontBold: 1
+  _characterNameFontItalic: 1
+  _characterNameFontSize: 0
+  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
+  _characterImagePosition: 0
+  _nextDialogueContent: {fileID: 229607495}
+  _dialogueStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _dialogueOptions: []
+--- !u!4 &1845361549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845361547}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.000049670532, z: 0.0005960465}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 762898510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1846293916
 PrefabInstance:
   m_ObjectHideFlags: 0
