@@ -5,19 +5,27 @@ using DialogueSystemWithText;
 
 public class BoxScript : MonoBehaviour
 {
-    [SerializeField] private GameObject Symptom1;  // Headache and Confusion
-    [SerializeField] private GameObject Symptom2;  //Dizz and coord
-    [SerializeField] private GameObject Symptom3; //fatigue and speech
+
+    [Header("Symptoms")]
+    [Tooltip("Headache and Confusion")]
+    [SerializeField] private GameObject Symptom1;
+    [Tooltip("Dizz and Coord")]
+    [SerializeField] private GameObject Symptom2;
+    [Tooltip("Fatigue and Speech")]
+    [SerializeField] private GameObject Symptom3;
+    [Tooltip("Pale and Blurr")]
     [SerializeField] private GameObject Symptom4; //pale and blurr
 
-    //for minor scene
+
+    [Header("For Minor Scene")]
     [SerializeField] private GameObject MonitorImage;
     [SerializeField] private GameObject Monitor;  
     [SerializeField] private GameObject BoxStrips;
     [SerializeField] private GameObject Strips;
     [SerializeField] private GameObject Lancet;
 
-    //for severe scene
+
+    [Header("For Severe Scene")]
     [SerializeField] private GameObject NeedlesImage;
     [SerializeField] private GameObject VialImage;
     [SerializeField] private GameObject Plunger;
@@ -30,15 +38,19 @@ public class BoxScript : MonoBehaviour
     [SerializeField] private GameObject Step3;
     [SerializeField] private GameObject Step4;
     [SerializeField] private GameObject Needleshot;
-    [SerializeField] private GameObject CharBack;
-    [SerializeField] private GameObject CharReg;
-    [SerializeField] private GameObject CharReg2;
-    [SerializeField] private GameObject CharFront;
     [SerializeField] private GameObject B1;
     [SerializeField] private GameObject B2;
     [SerializeField] private GameObject B3;
     [SerializeField] private GameObject B4;
     [SerializeField] private GameObject SyringeShot;
+
+
+    [Header("Character")]
+    [SerializeField] private GameObject CharBack;
+    [SerializeField] private GameObject CharReg;
+    [Tooltip("Character is Happy")]
+    [SerializeField] private GameObject CharReg2;
+    [SerializeField] private GameObject CharFront;
 
 
 
@@ -111,6 +123,7 @@ public class BoxScript : MonoBehaviour
 
     public void turnofffront()
     {
+      CharReg.SetActive(false);
       CharFront.SetActive(false);
       CharReg2.SetActive(true);
     }

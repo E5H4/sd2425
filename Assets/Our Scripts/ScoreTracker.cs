@@ -6,9 +6,9 @@ using TMPro;
 
 public class ScoreTracker : MonoBehaviour
 {
+    [Header("Score fields")]
     [SerializeField]
     private int startingScore = 50;
-
     [SerializeField]
     private int maxScore = 100;
 
@@ -16,12 +16,16 @@ public class ScoreTracker : MonoBehaviour
     private float startTime;
     private bool timerStarted = false;
 
+    [Header("Arrays for final grading screen")]
+    [Tooltip("Insert the grading pannels/images/sprites that pop on screen in ABC order")]
     [SerializeField] private GameObject[] gradePanels;  // A, B, C, D, F in order
-    [SerializeField] private DialogueUIController[] gradeDialogues; 
+    [Tooltip("Insert the Dialogues that pop on screen in ABC order")]
+    [SerializeField] private DialogueUIController[] gradeDialogues;
+    [Tooltip("Insert the Text that pop on screen in ABC order (make sure text has this script attached as well)")]
     [SerializeField] private TextMeshProUGUI[] scoreTexts;
 
-
-    //Print out on screen
+    [Header("Text Object")]
+    [Tooltip("Insert the text that this script is attached too")]
     [SerializeField] private TextMeshProUGUI scoreText;
 
     void Start()

@@ -15,6 +15,10 @@ public class TestingText : MonoBehaviour
 
     void Start()
     {
+        //Destroy lobby music hopefully
+        var lobbyMusicGO = GameObject.Find("Background Music - Lobby");
+        if (lobbyMusicGO != null)
+            Destroy(lobbyMusicGO);
         // Show difficulty in console
         Debug.Log("Difficulty: " + Difficulty.difficulty);
 
