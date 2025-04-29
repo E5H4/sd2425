@@ -50902,71 +50902,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7151008129383064775, guid: 4220bf4b02f24a84da3fabdabe688ee9, type: 3}
   m_PrefabInstance: {fileID: 535207868}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &536546503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 536546504}
-  - component: {fileID: 536546505}
-  m_Layer: 0
-  m_Name: 1_Random
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &536546504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536546503}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &536546505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536546503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: "You\u2019ve chosen the Random Hypoglycemic Shock episode."
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1890634079}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
 --- !u!1001 &536598656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59120,7 +59055,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &625688724
 Canvas:
   m_ObjectHideFlags: 0
@@ -59261,140 +59196,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3889620047389009613, guid: d5af55d224c7d7b4c8da00eae8c98b93, type: 3}
   m_PrefabInstance: {fileID: 626051127}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &627176614
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 627176615}
-  - component: {fileID: 627176616}
-  m_Layer: 0
-  m_Name: Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &627176615
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627176614}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &627176616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627176614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: Welcome to the Hypoglycemic Shock Simulator. Which episode would you
-    like to learn about?
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions:
-  - _option: Minor
-    _nextDialogueContent: {fileID: 1399662009}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 797653061}
-          m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
-          m_MethodName: SetMinorDifficulty
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _option: Servere
-    _nextDialogueContent: {fileID: 817970028}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 797653061}
-          m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
-          m_MethodName: SetSevereDifficulty
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _option: Random
-    _nextDialogueContent: {fileID: 536546505}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 797653061}
-          m_TargetAssemblyTypeName: Difficulty, Assembly-CSharp
-          m_MethodName: SetRandomDifficulty
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _option: Back to Lobby
-    _nextDialogueContent: {fileID: 0}
-    _optionEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 166089236}
-          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-          m_MethodName: LobbyBtn
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &627189124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74339,33 +74140,6 @@ MonoBehaviour:
   StartDialogue: {fileID: 0}
   MinorDialogue: {fileID: 0}
   SevereDialogue: {fileID: 0}
---- !u!224 &797653058 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-  m_PrefabInstance: {fileID: 3805863001708146828}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &797653061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 650230562900307810, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-  m_PrefabInstance: {fileID: 3805863001708146828}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf639ad5a10442b7b2ed35323700348, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &797653062 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-  m_PrefabInstance: {fileID: 3805863001708146828}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951af3225e49a49b488ada6920ea1f76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &798563272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76360,71 +76134,6 @@ MonoBehaviour:
   MinorDialogue3: {fileID: 762898511}
   lowerThreshold: 0.8
   upperThreshold: 1
---- !u!1 &817970026
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 817970027}
-  - component: {fileID: 817970028}
-  m_Layer: 0
-  m_Name: 1_Severe
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &817970027
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817970026}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &817970028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817970026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: "You\u2019ve chosen the Severe Hypoglycemic Shock episode."
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1890634079}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
 --- !u!1001 &818390274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100728,7 +100437,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1040694214
 Canvas:
   m_ObjectHideFlags: 0
@@ -104451,6 +104160,164 @@ RectTransform:
   m_AnchoredPosition: {x: 730, y: 20}
   m_SizeDelta: {x: 280, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1080668360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1806008035}
+    m_Modifications:
+    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: MinorDialogue
+      value: 
+      objectReference: {fileID: 1227348810}
+    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: SevereDialogue
+      value: 
+      objectReference: {fileID: 880479463}
+    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: minordialoguecontroller
+      value: 
+      objectReference: {fileID: 1227348814}
+    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: severedialoguecontroller
+      value: 
+      objectReference: {fileID: 880479467}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._option
+      value: Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._nextDialogueContent
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 166089236}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LobbyBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1164.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6470001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.6228447
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.2074318
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790812219553835670, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+      propertyPath: m_Name
+      value: StartDialogue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+--- !u!224 &1080668361 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
+  m_PrefabInstance: {fileID: 1080668360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1081333297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110290,7 +110157,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1163224645
 Canvas:
   m_ObjectHideFlags: 0
@@ -133658,71 +133525,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2561899689701693907, guid: 7a4dccd28d38ed5439efc759f0c24fa4, type: 3}
   m_PrefabInstance: {fileID: 1398539907}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1399662007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1399662008}
-  - component: {fileID: 1399662009}
-  m_Layer: 0
-  m_Name: 1_Minor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1399662008
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399662007}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1399662009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399662007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: "You\u2019ve chosen the Minor Hypoglycemic Shock episode."
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1890634079}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
 --- !u!1001 &1399755703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -151833,84 +151635,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3889620047389009613, guid: d5af55d224c7d7b4c8da00eae8c98b93, type: 3}
   m_PrefabInstance: {fileID: 1583127814}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1583229283
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1583229284}
-  - component: {fileID: 1583229285}
-  m_Layer: 0
-  m_Name: End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1583229284
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583229283}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1583229285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583229283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: "Let\u2019s follow these steps one by one as we help Jennifer, who\u2019s
-    experiencing hypoglycemic shock!"
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 0}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 797653062}
-        m_TargetAssemblyTypeName: TestingText, Assembly-CSharp
-        m_MethodName: ChoseDifficulty
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _dialogueOptions: []
 --- !u!1001 &1584552481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174954,7 +174678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 797653058}
+  - {fileID: 1080668361}
   - {fileID: 1227348819}
   - {fileID: 1166031145}
   - {fileID: 399190812}
@@ -183553,83 +183277,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7448510063927433708, guid: 382ae3d13535bf24d8999b8d74f7f7bd, type: 3}
   m_PrefabInstance: {fileID: 1890406318}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1890634077
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1890634078}
-  - component: {fileID: 1890634079}
-  m_Layer: 0
-  m_Name: EAP_Overview
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1890634078
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890634077}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1890634079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890634077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: "Before we start, let\u2019s review the Emergency Action Plan (EAP)."
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 069462f55449e4b259a6a0c9692ab193, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 2045990788}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 166089238}
-        m_TargetAssemblyTypeName: ScoreTracker, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
 --- !u!1001 &1891324484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199652,72 +199299,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 826288926397801176, guid: ce6d940fab601dd4bad470fe8aecdee7, type: 3}
   m_PrefabInstance: {fileID: 2045852830}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2045990786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2045990787}
-  - component: {fileID: 2045990788}
-  m_Layer: 0
-  m_Name: EAP_Steps
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2045990787
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045990786}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 797653058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2045990788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045990786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf02dac1997b2dd4c94fc9fe81132707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue: 'The steps of an EAP are: assess the situation, determine necessary
-    actions, find the safest way to provide care, provide care, and review.'
-  _customizeFont: 0
-  _dialogueFont: {fileID: 0}
-  _fontColor: {r: 0, g: 0, b: 0, a: 0}
-  _characterName: Sameshalos
-  _customizeCharacterName: 1
-  _withLineBreak: 0
-  _characterNameFontColor: {r: 0.6862745, g: 0.7764706, b: 1, a: 1}
-  _characterNameFontBold: 1
-  _characterNameFontItalic: 1
-  _characterNameFontSize: 0
-  _characterImageSprite: {fileID: 21300000, guid: 92762f5e6a12640b4afb4b03933a6ebe, type: 3}
-  _characterImagePosition: 0
-  _nextDialogueContent: {fileID: 1583229285}
-  _dialogueStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _dialogueOptions: []
 --- !u!1 &2047688827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1814932121547938600, guid: 0bd81e94430ecd64e8959692a15e54b4, type: 3}
@@ -209431,6 +209012,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1806008035}
     m_Modifications:
+    - target: {fileID: 208321048071449149, guid: d3c84d2342f274c078672bf89bb9c561, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3152810642271468754, guid: d3c84d2342f274c078672bf89bb9c561, type: 3}
       propertyPath: m_Name
       value: GlucagonMinorDialogue
@@ -209612,6 +209197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhoneDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 5259886379970867298, guid: b5de67fbf86df4551addca71aae70526, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8360174648423223987, guid: b5de67fbf86df4551addca71aae70526, type: 3}
       propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -209742,312 +209331,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d410f729e894d49148a6fc9106f0e2f0, type: 3}
---- !u!1001 &3805863001708146828
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1806008035}
-    m_Modifications:
-    - target: {fileID: 472495452359423379, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 650230562900307810, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: CharReg
-      value: 
-      objectReference: {fileID: 395229959}
-    - target: {fileID: 650230562900307810, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: CharSev
-      value: 
-      objectReference: {fileID: 1618384378}
-    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: MinorDialogue
-      value: 
-      objectReference: {fileID: 1227348810}
-    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: SevereDialogue
-      value: 
-      objectReference: {fileID: 880479463}
-    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: minordialoguecontroller
-      value: 
-      objectReference: {fileID: 1227348814}
-    - target: {fileID: 754165157572698574, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: severedialoguecontroller
-      value: 
-      objectReference: {fileID: 880479467}
-    - target: {fileID: 1525861282634084392, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2155674526028932975, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 166089238}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartTimer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ScoreTracker, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097588906268624873, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._option
-      value: Back to Lobby
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[0]._nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[1]._nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[2]._nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 797653061}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 797653061}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[2]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 797653061}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 166089236}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[0]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetMinorDifficulty
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[1]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetSevereDifficulty
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[2]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetRandomDifficulty
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LobbyBtn
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MenuController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4906083042373623301, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueOptions.Array.data[3]._optionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7015590751882075567, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _nextDialogueContent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1164.534
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.6470001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.6228447
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.2074318
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 692613574}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: grades
-      objectReference: {fileID: 0}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: BoxScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8456826238712379422, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: _dialogueEndEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8790812219553835670, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_Name
-      value: StartDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 8790812219553835670, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 4282541495550091378, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 6475502140734184374, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 587716619532673735, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 661120434362665646, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 5927694264875170630, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 6756240537452924034, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 808168572077341609, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    - {fileID: 7523223252829942748, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 627176615}
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1399662008}
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 817970027}
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 536546504}
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1890634078}
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2045990787}
-    - targetCorrespondingSourceObject: {fileID: 7847052152056479899, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1583229284}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6c830ebc1448f4eb1933797e5df855a4, type: 3}
 --- !u!1001 &3816868890179490451
 PrefabInstance:
   m_ObjectHideFlags: 0
