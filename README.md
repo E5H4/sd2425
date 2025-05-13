@@ -21,3 +21,8 @@ This project was collaboratively developed by:
 
 ## Any questions?
 You can reach out via email!
+
+## Game Trailer
+
+https://github.com/user-attachments/assets/ec963e78-1756-4dbb-94d2-ce8282d1c681
+
