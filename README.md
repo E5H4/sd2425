@@ -1,4 +1,5 @@
-![](https://www.csuohio.edu/sites/default/files/Full%20Vertical_CSU%20Green_Fresh%20Green_CMYK_Update.jpg)
+![]()![csu-logo-white](https://github.com/user-attachments/assets/eb6f871c-08d8-4580-9820-a15cb649a4b8)
+
 # M.E. SIMULATOR
 Senior Design Unity Project
 Cleveland State University | May 2025
